@@ -9,12 +9,12 @@ OsuClient osu = new OsuClient("api key");
 ```
 
 ### Beatmaps([/api/get_beatmaps](https://github.com/ppy/osu-api/wiki#apiget_beatmaps))
-For map sets:
+For map sets: `(eg: https://osu.ppy.sh/s/000000)`
 ``` c#
 var bm = new OsuBeatmap();
 bm = Osu.GetBeatmapSet("map set id");
 ```
-For a single beatmap:
+For a single beatmap: `(eg: https://osu.ppy.sh/b/000000)`
 ``` c#
 var bm = new OsuBeatmap();
 bm = Osu.GetBeatmap("beatmap id");
