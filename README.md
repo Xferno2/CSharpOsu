@@ -21,9 +21,10 @@ bm = Osu.GetBeatmap("beatmap id");
 ```
 
 ### Users([/api/get_user](https://github.com/ppy/osu-api/wiki#apiget_user))
+`(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 var us = new OsuUser();
-us = Osu.GetUser("username or userid");
+us = Osu.GetUser("userid or username");
 ```
 
 ### Side note
