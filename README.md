@@ -1,5 +1,5 @@
 # CSharpOsu
-C# library for using [osu!api](https://github.com/ppy/osu-api/wiki)
+C# library for [osu!api](https://github.com/ppy/osu-api/wiki)
 using [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 project.
 
@@ -27,6 +27,6 @@ var us = new OsuUser();
 us = Osu.GetUser("userid or username");
 ```
 
-### Side note
-This api is incomplete and its code is not the cleanest but it works ,
-at least for me. I will add more usage to the api soon.
+## Side note
+This library is incomplete and its code is not the cleanest but it works ,
+at least for me. I will add more usage to the library soon.
