@@ -22,6 +22,9 @@ namespace CSharpOsu
         string osuApiUrl = "https://osu.ppy.sh/api/";
         string osuThumbnailBeatmapSet = "https://osu.ppy.sh/s/";
         string osuThumbnailBeatmap = "https://osu.ppy.sh/b/";
+        string osuDowload = "https://osu.ppy.sh/d/";
+        string Bloodcat = "https://bloodcat.com/osu/s/";
+        string osuDirect = "osu://s/";
         string osuBeatmap = "get_beatmaps?";
         string osuScores = "get_scores?";
         string osuUser = "get_user?";
@@ -90,6 +93,10 @@ namespace CSharpOsu
             obj.difficultyrating = osudata[0].difficultyrating;
             obj.thumbnail = "https://b.ppy.sh/thumb/" + osudata[0].beatmapset_id + "l.jpg";
             obj.url = "https://osu.ppy.sh/s/" + obj.beatmapset_id;
+            obj.download = osuDowload + obj.beatmapset_id  ;
+            obj.downloadnovideo = osuDowload + obj.beatmapset_id + "n";
+            obj.osudirect = osuDirect + obj.beatmapset_id;
+            obj.bloodcat = Bloodcat + obj.beatmapset_id;
 
             return obj;
         }
