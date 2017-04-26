@@ -1,0 +1,7 @@
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\bin\Debug\CSharpOsu.dll
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\bin\Debug\CSharpOsu.pdb
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\bin\Debug\Newtonsoft.Json.dll
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\bin\Debug\Newtonsoft.Json.xml
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\obj\Debug\CSharpOsu.csprojResolveAssemblyReference.cache
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\obj\Debug\CSharpOsu.dll
+c:\users\xferno2\documents\visual studio 2017\Projects\CSharpOsu\CSharpOsu\obj\Debug\CSharpOsu.pdb
