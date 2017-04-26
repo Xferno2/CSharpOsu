@@ -3,8 +3,10 @@ C# library for [osu!api](https://github.com/ppy/osu-api/wiki)
 using [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 project.
 
-## Getting started
+## Directions for use
 To use this library you must add a reference to the DLL file in your project (Project -> Add Reference -> Browse) and search for CSharpOsu.dll (can be found in the Debug folder of this project) and add it to your project.
+
+## Getting started
 ```c#
 OsuClient osu = new OsuClient("api key");
 ```
