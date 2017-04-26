@@ -6,7 +6,7 @@ project.
 ## Directions for use
 To use this library you must add a reference to the DLL file in your project (Project -> Add Reference -> Browse) and search for CSharpOsu.dll (can be found in the Debug folder of this project) and add it to your project.
 
-## Getting started
+### Getting started
 ```c#
 OsuClient osu = new OsuClient("api key");
 ```
