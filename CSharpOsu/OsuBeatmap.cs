@@ -37,5 +37,9 @@ namespace CSharpOsu
         public string difficultyrating { get; set; }
         public string thumbnail { get; set; }
         public string url { get; set; }
+        public string download { get; set; }
+        public string downloadnovideo { get; set; }
+        public string osudirect { get; set; }
+        public string bloodcat { get; set; }
     }
 }
