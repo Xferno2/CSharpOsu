@@ -20,7 +20,6 @@ Console.WriteLine(bm.title);
 ```
 For a single beatmap: `(eg: https://osu.ppy.sh/b/000000)`
 ``` c#
-var bm = new OsuBeatmap();
 OsuBeatmap[] beatmap = osu.GetBeatmap("Beatmap id", false);
 var bm = beatmap[0]; //0 means first beatmap found.
 Console.WriteLine(bm.title);
