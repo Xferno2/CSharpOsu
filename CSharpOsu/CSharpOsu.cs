@@ -12,12 +12,18 @@ namespace CSharpOsu
     {
         public string Key { get; internal set; }
 
-
+        /// <summary>
+        /// Osu API Key
+        /// </summary>
+        /// <param name="key">API Key</param>
         public OsuClient(string key)
         {
             Key = key;   
         }
 
+        /// <summary>
+        /// A bunch of strings.
+        /// </summary>
         string osuUrl = "https://osu.ppy.sh/";
         string osuApiUrl = "https://osu.ppy.sh/api/";
         string osuThumbnailBeatmapSet = "https://osu.ppy.sh/s/";
@@ -35,19 +41,19 @@ namespace CSharpOsu
         string b = "b=";
         string u = "u=";
         string ad = "&";
-
-
         string Beatmap() { return osuApiUrl + osuBeatmap + k + Key; }
         string User(string id) { return osuApiUrl + osuUser + k + Key + ad + u + id; }
 
-
+        /// <summary>
+        /// Fetch JSON.
+        /// </summary>
+        /// <param name="url">Url of the JSON.</param>
+        /// <returns>Get JSON to be pharsed.</returns>
         string GetUrl(string url)
         {
             var html = "";
             using (WebClient webclient = new WebClient())
             {
-
-
                 using (WebClient client = new WebClient())
                 {
                     html = client.DownloadString(url);
@@ -141,7 +147,7 @@ namespace CSharpOsu
         /// <param name="id">Specify a user id or a username to return metadata from (required).</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
         /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.(NOT IMPLEMENTED YET!)</param>
-        /// <returns></returns>
+        /// <returns>Get informations about user.</returns>
         public OsuUser[] GetUser(string id , int? _m = null, int? _event_days = null)
         {
             string user = User(id);
