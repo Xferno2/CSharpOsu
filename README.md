@@ -14,20 +14,24 @@ OsuClient osu = new OsuClient("api key");
 ### Beatmaps([/api/get_beatmaps](https://github.com/ppy/osu-api/wiki#apiget_beatmaps))
 For map sets: `(eg: https://osu.ppy.sh/s/000000)`
 ``` c#
-var bm = new OsuBeatmap();
-bm = Osu.GetBeatmapSet("map set id");
+OsuBeatmap[] beatmap = Osu.GetBeatmap("Beatmap id", true);
+var bm = beatmap[0]; `0 means first beatmap found.`
+Console.WriteLine(beatmap.title);
 ```
 For a single beatmap: `(eg: https://osu.ppy.sh/b/000000)`
 ``` c#
 var bm = new OsuBeatmap();
-bm = Osu.GetBeatmap("beatmap id");
+OsuBeatmap[] beatmap = Osu.GetBeatmap("Beatmap id", false);
+var bm = beatmap[0]; `0 means first beatmap found.`
+Console.WriteLine(beatmap.title);
 ```
 
 ### Users([/api/get_user](https://github.com/ppy/osu-api/wiki#apiget_user))
 `(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
-var us = new OsuUser();
-us = Osu.GetUser("userid or username");
+OsuUser[] beatmap = Osu.GetUser("user id or username");
+var us = beatmap[0]; `0 means first user found.`
+Console.WriteLine(user.user_id);
 ```
 
 ## Side note

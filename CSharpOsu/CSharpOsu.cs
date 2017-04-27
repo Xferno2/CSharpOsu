@@ -37,8 +37,7 @@ namespace CSharpOsu
         string ad = "&";
 
 
-        string BeatmapSet(int id) { return osuApiUrl + osuBeatmap + k + Key + ad + s + id; }
-        string Beatmap(int id) { return osuApiUrl + osuBeatmap + k + Key + ad + b + id; }
+        string Beatmap() { return osuApiUrl + osuBeatmap + k + Key; }
         string User(string id) { return osuApiUrl + osuUser + k + Key + ad + u + id; }
 
 
@@ -57,165 +56,111 @@ namespace CSharpOsu
             return html;
         }
 
-
-        public OsuBeatmap GetBeatmapSet(int id)
+        /// <summary>
+        /// Fetch Beatmap.
+        /// </summary>
+        /// <param name="_id">Specify a beatmapset or beatmap id.</param>
+        /// <param name="_isSet">If is beatmapset or not(default true)</param>
+        /// <param name="_since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
+        /// <param name="_u">Specify a user or a username to return metadata from.</param>
+        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+        /// <param name="_a">Specify whether converted beatmaps are included (0 = not included, 1 = included). Only has an effect if m is chosen and not 0. Converted maps show their converted difficulty rating. Optional, default is 0.</param>
+        /// <param name="_h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
+        /// <param name="_limit">Amount of results. Optional, default and maximum are 500.</param>
+        /// <returns>Get information about a beatmaps.</returns>
+        public OsuBeatmap[] GetBeatmap(int? _id = null, bool _isSet = true, int? _since = null, string _u = null, int? _m = null, int? _a = null, string _h = null, int? _limit = null)
         {
-            OsuBeatmap obj = new OsuBeatmap();
-            string html = GetUrl(BeatmapSet(id));
-            dynamic osudata = JsonConvert.DeserializeObject(html, typeof(object));
-
-            obj.beatmapset_id = osudata[0].beatmapset_id;
-            obj.beatmap_id = osudata[0].beatmap_id;
-            obj.approved = osudata[0].approved;
-            obj.total_length = osudata[0].total_length;
-            obj.hit_length = osudata[0].hit_length;
-            obj.version = osudata[0].version;
-            obj.file_md5 = osudata[0].file_md5;
-            obj.diff_size = osudata[0].diff_size;
-            obj.diff_overall = osudata[0].diff_overall;
-            obj.diff_approach = osudata[0].diff_approach;
-            obj.diff_drain = osudata[0].diff_drain;
-            obj.mode = osudata[0].mode;
-            obj.approved_date = osudata[0].approved_date;
-            obj.last_update = osudata[0].last_update;
-            obj.artist = osudata[0].artist;
-            obj.title = osudata[0].title;
-            obj.creator = osudata[0].creator;
-            obj.bpm = osudata[0].bpm;
-            obj.source = osudata[0].source;
-            obj.tags = osudata[0].tags;
-            obj.genre_id = osudata[0].genre_id;
-            obj.language_id = osudata[0].language_id;
-            obj.favourite_count = osudata[0].favourite_count;
-            obj.playcount = osudata[0].playcount;
-            obj.passcount = osudata[0].passcount;
-            obj.max_combo = osudata[0].max_combo;
-            obj.difficultyrating = osudata[0].difficultyrating;
-            obj.thumbnail = "https://b.ppy.sh/thumb/" + osudata[0].beatmapset_id + "l.jpg";
-            obj.url = "https://osu.ppy.sh/s/" + obj.beatmapset_id;
-            obj.download = osuDowload + obj.beatmapset_id  ;
-            obj.download_no_video = osuDowload + obj.beatmapset_id + "n";
-            obj.osu_direct = osuDirect + obj.beatmapset_id;
-            obj.bloodcat = Bloodcat + obj.beatmapset_id;
-            switch (obj.approved)
+            OsuBeatmap[] obj;
+            string beatmap = Beatmap();
+            if (_since != null)
             {
-                case "-2":
-                    obj.approved_string = "Graveyard";
-                    break;
-                case "-1":
-                    obj.approved_string = "Pending";
-                    break;
-                case "1":
-                    obj.approved_string = "Ranked";
-                    break;
-                case "2":
-                    obj.approved_string = "Approved";
-                    break;
-                case "3":
-                    obj.approved_string = "Qualified";
-                    break;
-                case "4":
-                    obj.approved_string = "Loved";
-                    break;
-                default:
-                    obj.approved_string = "NULL";
-                    break;
+                beatmap = beatmap + "&since=" + _since;
+            } else if(_u != null)
+            {
+                beatmap = beatmap + "&u=" + _u;
+            } else if(_m != null)
+            {
+                beatmap = beatmap + "&m=" + _m;
+            } else if (_a != null)
+            {
+                beatmap = beatmap + "&a=" + _a;
+            } else if (_h != null)
+            {
+                beatmap = beatmap + "&h=" + _h;
+            } else if (_limit != null)
+            {
+                beatmap = beatmap + "&limit=" + _limit;
+            } else if (_id != null)
+            {
+                beatmap = (_isSet) ? beatmap + ad + s + _id : beatmap + ad + b + _id;
             }
 
+            string html = GetUrl(beatmap);
 
-            return obj;
-        }
-
-        public OsuBeatmap GetBeatmap(int id)
-        {
-            OsuBeatmap obj = new OsuBeatmap();
-            string html = GetUrl(Beatmap(id)); ;
-            dynamic osudata = JsonConvert.DeserializeObject(html, typeof(object));
-
-            obj.beatmapset_id = osudata[0].beatmapset_id;
-            obj.beatmap_id = osudata[0].beatmap_id;
-            obj.approved = osudata[0].approved;
-            obj.total_length = osudata[0].total_length;
-            obj.hit_length = osudata[0].hit_length;
-            obj.version = osudata[0].version;
-            obj.file_md5 = osudata[0].file_md5;
-            obj.diff_size = osudata[0].diff_size;
-            obj.diff_overall = osudata[0].diff_overall;
-            obj.diff_approach = osudata[0].diff_approach;
-            obj.diff_drain = osudata[0].diff_drain;
-            obj.mode = osudata[0].mode;
-            obj.approved_date = osudata[0].approved_date;
-            obj.last_update = osudata[0].last_update;
-            obj.artist = osudata[0].artist;
-            obj.title = osudata[0].title;
-            obj.creator = osudata[0].creator;
-            obj.bpm = osudata[0].bpm;
-            obj.source = osudata[0].source;
-            obj.tags = osudata[0].tags;
-            obj.genre_id = osudata[0].genre_id;
-            obj.language_id = osudata[0].language_id;
-            obj.favourite_count = osudata[0].favourite_count;
-            obj.playcount = osudata[0].playcount;
-            obj.passcount = osudata[0].passcount;
-            obj.max_combo = osudata[0].max_combo;
-            obj.difficultyrating = osudata[0].difficultyrating;
-            obj.thumbnail = "https://b.ppy.sh/thumb/" + osudata[0].beatmapset_id + "l.jpg";
-            obj.url = "https://osu.ppy.sh/b/" + obj.beatmap_id;
-            switch (obj.approved)
+            obj = JsonConvert.DeserializeObject<OsuBeatmap[]>(html);
+            for (int i = 0; i < obj.Length; i++)
             {
-                case "-2":
-                    obj.approved_string = "Graveyard";
-                    break;
-                case "-1":
-                    obj.approved_string = "Pending";
-                    break;
-                case "1":
-                    obj.approved_string = "Ranked";
-                    break;
-                case "2":
-                    obj.approved_string = "Approved";
-                    break;
-                case "3":
-                    obj.approved_string = "Qualified";
-                    break;
-                case "4":
-                    obj.approved_string = "Loved";
-                    break;
-                default:
-                    obj.approved_string = "NULL";
-                    break;
+                obj[i].thumbnail = "https://b.ppy.sh/thumb/" + obj[i].beatmapset_id + "l.jpg";
+                obj[i].url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id;
+                obj[i].download = osuDowload + obj[i].beatmapset_id;
+                obj[i].download_no_video = osuDowload + obj[i].beatmapset_id + "n";
+                obj[i].osu_direct = osuDirect + obj[i].beatmapset_id;
+                obj[i].bloodcat = Bloodcat + obj[i].beatmapset_id;
+                switch (obj[i].approved)
+                {
+                    case "-2":
+                        obj[i].approved_string = "Graveyard";
+                        break;
+                    case "-1":
+                        obj[i].approved_string = "Pending";
+                        break;
+                    case "1":
+                        obj[i].approved_string = "Ranked";
+                        break;
+                    case "2":
+                        obj[i].approved_string = "Approved";
+                        break;
+                    case "3":
+                        obj[i].approved_string = "Qualified";
+                        break;
+                    case "4":
+                        obj[i].approved_string = "Loved";
+                        break;
+                    default:
+                        obj[i].approved_string = "NULL";
+                        break;
+                }
             }
 
             return obj;
         }
 
-
-        public OsuUser GetUser(string id)
+        /// <summary>
+        /// Fetch User.
+        /// </summary>
+        /// <param name="id">Specify a user id or a username to return metadata from (required).</param>
+        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+        /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.(NOT IMPLEMENTED YET!)</param>
+        /// <returns></returns>
+        public OsuUser[] GetUser(string id , int? _m = null, int? _event_days = null)
         {
-            OsuUser obj = new OsuUser();
-            string html = GetUrl(User(id));
-            dynamic osudata = JsonConvert.DeserializeObject(html, typeof(object));
-
-            obj.user_id = osudata[0].user_id;
-            obj.username = osudata[0].username;
-            obj.count300 = osudata[0].count300;
-            obj.count100 = osudata[0].count100;
-            obj.count50 = osudata[0].count50;
-            obj.playcount = osudata[0].playcount;
-            obj.ranked_score = osudata[0].ranked_score;
-            obj.total_score = osudata[0].total_score;
-            obj.pp_rank = osudata[0].pp_rank;
-            obj.level = osudata[0].level;
-            obj.pp_raw = osudata[0].pp_raw;
-            obj.accuracy = osudata[0].accuracy;
-            obj.count_rank_ss = osudata[0].count_rank_ss;
-            obj.count_rank_s = osudata[0].count_rank_s;
-            obj.count_rank_a = osudata[0].count_rank_a;
-            obj.country = osudata[0].country;
-            obj.pp_country_rank = osudata[0].pp_country_rank;
-            obj.url = "https://osu.ppy.sh/u/" + obj.user_id;
-            obj.image = "https://a.ppy.sh/" + obj.user_id;
-
+            string user = User(id);
+            if (_m!= null)
+            {
+                user = user + "&m=" + _m;
+            }
+            else if (_event_days != null)
+            {
+                user = user + "&u=" + _event_days;
+            }
+            OsuUser[] obj;
+            string html = GetUrl(user);
+            obj = JsonConvert.DeserializeObject<OsuUser[]>(html);
+            for (int i = 0; i < obj.Length; i++)
+            {
+                obj[i].url = "https://osu.ppy.sh/u/" + obj[i].user_id;
+                obj[i].image = "https://a.ppy.sh/" + obj[i].user_id;
+            }
             return obj;
         }
     }
