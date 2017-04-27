@@ -12,9 +12,9 @@ OsuClient osu = new OsuClient("api key");
 ```
 
 ### Beatmaps([/api/get_beatmaps](https://github.com/ppy/osu-api/wiki#apiget_beatmaps))
-For map sets: `(eg: https://osu.ppy.sh/s/000000)`
+For beatmapset: `(eg: https://osu.ppy.sh/s/000000)`
 ``` c#
-OsuBeatmap[] beatmap = osu.GetBeatmap("Beatmap id", true);
+OsuBeatmap[] beatmap = osu.GetBeatmap("Beatmapset id", true);
 var bm = beatmap[0]; //0 means first beatmap found.
 Console.WriteLine(bm.title);
 ```
