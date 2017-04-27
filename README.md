@@ -15,14 +15,14 @@ OsuClient osu = new OsuClient("api key");
 For map sets: `(eg: https://osu.ppy.sh/s/000000)`
 ``` c#
 OsuBeatmap[] beatmap = Osu.GetBeatmap("Beatmap id", true);
-var bm = beatmap[0]; `0 means first beatmap found.`
+var bm = beatmap[0]; //0 means first beatmap found.
 Console.WriteLine(beatmap.title);
 ```
 For a single beatmap: `(eg: https://osu.ppy.sh/b/000000)`
 ``` c#
 var bm = new OsuBeatmap();
 OsuBeatmap[] beatmap = Osu.GetBeatmap("Beatmap id", false);
-var bm = beatmap[0]; `0 means first beatmap found.`
+var bm = beatmap[0]; //0 means first beatmap found.
 Console.WriteLine(beatmap.title);
 ```
 
@@ -30,7 +30,7 @@ Console.WriteLine(beatmap.title);
 `(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 OsuUser[] beatmap = Osu.GetUser("user id or username");
-var us = beatmap[0]; `0 means first user found.`
+var us = beatmap[0]; //0 means first user found.
 Console.WriteLine(user.user_id);
 ```
 
