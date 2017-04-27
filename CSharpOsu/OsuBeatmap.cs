@@ -38,8 +38,9 @@ namespace CSharpOsu
         public string thumbnail { get; set; }
         public string url { get; set; }
         public string download { get; set; }
-        public string downloadnovideo { get; set; }
-        public string osudirect { get; set; }
+        public string download_no_video { get; set; }
+        public string osu_direct { get; set; }
         public string bloodcat { get; set; }
+        public string approved_string { get; set; }
     }
 }

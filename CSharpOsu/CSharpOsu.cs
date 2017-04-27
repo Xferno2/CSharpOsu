@@ -94,9 +94,34 @@ namespace CSharpOsu
             obj.thumbnail = "https://b.ppy.sh/thumb/" + osudata[0].beatmapset_id + "l.jpg";
             obj.url = "https://osu.ppy.sh/s/" + obj.beatmapset_id;
             obj.download = osuDowload + obj.beatmapset_id  ;
-            obj.downloadnovideo = osuDowload + obj.beatmapset_id + "n";
-            obj.osudirect = osuDirect + obj.beatmapset_id;
+            obj.download_no_video = osuDowload + obj.beatmapset_id + "n";
+            obj.osu_direct = osuDirect + obj.beatmapset_id;
             obj.bloodcat = Bloodcat + obj.beatmapset_id;
+            switch (obj.approved)
+            {
+                case "-2":
+                    obj.approved_string = "Graveyard";
+                    break;
+                case "-1":
+                    obj.approved_string = "Pending";
+                    break;
+                case "1":
+                    obj.approved_string = "Ranked";
+                    break;
+                case "2":
+                    obj.approved_string = "Approved";
+                    break;
+                case "3":
+                    obj.approved_string = "Qualified";
+                    break;
+                case "4":
+                    obj.approved_string = "Loved";
+                    break;
+                default:
+                    obj.approved_string = "NULL";
+                    break;
+            }
+
 
             return obj;
         }
@@ -136,6 +161,30 @@ namespace CSharpOsu
             obj.difficultyrating = osudata[0].difficultyrating;
             obj.thumbnail = "https://b.ppy.sh/thumb/" + osudata[0].beatmapset_id + "l.jpg";
             obj.url = "https://osu.ppy.sh/b/" + obj.beatmap_id;
+            switch (obj.approved)
+            {
+                case "-2":
+                    obj.approved_string = "Graveyard";
+                    break;
+                case "-1":
+                    obj.approved_string = "Pending";
+                    break;
+                case "1":
+                    obj.approved_string = "Ranked";
+                    break;
+                case "2":
+                    obj.approved_string = "Approved";
+                    break;
+                case "3":
+                    obj.approved_string = "Qualified";
+                    break;
+                case "4":
+                    obj.approved_string = "Loved";
+                    break;
+                default:
+                    obj.approved_string = "NULL";
+                    break;
+            }
 
             return obj;
         }
