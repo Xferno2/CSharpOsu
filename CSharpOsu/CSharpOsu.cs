@@ -146,7 +146,7 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="id">Specify a user id or a username to return metadata from (required).</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
-        /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.(NOT IMPLEMENTED YET!)</param>
+        /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.</param>
         /// <returns>Get informations about user.</returns>
         public OsuUser[] GetUser(string id , int? _m = null, int? _event_days = null)
         {

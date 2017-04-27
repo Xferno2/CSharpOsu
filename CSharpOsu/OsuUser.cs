@@ -25,6 +25,7 @@ namespace CSharpOsu
         public string count_rank_a { get; set; }
         public string country { get; set; }
         public string pp_country_rank { get; set; }
+        public List<object> events { get; set; }
         public string url { get; set; }
         public string image { get; set; }
     }
