@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="CSharpOsu.cs" />
     <Compile Include="OsuBeatmap.cs" />
+    <Compile Include="OsuMatch.cs" />
+    <Compile Include="OsuReplay.cs" />
+    <Compile Include="OsuScore.cs" />
+    <Compile Include="OsuUserBest.cs" />
+    <Compile Include="OsuUserRecent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OsuUser.cs" />
   </ItemGroup>

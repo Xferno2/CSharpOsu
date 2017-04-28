@@ -30,19 +30,31 @@ namespace CSharpOsu
         string osuThumbnailBeatmap = "https://osu.ppy.sh/b/";
         string osuDowload = "https://osu.ppy.sh/d/";
         string Bloodcat = "https://bloodcat.com/osu/s/";
+
         string osuDirect = "osu://s/";
         string osuBeatmap = "get_beatmaps?";
         string osuScores = "get_scores?";
         string osuUser = "get_user?";
         string osuUserBest = "get_user_best?";
         string osuUserRecent = "get_user_recent?";
+        string osuMatch = "get_match?";
+        string osuReplay = "get_replay?";
+
         string k = "k=";
         string s = "s=";
         string b = "b=";
         string u = "u=";
+        string m = "m=";
+        string mp = "mp=";
         string ad = "&";
+
         string Beatmap() { return osuApiUrl + osuBeatmap + k + Key; }
         string User(string id) { return osuApiUrl + osuUser + k + Key + ad + u + id; }
+        string Score(string beatmap) { return osuApiUrl + osuScores + k + Key + ad + b + beatmap; }
+        string User_Best(string user) { return osuApiUrl + osuUserBest + k + Key + ad + u + user; }
+        string User_Recent(string user) { return osuApiUrl + osuUserRecent + k + Key + ad + u + user; }
+        string Match(string match) { return osuApiUrl + osuMatch + k + Key + ad + mp + match; }
+        string Replay(int mode, string beatmap, string user) { return osuApiUrl + osuReplay + k + Key + ad + m + mode + ad + b + beatmap + ad + u + user; }
 
         /// <summary>
         /// Fetch JSON.
@@ -169,5 +181,123 @@ namespace CSharpOsu
             }
             return obj;
         }
+
+
+        /// <summary>
+        /// Fetch Scores.
+        /// </summary>
+        /// <param name="_b">Specify a beatmap_id to return score information from.</param>
+        /// <param name="_u">Specify a user_id or a username to return score information for.</param>
+        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+        /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+        /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <returns>Get informations about scores from a beatmap.</returns>
+        public OsuScore[] GetScore(string _b, string _u = null, int? _m = null, string _mods = null, int? _limit = null)
+        {
+            string score = Score(_b);
+            if (_u != null)
+            {
+                score = score + "&u=" + _u;
+            } else if (_m != null)
+            {
+                score = score + "&m=" + _m;
+            } else if (_mods != null)
+            {
+                score = score + "&mods=" + _mods;
+            } else if (_limit != null)
+            {
+                score = score + "&limit=" + _limit;
+            }
+            OsuScore[] obj;
+            string html = GetUrl(score);
+            obj = JsonConvert.DeserializeObject<OsuScore[]>(html);
+
+            return obj;
+        }
+
+        /// <summary>
+        /// Fetch user best scores.
+        /// </summary>
+        /// <param name="_u">Specify a user_id or a username to return score information for.</param>
+        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+        /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <returns>Get informations about user best scores.</returns>
+        public OsuUserBest[] GetUserBest(string _u,int? _m = null, int? _limit = null)
+        {
+            string userbest = User_Best(_u);
+            if (_m != null)
+            {
+               userbest = userbest + "&m=" + _m;
+            }
+            else if (_limit != null)
+            {
+                userbest = userbest + "&limit=" + _limit;
+            }
+            OsuUserBest[] obj;
+            string html = GetUrl(userbest);
+            obj = JsonConvert.DeserializeObject<OsuUserBest[]>(html);
+
+            return obj;
+        }
+
+        /// <summary>
+        /// Fetch user recent scores.
+        /// </summary>
+        /// <param name="_u">Specify a user_id or a username to return score information for.</param>
+        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+        /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <returns>Get informations about user recent scores.</returns>
+        public OsuUserRecent[] GetUserRecent(string _u, int? _m = null, int? _limit = null)
+        {
+            string userbest = User_Recent(_u);
+            if (_m != null)
+            {
+                userbest = userbest + "&m=" + _m;
+            }
+            else if (_limit != null)
+            {
+                userbest = userbest + "&limit=" + _limit;
+            }
+            OsuUserRecent[] obj;
+            string html = GetUrl(userbest);
+            obj = JsonConvert.DeserializeObject<OsuUserRecent[]>(html);
+
+            return obj;
+        }
+
+        /// <summary>
+        /// Fetch multiplayer lobby.
+        /// </summary>
+        /// <param name="mp">Match id to get information from.</param>
+        /// <returns>Get informations about a multiplayer lobby.</returns>
+        public OsuMatch[] GetMatch(string _mp)
+        {
+            string match = Match(_mp);
+            OsuMatch[] obj;
+            string html = GetUrl(match);
+            obj = JsonConvert.DeserializeObject<OsuMatch[]>(html);
+
+            return obj;
+        }
+
+        /// <summary>
+        /// Fetch replay data.
+        /// </summary>
+        /// <param name="_m">The mode the score was played in.</param>
+        /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
+        /// <param name="_u">The user that has played the beatmap.</param>
+        /// <returns>Get informations about a replay.</returns>
+        public OsuReplay[] GetReplay(int _m, string _b, string _u)
+        {
+            string replay = Replay(_m, _b, _u);
+            OsuReplay[] obj;
+            string html = GetUrl(replay);
+            obj = JsonConvert.DeserializeObject<OsuReplay[]>(html);
+
+            return obj;
+            // Note that the binary data you get when you decode above base64-string, is not the contents of an.osr-file.It is the LZMA stream referred to by the osu-wiki here:
+            // The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream(https://osu.ppy.sh/wiki/Osr_(file_format)#Format)
+        }
+
     }
 }
