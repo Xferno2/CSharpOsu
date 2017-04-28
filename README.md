@@ -72,9 +72,8 @@ Console.WriteLine(ry.content);
 ## Side note
 The functions from osu!api are all covered and all the searching criteria are accepted by functions parameters. I've made the code cleaner but I still got a lot to do with cleaning. I've added comments and summaries to help you figuring out what everything dose.
 
-Everything, except Beatmap and Users functions, haven't been tested so if any function or a parametre of a function returns an error just make an issues and I will see where is the problem.
+Everything, except Beatmap and Users functions, haven't been tested so if any function or a parametre of a function returns an error just make an Issues post and I will see where is the problem.
 
 ### To do
 1. It's still not clear for me how replay encoding works but I will try to make a converter to output a .osr file.
-2. I need to use the formula for accuracy from osu wiki to be able to create a accuracy parametre.
-3. Get the users language flags as a jpg.
+2. Get the users language flags as a jpg.
