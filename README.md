@@ -76,4 +76,3 @@ Everything, except Beatmap and Users functions, haven't been tested so if any fu
 
 ### To do
 1. It's still not clear for me how replay encoding works but I will try to make a converter to output a .osr file.
-2. Get the users language flags as a jpg.
