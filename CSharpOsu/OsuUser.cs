@@ -28,5 +28,7 @@ namespace CSharpOsu
         public List<object> events { get; set; }
         public string url { get; set; }
         public string image { get; set; }
+        public string flag { get; set; }
+        public string flag_old { get; set; }
     }
 }

@@ -178,6 +178,8 @@ namespace CSharpOsu
             {
                 obj[i].url = "https://osu.ppy.sh/u/" + obj[i].user_id;
                 obj[i].image = "https://a.ppy.sh/" + obj[i].user_id;
+                obj[i].flag = "https://new.ppy.sh/images/flags/" + obj[i].country + ".png";
+                obj[i].flag_old = "https://s.ppy.sh/images/flags/" + obj[i].country.ToLower() + ".gif";
             }
             return obj;
         }
