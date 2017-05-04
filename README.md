@@ -15,13 +15,13 @@ OsuClient osu = new OsuClient("api key");
 For beatmapset: `(eg: https://osu.ppy.sh/s/000000)`
 ``` c#
 OsuBeatmap[] beatmap = osu.GetBeatmap("beatmapset id", true);
-var bm = beatmap[0]; //0 means first beatmap found.
+var bm = beatmap[0]; //0 means first result found.
 Console.WriteLine(bm.title);
 ```
 For a single beatmap: `(eg: https://osu.ppy.sh/b/000000)`
 ``` c#
 OsuBeatmap[] beatmap = osu.GetBeatmap("beatmap id", false);
-var bm = beatmap[0]; //0 means first beatmap found.
+var bm = beatmap[0]; //0 means first result found.
 Console.WriteLine(bm.title);
 ```
 
@@ -29,7 +29,7 @@ Console.WriteLine(bm.title);
 `(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 OsuUser[] beatmap = osu.GetUser("user id or username");
-var us = beatmap[0]; //0 means first user found.
+var us = beatmap[0]; //0 means first result found.
 Console.WriteLine(us.user_id);
 ```
 
@@ -37,35 +37,35 @@ Console.WriteLine(us.user_id);
 `(eg: https://osu.ppy.sh/b/000000)`
 ```c#
 OsuScore[] score = osu.GetScore("beatmap id");
-var sc = score[0]; //0 means first user found.
+var sc = score[0]; //0 means first result found.
 Console.WriteLine(sc.score);
 ```
 ### Best Performance([/api/get_user_best](https://github.com/ppy/osu-api/wiki#apiget_user_best))
 `(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 OsuUserBest[] userbest = osu.GetUserBest("user id or username");
-var ub = userbest[0]; //0 means first user found.
+var ub = userbest[0]; //0 means first result found.
 Console.WriteLine(ub.rank);
 ```
 ### Recently Played([/api/get_user_recent](https://github.com/ppy/osu-api/wiki#apiget_user_recent))
 `(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 OsuUserRecent[] userrecent = osu.GetUserRecent("user id or username");
-var ur = userrecent[0]; //0 means first user found.
+var ur = userrecent[0]; //0 means first result found.
 Console.WriteLine(ur.maxcombo);
 ```
 ### Multiplayer([/api/get_match](https://github.com/ppy/osu-api/wiki#apiget_match))
 `(eg: https://osu.ppy.sh/mp/00000000)`
 ```c#
 OsuMatch[] match = osu.GetMatch("match id");
-var mh = match[0]; //0 means first user found.
+var mh = match[0]; //0 means first result found.
 Console.WriteLine(mh.match.name);
 ```
 ### Replay data([/api/get_replay](https://github.com/ppy/osu-api/wiki#apiget_replay))
 `(eg: https://osu.ppy.sh/b/000000 and 0 and https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 OsuReplay[] replay = osu.GetReplay("beatmap id", "game mode", "user id or username");
-var ry = replay[0]; //0 means first user found.
+var ry = replay[0]; //0 means first result found.
 Console.WriteLine(ry.content);
 ```
 
