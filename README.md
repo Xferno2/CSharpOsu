@@ -28,8 +28,8 @@ Console.WriteLine(bm.title);
 ### Users([/api/get_user](https://github.com/ppy/osu-api/wiki#apiget_user))
 `(eg: https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
-OsuUser[] beatmap = osu.GetUser("user id or username");
-var us = beatmap[0]; //0 means first result found.
+OsuUser[] user = osu.GetUser("user id or username");
+var us = user[0]; //0 means first result found.
 Console.WriteLine(us.user_id);
 ```
 
