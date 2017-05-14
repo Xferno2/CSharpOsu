@@ -30,8 +30,8 @@ namespace CSharpOsu
         string osuThumbnailBeatmap = "https://osu.ppy.sh/b/";
         string osuDowload = "https://osu.ppy.sh/d/";
         string Bloodcat = "https://bloodcat.com/osu/s/";
-
         string osuDirect = "osu://s/";
+
         string osuBeatmap = "get_beatmaps?";
         string osuScores = "get_scores?";
         string osuUser = "get_user?";
@@ -180,6 +180,11 @@ namespace CSharpOsu
                 obj[i].image = "https://a.ppy.sh/" + obj[i].user_id;
                 obj[i].flag = "https://new.ppy.sh/images/flags/" + obj[i].country + ".png";
                 obj[i].flag_old = "https://s.ppy.sh/images/flags/" + obj[i].country.ToLower() + ".gif";
+                obj[i].osutrack = "https://ameobea.me/osutrack/user/" + obj[i].username;
+                obj[i].osustats = "https://osustats.ppy.sh/u/" + obj[i].username;
+                obj[i].osuskills = "http://osuskills.tk/user/" + obj[i].username;
+                obj[i].osuchan = "https://syrin.me/osuchan/u/" + obj[i].user_id;
+                obj[i].spectateUser = "osu://spectate/" + obj[i].user_id;
             }
             return obj;
         }
@@ -270,7 +275,7 @@ namespace CSharpOsu
         /// <summary>
         /// Fetch multiplayer lobby.
         /// </summary>
-        /// <param name="mp">Match id to get information from.</param>
+        /// <param name="_mp">Match id to get information from.</param>
         /// <returns>Get informations about a multiplayer lobby.</returns>
         public OsuMatch[] GetMatch(string _mp)
         {
