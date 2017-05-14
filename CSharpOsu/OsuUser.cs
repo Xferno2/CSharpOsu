@@ -6,6 +6,15 @@ using System.Threading.Tasks;
 
 namespace CSharpOsu
 {
+    public class Event
+    {
+        public string display_html { get; set; }
+        public string beatmap_id { get; set; }
+        public string beatmapset_id { get; set; }
+        public string date { get; set; }
+        public string epicfactor { get; set; }
+    }
+
     public class OsuUser
     {
         public string user_id { get; set; }
@@ -25,10 +34,15 @@ namespace CSharpOsu
         public string count_rank_a { get; set; }
         public string country { get; set; }
         public string pp_country_rank { get; set; }
-        public List<object> events { get; set; }
+        public List<Event> events { get; set; }
         public string url { get; set; }
         public string image { get; set; }
         public string flag { get; set; }
         public string flag_old { get; set; }
+        public string osutrack { get; set; }
+        public string osustats { get; set; }
+        public string osuskills { get; set; }
+        public string osuchan { get; set; }
+        public string spectateUser { get; set; }
     }
 }
