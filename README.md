@@ -57,14 +57,16 @@ Console.WriteLine(ur.maxcombo);
 ### Multiplayer([/api/get_match](https://github.com/ppy/osu-api/wiki#apiget_match))
 `(eg: https://osu.ppy.sh/mp/00000000)`
 ```c#
-OsuMatch multip = isu.GetMatch("match id");
-Console.WriteLine(multip.match.name);
+OsuMatch[] match = osu.GetMatch("match id");
+var mh = match[0]; //0 means first result found.
+Console.WriteLine(mh.match.name);
 ```
 ### Replay data([/api/get_replay](https://github.com/ppy/osu-api/wiki#apiget_replay))
 `(eg: https://osu.ppy.sh/b/000000 and 0 and https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
-OsuReplay replay = osu.GetReplay("beatmap id", "game mode", "user id or username");
-Console.WriteLine(replay.content);
+OsuReplay[] replay = osu.GetReplay("beatmap id", "game mode", "user id or username");
+var ry = replay[0]; //0 means first result found.
+Console.WriteLine(ry.content);
 ```
 
 ## Side note

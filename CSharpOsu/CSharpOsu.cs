@@ -277,12 +277,12 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="_mp">Match id to get information from.</param>
         /// <returns>Get informations about a multiplayer lobby.</returns>
-        public OsuMatch GetMatch(string _mp)
+        public OsuMatch[] GetMatch(string _mp)
         {
-            OsuMatch obj;
+            OsuMatch[] obj;
             string match = Match(_mp);
             string html = GetUrl(match);
-            obj = JsonConvert.DeserializeObject<OsuMatch>(html);
+            obj = JsonConvert.DeserializeObject<OsuMatch[]>("[" + html + "]");
 
             return obj;
         }
@@ -294,12 +294,12 @@ namespace CSharpOsu
         /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
         /// <param name="_u">The user that has played the beatmap.</param>
         /// <returns>Get informations about a replay.</returns>
-        public OsuReplay GetReplay(int _m, string _b, string _u)
+        public OsuReplay[] GetReplay(int _m, string _b, string _u)
         {
-            OsuReplay obj;
+            OsuReplay[] obj;
             string replay = Replay(_m, _b, _u);
             string html = GetUrl(replay);
-            obj = JsonConvert.DeserializeObject<OsuReplay>(html);
+            obj = JsonConvert.DeserializeObject<OsuReplay[]>("[" + html + "]");
 
             return obj;
             // Note that the binary data you get when you decode above base64-string, is not the contents of an.osr-file.It is the LZMA stream referred to by the osu-wiki here:
