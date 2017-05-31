@@ -61,10 +61,14 @@ OsuMatch multip = osu.GetMatch("match id");
 Console.WriteLine(multip.match.name);
 ```
 ### Replay data([/api/get_replay](https://github.com/ppy/osu-api/wiki#apiget_replay))
-`(eg: https://osu.ppy.sh/b/000000 and 0 and https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
+For getting replay EncodedBase64 content(pretty useless without parsing): `(eg: https://osu.ppy.sh/b/000000 | 0 | https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
 ```c#
 OsuReplay replay = osu.GetReplay("beatmap id", "game mode", "user id or username");
 Console.WriteLine(replay.content);
+```
+For getting the .osr file on disk: `(eg: "C:/replay.osr" | 0 | https://osu.ppy.sh/b/000000 | https://osu.ppy.sh/u/000000 or https://osu.ppy.sh/u/username)`
+```c#
+OsuReplay replay = osu.GetReplay("path on disk with name and .osr extenstion", "game mode", "beatmap id", "user id or username");
 ```
 
 ## Side note
