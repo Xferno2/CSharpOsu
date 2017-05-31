@@ -72,9 +72,7 @@ OsuReplay replay = osu.GetReplay("path on disk with name and .osr extenstion", "
 ```
 
 ## Side note
-The functions from osu!api are all covered and all the searching criteria are accepted by functions parameters. I've made the code cleaner but I still got a lot to do with cleaning. I've added comments and summaries to help you figuring out what everything dose.
-
-Everything, except Beatmap and Users functions, haven't been tested so if any function or a parametre of a function returns an error just make an Issues post and I will see where is the problem.
+The functions from osu!api are all covered and all the searching criteria are accepted by functions parameters. I've made the code cleaner but I still got a lot to do with cleaning.
 
 ### To do
 1. Add error handlers.
