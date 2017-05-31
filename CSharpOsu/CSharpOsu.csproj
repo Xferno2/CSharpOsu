@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryHandler.cs" />
     <Compile Include="CSharpOsu.cs" />
     <Compile Include="OsuBeatmap.cs" />
     <Compile Include="OsuMatch.cs" />

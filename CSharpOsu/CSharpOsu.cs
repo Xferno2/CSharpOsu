@@ -5,6 +5,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using BinaryHandler;
+using System.IO;
 
 namespace CSharpOsu
 {
@@ -304,6 +306,64 @@ namespace CSharpOsu
             return obj;
             // Note that the binary data you get when you decode above base64-string, is not the contents of an.osr-file.It is the LZMA stream referred to by the osu-wiki here:
             // The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream(https://osu.ppy.sh/wiki/Osr_(file_format)#Format)
+        }
+
+        /// <summary>
+        /// .osr file.
+        /// </summary>
+        /// <param name="path">Location on disk where the file will written.</param>
+        /// <param name="_m">The mode the score was played in.</param>
+        /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
+        /// <param name="_u">The user that has played the beatmap.</param>
+        /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+        /// <param name="_count">There can be mroe than 1 replay that contains those arguments , an array is needed.</param>
+        /// <returns>Write a .osr file on the disk.</returns>
+        public void GetReplay(string path,int _m, string _b, string _u, int _mods=0, int _count = 0)
+        {
+            var replay = GetReplay(_m, _b, _u);
+            var sc = GetScore(_b,_u,_m ,_mods.ToString());
+            var bt = GetBeatmap(Convert.ToInt32(_b), _isSet: false);
+            var bin = new BinHandler();
+
+            var score = sc[_count];
+            var beatmap = bt[_count];
+
+            BinaryWriter binWriter = new BinaryWriter(new MemoryStream());
+            BinaryReader binReader = new BinaryReader(binWriter.BaseStream);
+
+            var replayHashData = score.maxcombo + "osu" + score.username + beatmap.file_md5 + score.score + score.rank;
+            var content = Convert.FromBase64String(replay.content);
+
+            bin.writeByte(binWriter, _m.ToString());
+            bin.writeInteger(binWriter, 20151228);
+            bin.writeString(binWriter, beatmap.file_md5);
+            bin.writeString(binWriter, score.username);
+            bin.writeString(binWriter, bin.CalculateMD5Hash(replayHashData).ToLower());
+            bin.writeShort(binWriter, Convert.ToInt16(score.count300));
+            bin.writeShort(binWriter, Convert.ToInt16(score.count100));
+            bin.writeShort(binWriter, Convert.ToInt16(score.count50));
+            bin.writeShort(binWriter, Convert.ToInt16(score.countgeki));
+            bin.writeShort(binWriter, Convert.ToInt16(score.countkatu));
+            bin.writeShort(binWriter, Convert.ToInt16(score.countmiss));
+            bin.writeInteger(binWriter, Convert.ToInt32(score.score));
+            bin.writeShort(binWriter, Convert.ToInt16(score.maxcombo));
+            bin.writeByte(binWriter, score.perfect);
+            bin.writeInteger(binWriter, Convert.ToInt32(score.enabled_mods));
+            bin.writeString(binWriter, "");
+            bin.writeDate(binWriter, score.date);
+            bin.writeInteger(binWriter, content.Length);
+            binWriter.Write(content);
+
+            binWriter.Write(Convert.ToInt64(score.score_id));
+            binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);
+
+
+            binReader.BaseStream.Position = 0;
+            byte[] AllData = binReader.ReadBytes(Convert.ToInt32(binReader.BaseStream.Length));
+
+
+            File.WriteAllBytes(path, AllData);
+
         }
 
     }

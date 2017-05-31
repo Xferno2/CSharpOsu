@@ -73,4 +73,4 @@ The functions from osu!api are all covered and all the searching criteria are ac
 Everything, except Beatmap and Users functions, haven't been tested so if any function or a parametre of a function returns an error just make an Issues post and I will see where is the problem.
 
 ### To do
-1. It's still not clear for me how replay encoding works but I will try to make a converter to output a .osr file.
+1. Add error handlers.
