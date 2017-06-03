@@ -1,6 +1,7 @@
 # CSharpOsu
 C# library for [osu!api](https://github.com/ppy/osu-api/wiki)
 using [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
+
 This library is CLS Compilant , that means that can be used with
 any .NET Framework ( C#, C++/CLI, Eiffel, F#, IronPython, IronRuby,
 PowerBuilder, Visual Basic, Visual COBOL, and Windows PowerShell).
