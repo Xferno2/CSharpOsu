@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using BinaryHandler;
 using System.IO;
 
+[assembly: CLSCompliant(true)]
 namespace CSharpOsu
 {
     public class OsuClient
@@ -26,10 +27,7 @@ namespace CSharpOsu
         /// <summary>
         /// A bunch of strings.
         /// </summary>
-        string osuUrl = "https://osu.ppy.sh/";
         string osuApiUrl = "https://osu.ppy.sh/api/";
-        string osuThumbnailBeatmapSet = "https://osu.ppy.sh/s/";
-        string osuThumbnailBeatmap = "https://osu.ppy.sh/b/";
         string osuDowload = "https://osu.ppy.sh/d/";
         string Bloodcat = "https://bloodcat.com/osu/s/";
         string osuDirect = "osu://s/";
