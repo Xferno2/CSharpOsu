@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using BinaryHandler;
 using System.IO;
 
+
 [assembly: CLSCompliant(true)]
 namespace CSharpOsu
 {
@@ -64,13 +65,10 @@ namespace CSharpOsu
         string GetUrl(string url)
         {
             var html = "";
-            using (WebClient webclient = new WebClient())
-            {
                 using (WebClient client = new WebClient())
                 {
                     html = client.DownloadString(url);
                 }
-            }
             return html;
         }
 
