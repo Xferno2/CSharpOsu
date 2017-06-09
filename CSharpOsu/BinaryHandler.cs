@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinaryHandler
+namespace CSharpOsu.BinaryHandler
 {
     public class BinHandler
     {
@@ -17,8 +17,8 @@ namespace BinaryHandler
         /// <param name="str">A string.</param>
         public void writeString(BinaryWriter binWriter, string str)
         {
-            byte abyte = 0x0B;
-            binWriter.Write(abyte);
+            byte b = 0x0B;
+            binWriter.Write(b);
             binWriter.Write(str);
         }
 
@@ -61,7 +61,9 @@ namespace BinaryHandler
         /// <param name="datestr">A date parsed as a string.</param>
         public void writeDate(BinaryWriter binWriter, string datestr)
         {
-            // Weird string manipulation. I have no clue how it works. The credits for this one goes to omkelderman(https://github.com/omkelderman/osu-replay-downloader)
+            // Weird string and timestamp manipulation. I have no clue how it works.
+            // The credits for this one goes to omkelderman(https://github.com/omkelderman/osu-replay-downloader).
+
             var constant = 429.4967296;
             DateTime date = DateTime.Parse(datestr.Replace(' ', 'T') + "+08:00");
 
@@ -96,29 +98,17 @@ namespace BinaryHandler
         /// </summary>
         /// <param name="input">Decoded MD5 string.</param>
         /// <returns></returns>
-        public string CalculateMD5Hash(string input)
+        public string MD5Hash(string input)
 
         {
-
-            // step 1, calculate MD5 hash from input
-
             MD5 md5 = System.Security.Cryptography.MD5.Create();
-
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
-
-            byte[] hash = md5.ComputeHash(inputBytes);
-
-            // step 2, convert byte array to hex string
-
             StringBuilder sb = new StringBuilder();
 
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hash = md5.ComputeHash(inputBytes);
+
             for (int i = 0; i < hash.Length; i++)
-
-            {
-
-                sb.Append(hash[i].ToString("X2"));
-
-            }
+            {   sb.Append(hash[i].ToString("X2"));  }
 
             return sb.ToString();
 

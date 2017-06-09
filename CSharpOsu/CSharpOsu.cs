@@ -5,7 +5,8 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using BinaryHandler;
+using CSharpOsu.BinaryHandler;
+using CSharpOsu.Enum;
 using System.IO;
 
 
@@ -22,8 +23,9 @@ namespace CSharpOsu
         /// <param name="key">API Key</param>
         public OsuClient(string key)
         {
-            Key = key;   
+            Key = key;
         }
+        
 
         /// <summary>
         /// A bunch of strings.
@@ -51,11 +53,11 @@ namespace CSharpOsu
 
         string Beatmap() { return osuApiUrl + osuBeatmap + k + Key; }
         string User(string id) { return osuApiUrl + osuUser + k + Key + ad + u + id; }
-        string Score(string beatmap) { return osuApiUrl + osuScores + k + Key + ad + b + beatmap; }
+        string Score(int beatmap) { return osuApiUrl + osuScores + k + Key + ad + b.ToString() + beatmap; }
         string User_Best(string user) { return osuApiUrl + osuUserBest + k + Key + ad + u + user; }
         string User_Recent(string user) { return osuApiUrl + osuUserRecent + k + Key + ad + u + user; }
-        string Match(string match) { return osuApiUrl + osuMatch + k + Key + ad + mp + match; }
-        string Replay(int mode, string beatmap, string user) { return osuApiUrl + osuReplay + k + Key + ad + m + mode + ad + b + beatmap + ad + u + user; }
+        string Match(int match) { return osuApiUrl + osuMatch + k + Key + ad + mp + match; }
+        string Replay(mode mode, int beatmap, string user) { return osuApiUrl + osuReplay + k + Key + ad + m + mode + ad + b + beatmap + ad + u + user; }
 
         /// <summary>
         /// Fetch JSON.
@@ -64,11 +66,11 @@ namespace CSharpOsu
         /// <returns>Get JSON to be pharsed.</returns>
         string GetUrl(string url)
         {
-            var html = "";
-                using (WebClient client = new WebClient())
-                {
+            string html= "";
+            using (WebClient client = new WebClient())
+            {
                     html = client.DownloadString(url);
-                }
+            }
             return html;
         }
 
@@ -84,17 +86,17 @@ namespace CSharpOsu
         /// <param name="_h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
         /// <param name="_limit">Amount of results. Optional, default and maximum are 500.</param>
         /// <returns>Get information about a beatmaps.</returns>
-        public OsuBeatmap[] GetBeatmap(int? _id = null, bool _isSet = true, int? _since = null, string _u = null, int? _m = null, int? _a = null, string _h = null, int? _limit = null)
+        public OsuBeatmap[] GetBeatmap(int? _id = null, bool _isSet = true, string _since = null, string _u = null, mode? _m = null, conv? _a = null, string _h = null, int? _limit = null)
         {
             OsuBeatmap[] obj;
             string beatmap = Beatmap();
             if (_since != null)
             {
                 beatmap = beatmap + "&since=" + _since;
-            } else if(_u != null)
+            } else if (_u != null)
             {
                 beatmap = beatmap + "&u=" + _u;
-            } else if(_m != null)
+            } else if (_m != null)
             {
                 beatmap = beatmap + "&m=" + _m;
             } else if (_a != null)
@@ -158,7 +160,7 @@ namespace CSharpOsu
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
         /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.</param>
         /// <returns>Get informations about user.</returns>
-        public OsuUser[] GetUser(string id , int? _m = null, int? _event_days = null)
+        public OsuUser[] GetUser(string id, mode? _m = null, int? _event_days = null)
         {
             string user = User(id);
             if (_m!= null)
@@ -197,7 +199,7 @@ namespace CSharpOsu
         /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
         /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
         /// <returns>Get informations about scores from a beatmap.</returns>
-        public OsuScore[] GetScore(string _b, string _u = null, int? _m = null, string _mods = null, int? _limit = null)
+        public OsuScore[] GetScore(int _b, string _u = null, mode? _m = null, int? _mods = null, int? _limit = null)
         {
             string score = Score(_b);
             if (_u != null)
@@ -227,7 +229,7 @@ namespace CSharpOsu
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
         /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
         /// <returns>Get informations about user best scores.</returns>
-        public OsuUserBest[] GetUserBest(string _u,int? _m = null, int? _limit = null)
+        public OsuUserBest[] GetUserBest(string _u, mode? _m = null, int? _limit = null)
         {
             string userbest = User_Best(_u);
             if (_m != null)
@@ -252,7 +254,7 @@ namespace CSharpOsu
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
         /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
         /// <returns>Get informations about user recent scores.</returns>
-        public OsuUserRecent[] GetUserRecent(string _u, int? _m = null, int? _limit = null)
+        public OsuUserRecent[] GetUserRecent(string _u, mode? _m = null, int? _limit = null)
         {
             string userbest = User_Recent(_u);
             if (_m != null)
@@ -275,7 +277,7 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="_mp">Match id to get information from.</param>
         /// <returns>Get informations about a multiplayer lobby.</returns>
-        public OsuMatch GetMatch(string _mp)
+        public OsuMatch GetMatch(int _mp)
         {
             OsuMatch obj;
             string match = Match(_mp);
@@ -292,12 +294,16 @@ namespace CSharpOsu
         /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
         /// <param name="_u">The user that has played the beatmap.</param>
         /// <returns>Get informations about a replay.</returns>
-        public OsuReplay GetReplay(int _m, string _b, string _u)
+        public OsuReplay GetReplay(mode _m, int _b, string _u)
         {
             OsuReplay obj;
             string replay = Replay(_m, _b, _u);
             string html = GetUrl(replay);
             obj = JsonConvert.DeserializeObject<OsuReplay>(html);
+            if (obj.error == null)
+            {
+                obj.error = "none";
+            }
 
             return obj;
             // Note that the binary data you get when you decode above base64-string, is not the contents of an.osr-file.It is the LZMA stream referred to by the osu-wiki here:
@@ -305,7 +311,7 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// .osr file.
+        /// .osr file bytes.
         /// </summary>
         /// <param name="path">Location on disk where the file will written.</param>
         /// <param name="_m">The mode the score was played in.</param>
@@ -313,28 +319,37 @@ namespace CSharpOsu
         /// <param name="_u">The user that has played the beatmap.</param>
         /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
         /// <param name="_count">There can be mroe than 1 replay that contains those arguments , an array is needed.</param>
-        /// <returns>Write a .osr file on the disk.</returns>
-        public void GetReplay(string path,int _m, string _b, string _u, int _mods=0, int _count = 0)
+        /// <returns>Get all the bytes to create a .osr file.</returns>
+        public byte[] GetReplay(mode _m, int _b, string _u, type t, int _mods=0, int _count = 0)
         {
             var replay = GetReplay(_m, _b, _u);
-            var sc = GetScore(_b,_u,_m ,_mods.ToString());
+
+            //Throw
+            if (replay.error == "Replay not available.")
+            {
+                throw new Exception("Replay data not available.");
+            }
+
+            var sc = GetScore(_b,_u,_m ,_mods);
             var bt = GetBeatmap(Convert.ToInt32(_b), _isSet: false);
-            var bin = new BinHandler();
 
             var score = sc[_count];
             var beatmap = bt[_count];
+
+            var bin = new BinHandler();
 
             BinaryWriter binWriter = new BinaryWriter(new MemoryStream());
             BinaryReader binReader = new BinaryReader(binWriter.BaseStream);
 
             var replayHashData = score.maxcombo + "osu" + score.username + beatmap.file_md5 + score.score + score.rank;
             var content = Convert.FromBase64String(replay.content);
+            var mode = Convert.ToInt32(_m).ToString();
 
-            bin.writeByte(binWriter, _m.ToString());
-            bin.writeInteger(binWriter, 20151228);
+            bin.writeByte(binWriter, mode);
+            bin.writeInteger(binWriter, 0);
             bin.writeString(binWriter, beatmap.file_md5);
             bin.writeString(binWriter, score.username);
-            bin.writeString(binWriter, bin.CalculateMD5Hash(replayHashData).ToLower());
+            bin.writeString(binWriter, bin.MD5Hash(replayHashData).ToLower());
             bin.writeShort(binWriter, Convert.ToInt16(score.count300));
             bin.writeShort(binWriter, Convert.ToInt16(score.count100));
             bin.writeShort(binWriter, Convert.ToInt16(score.count50));
@@ -353,12 +368,10 @@ namespace CSharpOsu
             binWriter.Write(Convert.ToInt64(score.score_id));
             binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);
 
-
             binReader.BaseStream.Position = 0;
-            byte[] AllData = binReader.ReadBytes(Convert.ToInt32(binReader.BaseStream.Length));
+            int streamLenght = Convert.ToInt32(binReader.BaseStream.Length);
 
-
-            File.WriteAllBytes(path, AllData);
+            return binReader.ReadBytes(streamLenght);
 
         }
 

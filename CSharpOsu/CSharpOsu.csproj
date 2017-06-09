@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="BinaryHandler.cs" />
     <Compile Include="CSharpOsu.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="OsuBeatmap.cs" />
     <Compile Include="OsuMatch.cs" />
     <Compile Include="OsuReplay.cs" />
