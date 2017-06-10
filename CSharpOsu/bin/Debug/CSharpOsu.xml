@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSharpOsu</name>
+    </assembly>
+    <members>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.writeString(System.IO.BinaryWriter,System.String)">
+            <summary>
+            Binary String
+            </summary>
+            <param name="binWriter">The main BinaryWriter.</param>
+            <param name="str">A string.</param>
+        </member>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.writeByte(System.IO.BinaryWriter,System.String)">
+            <summary>
+            Binary Byte
+            </summary>
+            <param name="binWriter">The main BinaryWriter.</param>
+            <param name="bt">A string.</param>
+        </member>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.writeShort(System.IO.BinaryWriter,System.Int16)">
+            <summary>
+            Binary Short
+            </summary>
+            <param name="binWriter">The main BinaryWriter.</param>
+            <param name="srt">A short(Int16).</param>
+        </member>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.writeInteger(System.IO.BinaryWriter,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="binWriter">The main BinaryWriter.</param>
+            <param name="i">A intiger(Int32).</param>
+        </member>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.writeDate(System.IO.BinaryWriter,System.String)">
+            <summary>
+            Binary Database Timestamp
+            </summary>
+            <param name="binWriter">The main BinaryWriter.</param>
+            <param name="datestr">A date parsed as a string.</param>
+        </member>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.GetTime(System.DateTime)">
+            <summary>
+            Unix Timestamp
+            </summary>
+            <param name="date">A date from DateTime.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharpOsu.BinaryHandler.BinHandler.MD5Hash(System.String)">
+            <summary>
+            Calculate MD5Hash
+            </summary>
+            <param name="input">Decoded MD5 string.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.#ctor(System.String)">
+            <summary>
+            Osu API Key
+            </summary>
+            <param name="key">API Key</param>
+        </member>
+        <member name="F:CSharpOsu.OsuClient.osuApiUrl">
+            <summary>
+            A bunch of strings.
+            </summary>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetUrl(System.String)">
+            <summary>
+            Get JSON to be pharsed.
+            </summary>
+            <param name="url">Url of the JSON.</param>
+            <returns>Fetch JSON.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetBeatmap(System.Nullable{System.Int32},System.Boolean,System.String,System.String,System.Nullable{CSharpOsu.Enum.mode},System.Nullable{CSharpOsu.Enum.conv},System.String,System.Nullable{System.Int32})">
+            <summary>
+            Get information about beatmaps.
+            </summary>
+            <param name="_id">Specify a beatmapset or beatmap id.</param>
+            <param name="_isSet">If is beatmapset or not(default true)</param>
+            <param name="_since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
+            <param name="_u">Specify a user or a username to return metadata from.</param>
+            <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+            <param name="_a">Specify whether converted beatmaps are included (0 = not included, 1 = included). Only has an effect if m is chosen and not 0. Converted maps show their converted difficulty rating. Optional, default is 0.</param>
+            <param name="_h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
+            <param name="_limit">Amount of results. Optional, default and maximum are 500.</param>
+            <returns>Fetch Beatmap.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetUser(System.String,System.Nullable{CSharpOsu.Enum.mode},System.Nullable{System.Int32})">
+            <summary>
+            Get informations about a user.
+            </summary>
+            <param name="id">Specify a user id or a username to return metadata from (required).</param>
+            <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+            <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.</param>
+            <returns>Fetch User.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetScore(System.Int32,System.String,System.Nullable{CSharpOsu.Enum.mode},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Get informations about scores from a beatmap.
+            </summary>
+            <param name="_b">Specify a beatmap_id to return score information from.</param>
+            <param name="_u">Specify a user_id or a username to return score information for.</param>
+            <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+            <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+            <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+            <returns>Fetch Scores.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetUserBest(System.String,System.Nullable{CSharpOsu.Enum.mode},System.Nullable{System.Int32})">
+            <summary>
+            Get informations about a user best scores.
+            </summary>
+            <param name="_u">Specify a user_id or a username to return score information for.</param>
+            <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+            <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+            <returns>Fetch user best scores.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetUserRecent(System.String,System.Nullable{CSharpOsu.Enum.mode},System.Nullable{System.Int32})">
+            <summary>
+            Get informations about a user recent scores.
+            </summary>
+            <param name="_u">Specify a user_id or a username to return score information for.</param>
+            <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+            <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+            <returns>Fetch user recent scores.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetMatch(System.Int32)">
+            <summary>
+            Get informations about a multiplayer lobby.
+            </summary>
+            <param name="_mp">Match id to get information from.</param>
+            <returns>Fetch multiplayer lobby.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetReplay(CSharpOsu.Enum.mode,System.Int32,System.String)">
+            <summary>
+            Get informations about a replay.
+            </summary>
+            <param name="_m">The mode the score was played in.</param>
+            <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
+            <param name="_u">The user that has played the beatmap.</param>
+            <returns>Fetch replay data.</returns>
+        </member>
+        <member name="M:CSharpOsu.OsuClient.GetReplay(CSharpOsu.Enum.mode,System.Int32,System.String,CSharpOsu.Enum.type,System.Int32,System.Int32)">
+            <summary>
+            Get all the bytes to create a .osr file.
+            </summary>
+            <param name="_m">The mode the score was played in.</param>
+            <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
+            <param name="_u">The user that has played the beatmap.</param>
+            <param name="t">A way to show the compliler that this is a different function.</param>
+            <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+            <param name="_count">There can be mroe than 1 replay that contains those arguments , an array is needed.</param>
+            <returns>.osr file bytes.</returns>
+        </member>
+        <member name="T:CSharpOsu.Enum.mode">
+            <summary>
+            A bunch of enums.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -12,3 +12,4 @@ C:\Users\dinu_\Documents\Visual Studio 2017\Projects\CSharpOsu\CSharpOsu\bin\Deb
 C:\Users\dinu_\Documents\Visual Studio 2017\Projects\CSharpOsu\CSharpOsu\obj\Debug\CSharpOsu.csprojResolveAssemblyReference.cache
 C:\Users\dinu_\Documents\Visual Studio 2017\Projects\CSharpOsu\CSharpOsu\obj\Debug\CSharpOsu.dll
 C:\Users\dinu_\Documents\Visual Studio 2017\Projects\CSharpOsu\CSharpOsu\obj\Debug\CSharpOsu.pdb
+C:\Users\dinu_\Documents\Visual Studio 2017\Projects\CSharpOsu\CSharpOsu\bin\Debug\CSharpOsu.xml

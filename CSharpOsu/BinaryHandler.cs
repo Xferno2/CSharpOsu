@@ -36,7 +36,7 @@ namespace CSharpOsu.BinaryHandler
         /// Binary Short
         /// </summary>
         /// <param name="binWriter">The main BinaryWriter.</param>
-        /// <param name="str">A short(Int16).</param>
+        /// <param name="srt">A short(Int16).</param>
         public void writeShort(BinaryWriter binWriter, short srt)
         {
 

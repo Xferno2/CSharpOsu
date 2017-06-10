@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CSharpOsu.Enum
 {
         /// <summary>
-        /// Some enums for osu mode and converted beatmaps.
+        /// A bunch of enums.
         /// </summary>
         public enum mode { osu, Taiko, CtB, osuMania };
         public enum conv { notIncluded, Included }

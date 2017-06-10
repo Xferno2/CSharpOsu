@@ -60,10 +60,10 @@ namespace CSharpOsu
         string Replay(mode mode, int beatmap, string user) { return osuApiUrl + osuReplay + k + Key + ad + m + mode + ad + b + beatmap + ad + u + user; }
 
         /// <summary>
-        /// Fetch JSON.
+        /// Get JSON to be pharsed.
         /// </summary>
         /// <param name="url">Url of the JSON.</param>
-        /// <returns>Get JSON to be pharsed.</returns>
+        /// <returns>Fetch JSON.</returns>
         string GetUrl(string url)
         {
             string html= "";
@@ -75,7 +75,7 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// Fetch Beatmap.
+        /// Get information about beatmaps.
         /// </summary>
         /// <param name="_id">Specify a beatmapset or beatmap id.</param>
         /// <param name="_isSet">If is beatmapset or not(default true)</param>
@@ -85,7 +85,7 @@ namespace CSharpOsu
         /// <param name="_a">Specify whether converted beatmaps are included (0 = not included, 1 = included). Only has an effect if m is chosen and not 0. Converted maps show their converted difficulty rating. Optional, default is 0.</param>
         /// <param name="_h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
         /// <param name="_limit">Amount of results. Optional, default and maximum are 500.</param>
-        /// <returns>Get information about a beatmaps.</returns>
+        /// <returns>Fetch Beatmap.</returns>
         public OsuBeatmap[] GetBeatmap(int? _id = null, bool _isSet = true, string _since = null, string _u = null, mode? _m = null, conv? _a = null, string _h = null, int? _limit = null)
         {
             OsuBeatmap[] obj;
@@ -154,12 +154,12 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// Fetch User.
+        /// Get informations about a user.
         /// </summary>
         /// <param name="id">Specify a user id or a username to return metadata from (required).</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
         /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.</param>
-        /// <returns>Get informations about user.</returns>
+        /// <returns>Fetch User.</returns>
         public OsuUser[] GetUser(string id, mode? _m = null, int? _event_days = null)
         {
             string user = User(id);
@@ -191,14 +191,14 @@ namespace CSharpOsu
 
 
         /// <summary>
-        /// Fetch Scores.
+        /// Get informations about scores from a beatmap.
         /// </summary>
         /// <param name="_b">Specify a beatmap_id to return score information from.</param>
         /// <param name="_u">Specify a user_id or a username to return score information for.</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
         /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
         /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
-        /// <returns>Get informations about scores from a beatmap.</returns>
+        /// <returns>Fetch Scores.</returns>
         public OsuScore[] GetScore(int _b, string _u = null, mode? _m = null, int? _mods = null, int? _limit = null)
         {
             string score = Score(_b);
@@ -223,12 +223,12 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// Fetch user best scores.
+        /// Get informations about a user best scores.
         /// </summary>
         /// <param name="_u">Specify a user_id or a username to return score information for.</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
         /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
-        /// <returns>Get informations about user best scores.</returns>
+        /// <returns>Fetch user best scores.</returns>
         public OsuUserBest[] GetUserBest(string _u, mode? _m = null, int? _limit = null)
         {
             string userbest = User_Best(_u);
@@ -248,12 +248,12 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// Fetch user recent scores.
+        /// Get informations about a user recent scores.
         /// </summary>
         /// <param name="_u">Specify a user_id or a username to return score information for.</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
         /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
-        /// <returns>Get informations about user recent scores.</returns>
+        /// <returns>Fetch user recent scores.</returns>
         public OsuUserRecent[] GetUserRecent(string _u, mode? _m = null, int? _limit = null)
         {
             string userbest = User_Recent(_u);
@@ -273,10 +273,10 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// Fetch multiplayer lobby.
+        /// Get informations about a multiplayer lobby.
         /// </summary>
         /// <param name="_mp">Match id to get information from.</param>
-        /// <returns>Get informations about a multiplayer lobby.</returns>
+        /// <returns>Fetch multiplayer lobby.</returns>
         public OsuMatch GetMatch(int _mp)
         {
             OsuMatch obj;
@@ -288,12 +288,12 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// Fetch replay data.
+        /// Get informations about a replay.
         /// </summary>
         /// <param name="_m">The mode the score was played in.</param>
         /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
         /// <param name="_u">The user that has played the beatmap.</param>
-        /// <returns>Get informations about a replay.</returns>
+        /// <returns>Fetch replay data.</returns>
         public OsuReplay GetReplay(mode _m, int _b, string _u)
         {
             OsuReplay obj;
@@ -311,15 +311,15 @@ namespace CSharpOsu
         }
 
         /// <summary>
-        /// .osr file bytes.
+        /// Get all the bytes to create a .osr file.
         /// </summary>
-        /// <param name="path">Location on disk where the file will written.</param>
         /// <param name="_m">The mode the score was played in.</param>
         /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
         /// <param name="_u">The user that has played the beatmap.</param>
+        /// <param name="t">A way to show the compliler that this is a different function.</param>
         /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
         /// <param name="_count">There can be mroe than 1 replay that contains those arguments , an array is needed.</param>
-        /// <returns>Get all the bytes to create a .osr file.</returns>
+        /// <returns>.osr file bytes.</returns>
         public byte[] GetReplay(mode _m, int _b, string _u, type t, int _mods=0, int _count = 0)
         {
             var replay = GetReplay(_m, _b, _u);
