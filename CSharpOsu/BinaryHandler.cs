@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharpOsu.BinaryHandler
 {
-    public class BinHandler
+    internal class BinHandler
     {
         /// <summary>
         /// Binary String
