@@ -7,7 +7,7 @@ any .NET Framework languages ( C#, C++/CLI, Eiffel, F#, IronPython, IronRuby,
 PowerBuilder, Visual Basic, Visual COBOL, and Windows PowerShell).
 
 ## Now available on Nuget
-[![NuGet](https://img.shields.io/nuget/dt/CSharpOSU.svg)]() [![NuGet](https://img.shields.io/nuget/v/CSharpOsu.svg)](https://www.nuget.org/packages/CSharpOSU/1.3.1)
+[![NuGet](https://img.shields.io/nuget/dt/CSharpOSU.svg)]() [![NuGet](https://img.shields.io/nuget/v/CSharpOsu.svg)](https://www.nuget.org/packages/CSharpOSU)
 
 [![Nuget](https://i.gyazo.com/b01edf11d69900d707d5fed3cad5081f.png)]()
 
