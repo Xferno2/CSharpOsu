@@ -17,8 +17,7 @@ namespace CSharpOsu.BinaryHandler
         /// <param name="str">A string.</param>
         public void writeString(BinaryWriter binWriter, string str)
         {
-            byte b = 0x0B;
-            binWriter.Write(b);
+            binWriter.Write(byte.Parse(0x0B.ToString()));
             binWriter.Write(str);
         }
 
@@ -36,20 +35,18 @@ namespace CSharpOsu.BinaryHandler
         /// Binary Short
         /// </summary>
         /// <param name="binWriter">The main BinaryWriter.</param>
-        /// <param name="srt">A short(Int16).</param>
-        public void writeShort(BinaryWriter binWriter, short srt)
+        /// <param name="srt">A string.</param>
+        public void writeShort(BinaryWriter binWriter, string srt)
         {
-
             binWriter.Write(Convert.ToUInt16(srt));
-
         }
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="binWriter">The main BinaryWriter.</param>
-        /// <param name="i">A intiger(Int32).</param>
-        public void writeInteger(BinaryWriter binWriter, int i)
+        /// <param name="i">A string.</param>
+        public void writeInteger(BinaryWriter binWriter, string i)
         {
             binWriter.Write(Convert.ToUInt32(i));
         }
@@ -110,7 +107,7 @@ namespace CSharpOsu.BinaryHandler
             for (int i = 0; i < hash.Length; i++)
             {   sb.Append(hash[i].ToString("X2"));  }
 
-            return sb.ToString();
+            return sb.ToString().ToLower();
 
         }
     }

@@ -36,7 +36,8 @@ namespace CSharpOsu
         public string max_combo { get; set; }
         public string difficultyrating { get; set; }
         public string thumbnail { get; set; }
-        public string url { get; set; }
+        public string beatmapset_url { get; set; }
+        public string beatmap_url { get; set; }
         public string download { get; set; }
         public string download_no_video { get; set; }
         public string osu_direct { get; set; }

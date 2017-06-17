@@ -66,7 +66,7 @@ namespace CSharpOsu
         /// <returns>Fetch JSON.</returns>
         string GetUrl(string url)
         {
-            string html= "";
+            string html;
             using (WebClient client = new WebClient())
             {
                     html = client.DownloadString(url);
@@ -119,7 +119,10 @@ namespace CSharpOsu
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].thumbnail = "https://b.ppy.sh/thumb/" + obj[i].beatmapset_id + "l.jpg";
-                obj[i].url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id;
+                if (_isSet)
+                { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "NULL"; }
+                else
+                { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
                 obj[i].download = osuDowload + obj[i].beatmapset_id;
                 obj[i].download_no_video = osuDowload + obj[i].beatmapset_id + "n";
                 obj[i].osu_direct = osuDirect + obj[i].beatmapset_id;
@@ -316,9 +319,9 @@ namespace CSharpOsu
         /// <param name="_m">The mode the score was played in.</param>
         /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
         /// <param name="_u">The user that has played the beatmap.</param>
-        /// <param name="t">A way to show the compliler that this is a different function.</param>
+        /// <param name="t">Change the function to the one that returns bytes.</param>
         /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
-        /// <param name="_count">There can be mroe than 1 replay that contains those arguments , an array is needed.</param>
+        /// <param name="_count">On a single map there can be multiple scores. This is a way to get a single score.</param>
         /// <returns>.osr file bytes.</returns>
         public byte[] GetReplay(mode _m, int _b, string _u, type t, int _mods=0, int _count = 0)
         {
@@ -331,45 +334,58 @@ namespace CSharpOsu
             }
 
             var sc = GetScore(_b,_u,_m ,_mods);
-            var bt = GetBeatmap(Convert.ToInt32(_b), _isSet: false);
+            var bt = GetBeatmap(_b, _isSet: false);
 
             var score = sc[_count];
-            var beatmap = bt[_count];
+            var beatmap = bt[0];
 
             var bin = new BinHandler();
 
             BinaryWriter binWriter = new BinaryWriter(new MemoryStream());
             BinaryReader binReader = new BinaryReader(binWriter.BaseStream);
 
-            var replayHashData = score.maxcombo + "osu" + score.username + beatmap.file_md5 + score.score + score.rank;
+            var replayHashData = bin.MD5Hash(score.maxcombo + "osu" + score.username + beatmap.file_md5 + score.score + score.rank);
             var content = Convert.FromBase64String(replay.content);
             var mode = Convert.ToInt32(_m).ToString();
 
-            bin.writeByte(binWriter, mode);
-            bin.writeInteger(binWriter, 0);
-            bin.writeString(binWriter, beatmap.file_md5);
-            bin.writeString(binWriter, score.username);
-            bin.writeString(binWriter, bin.MD5Hash(replayHashData).ToLower());
-            bin.writeShort(binWriter, Convert.ToInt16(score.count300));
-            bin.writeShort(binWriter, Convert.ToInt16(score.count100));
-            bin.writeShort(binWriter, Convert.ToInt16(score.count50));
-            bin.writeShort(binWriter, Convert.ToInt16(score.countgeki));
-            bin.writeShort(binWriter, Convert.ToInt16(score.countkatu));
-            bin.writeShort(binWriter, Convert.ToInt16(score.countmiss));
-            bin.writeInteger(binWriter, Convert.ToInt32(score.score));
-            bin.writeShort(binWriter, Convert.ToInt16(score.maxcombo));
-            bin.writeByte(binWriter, score.perfect);
-            bin.writeInteger(binWriter, Convert.ToInt32(score.enabled_mods));
-            bin.writeString(binWriter, "");
-            bin.writeDate(binWriter, score.date);
-            bin.writeInteger(binWriter, content.Length);
-            binWriter.Write(content);
+            // Begin
+            bin.writeByte(binWriter, mode);                                      // Write osu mode.
+            bin.writeInteger(binWriter, 0.ToString());                           // Write osu version. (Unknown)
+            bin.writeString(binWriter, beatmap.file_md5);                        // Write beatmap MD5.
+            bin.writeString(binWriter, score.username);                          // Write username.
+            bin.writeString(binWriter, replayHashData);                          // Write replay MD5.
+            bin.writeShort(binWriter, score.count300);                           // Write 300s count.
+            bin.writeShort(binWriter, score.count100);                           // Write 100s count.
+            bin.writeShort(binWriter, score.count50);                            // Write 50s count.
+            bin.writeShort(binWriter, score.countgeki);                          // Write geki count.
+            bin.writeShort(binWriter, score.countkatu);                          // Write katu count.
+            bin.writeShort(binWriter, score.countmiss);                          // Write miss count.
+            bin.writeInteger(binWriter, score.score);                            // Write score.
+            bin.writeShort(binWriter, score.maxcombo);                           // Write maxcombo.
+            bin.writeByte(binWriter, score.perfect);                             // Write if the score is perfect or not.
+            bin.writeInteger(binWriter, score.enabled_mods);                     // Write which mods where enabled.
+            bin.writeString(binWriter, "");                                      // Write lifebar hp. (Unknown)
+            bin.writeDate(binWriter, score.date);                                // Write replay timestamp.
+            bin.writeInteger(binWriter, content.Length.ToString());              // Write replay content lenght.
 
-            binWriter.Write(Convert.ToInt64(score.score_id));
-            binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);
+            // Content
+            binWriter.Write(content);                                            // Write replay content.
+
+
+            // Final
+            binWriter.Write(Convert.ToInt64(score.score_id));                    // Write score id.
+            binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);   // Write null byte.
+
 
             binReader.BaseStream.Position = 0;
             int streamLenght = Convert.ToInt32(binReader.BaseStream.Length);
+
+
+            // [WARNING!]
+            // The Get Replay Data from osu!api dosen't have a mods parametre
+            // It is possible that the movement of the cursor to be wrong because of that.
+            // This happens with HR and DT mods. 
+            // I don't think there's an actual way to fix this but I will look into it.
 
             return binReader.ReadBytes(streamLenght);
 
