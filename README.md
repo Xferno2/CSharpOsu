@@ -1,4 +1,4 @@
-<a href=""><img src="https://www.dropbox.com/s/gituqfcsj9ugnzg/Favicon.gif?dl=1" align="left" height="200" width="200" ></a>
+<a href=""><img src="https://www.dropbox.com/s/gituqfcsj9ugnzg/Favicon.gif?dl=1" align="left" height="190" width="190" ></a>
 # CSharpOsu [![Github All Releases](https://img.shields.io/github/downloads/Xferno2/CSharpOsu/total.svg)]()
 C# library for [osu!api](https://github.com/ppy/osu-api/wiki)
 using [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) project.
@@ -8,8 +8,9 @@ any .NET Framework languages ( C#, C++/CLI, Eiffel, F#, IronPython, IronRuby,
 PowerBuilder, Visual Basic, Visual COBOL, and Windows PowerShell).
 
 ## Now available on Nuget
->[![NuGet](https://img.shields.io/nuget/dt/CSharpOSU.svg)]() [![NuGet](https://img.shields.io/nuget/v/CSharpOsu.svg)](https://www.nuget.org/packages/CSharpOSU)
+[![NuGet](https://img.shields.io/nuget/dt/CSharpOSU.svg)]() [![NuGet](https://img.shields.io/nuget/v/CSharpOsu.svg)](https://www.nuget.org/packages/CSharpOSU)
 
 [![Nuget](https://i.gyazo.com/b01edf11d69900d707d5fed3cad5081f.png)]()
 
 ### Documentation available [here](https://xferno2.github.io/CSharpOsu/).
+Still needs some work but for now is fine.
