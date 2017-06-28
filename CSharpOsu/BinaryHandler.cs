@@ -17,7 +17,7 @@ namespace CSharpOsu.BinaryHandler
         /// <param name="str">A string.</param>
         public void writeString(BinaryWriter binWriter, string str)
         {
-            binWriter.Write(byte.Parse(0x0B.ToString()));
+            binWriter.Write((byte)0x0B);
             binWriter.Write(str);
         }
 

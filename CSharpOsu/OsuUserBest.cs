@@ -23,5 +23,9 @@ namespace CSharpOsu
         public string date { get; set; }
         public string rank { get; set; }
         public string pp { get; set; }
+        /// <summary>
+        /// You will need math round to 2 decimals to get a fancy value.
+        /// </summary>
+        public string accuracy { get; set; }
     }
 }

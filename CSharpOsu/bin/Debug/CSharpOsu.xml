@@ -76,7 +76,7 @@
             Get information about beatmaps.
             </summary>
             <param name="_id">Specify a beatmapset or beatmap id.</param>
-            <param name="_isSet">If is beatmapset or not(default true)</param>
+            <param name="_isSet">Logical switch that determine if the request is a single beatmap or a beatmapset</param>
             <param name="_since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
             <param name="_u">Specify a user or a username to return metadata from.</param>
             <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
@@ -154,6 +154,16 @@
         <member name="T:CSharpOsu.Enum.mode">
             <summary>
             A bunch of enums.
+            </summary>
+        </member>
+        <member name="P:CSharpOsu.OsuUserBest.accuracy">
+            <summary>
+            You will need math round to 2 decimals to get a fancy value.
+            </summary>
+        </member>
+        <member name="P:CSharpOsu.OsuUserRecent.accuracy">
+            <summary>
+            You will need math round to 2 decimals to get a fancy value.
             </summary>
         </member>
     </members>

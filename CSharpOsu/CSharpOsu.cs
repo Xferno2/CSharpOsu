@@ -78,7 +78,7 @@ namespace CSharpOsu
         /// Get information about beatmaps.
         /// </summary>
         /// <param name="_id">Specify a beatmapset or beatmap id.</param>
-        /// <param name="_isSet">If is beatmapset or not(default true)</param>
+        /// <param name="_isSet">Logical switch that determine if the request is a single beatmap or a beatmapset</param>
         /// <param name="_since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
         /// <param name="_u">Specify a user or a username to return metadata from.</param>
         /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
@@ -247,6 +247,45 @@ namespace CSharpOsu
             string html = GetUrl(userbest);
             obj = JsonConvert.DeserializeObject<OsuUserBest[]>(html);
 
+            for (int i = 0; i < obj.Length; i++)
+            {
+                // Get Beatmap for the mode
+                var currentObj = obj[i];
+                var bt = GetBeatmap(Convert.ToInt32(currentObj.beatmap_id), _isSet: false);
+
+                // Variables
+                float accuracy = 0;
+                var mapMode = (mode)Convert.ToInt32(bt[0].mode);
+                float totalPointsOfHits;
+                float totalNumberOfHits;
+
+                // Logical switch for every mode
+                if (mapMode == mode.osu)
+                {
+                    totalPointsOfHits = Convert.ToInt32(currentObj.count50) * 50 + Convert.ToInt32(currentObj.count100) * 100 + Convert.ToInt32(currentObj.count300) * 300;
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count50) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.count300);
+                    accuracy = totalPointsOfHits / (totalNumberOfHits * 300);
+                }
+                else if (mapMode == mode.Taiko)
+                {
+                    totalPointsOfHits = (Convert.ToInt32(currentObj.count100) * 0.5f + Convert.ToInt32(currentObj.count300) * 1) * 300;
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.count300);
+                    accuracy = totalPointsOfHits / (totalNumberOfHits * 300);
+                }
+                else if (mapMode == mode.CtB)
+                {
+                    totalPointsOfHits = Convert.ToInt32(currentObj.count50 + currentObj.count100 + currentObj.count300);
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count50) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.count300) + Convert.ToInt32(currentObj.countkatu);
+                    accuracy = totalPointsOfHits / totalNumberOfHits;
+                }
+                else if (mapMode == mode.osuMania)
+                {
+                    totalPointsOfHits = Convert.ToInt32(currentObj.count50) * 50 + Convert.ToInt32(currentObj.count100) * 100 + Convert.ToInt32(currentObj.countkatu) * 200 + Convert.ToInt32(currentObj.count300 + currentObj.countgeki) * 300;
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count50) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.countkatu) + Convert.ToInt32(currentObj.count300) + Convert.ToInt32(currentObj.countgeki);
+                    accuracy = totalPointsOfHits / (totalNumberOfHits * 300);
+                }
+                currentObj.accuracy = (accuracy * 100).ToString();
+            }
             return obj;
         }
 
@@ -272,6 +311,45 @@ namespace CSharpOsu
             string html = GetUrl(userbest);
             obj = JsonConvert.DeserializeObject<OsuUserRecent[]>(html);
 
+            for (int i = 0; i < obj.Length; i++)
+            {
+                // Get Beatmap for the mode
+                var currentObj = obj[i];
+                var bt = GetBeatmap(Convert.ToInt32(currentObj.beatmap_id), _isSet: false);
+
+                // Variables
+                float accuracy = 0;
+                var mapMode = (mode)Convert.ToInt32(bt[0].mode);
+                float totalPointsOfHits;
+                float totalNumberOfHits;
+
+                // Logical switch for every mode
+                if (mapMode == mode.osu)
+                {
+                    totalPointsOfHits = Convert.ToInt32(currentObj.count50) * 50 + Convert.ToInt32(currentObj.count100) * 100 + Convert.ToInt32(currentObj.count300) * 300;
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count50) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.count300);
+                    accuracy = totalPointsOfHits / (totalNumberOfHits * 300);
+                }
+                else if (mapMode == mode.Taiko)
+                {
+                    totalPointsOfHits = (Convert.ToInt32(currentObj.count100) * 0.5f + Convert.ToInt32(currentObj.count300) * 1) * 300;
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.count300);
+                    accuracy = totalPointsOfHits / (totalNumberOfHits * 300);
+                }
+                else if (mapMode == mode.CtB)
+                {
+                    totalPointsOfHits = Convert.ToInt32(currentObj.count50 + currentObj.count100 + currentObj.count300);
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count50) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.count300) + Convert.ToInt32(currentObj.countkatu);
+                    accuracy = totalPointsOfHits / totalNumberOfHits;
+                }
+                else if (mapMode == mode.osuMania)
+                {
+                    totalPointsOfHits = Convert.ToInt32(currentObj.count50) * 50 + Convert.ToInt32(currentObj.count100) * 100 + Convert.ToInt32(currentObj.countkatu) * 200 + Convert.ToInt32(currentObj.count300 + currentObj.countgeki) * 300;
+                    totalNumberOfHits = Convert.ToInt32(currentObj.countmiss) + Convert.ToInt32(currentObj.count50) + Convert.ToInt32(currentObj.count100) + Convert.ToInt32(currentObj.countkatu) + Convert.ToInt32(currentObj.count300) + Convert.ToInt32(currentObj.countgeki);
+                    accuracy = totalPointsOfHits / (totalNumberOfHits * 300);
+                }
+                currentObj.accuracy = (accuracy * 100).ToString();
+            }
             return obj;
         }
 
@@ -308,6 +386,12 @@ namespace CSharpOsu
                 obj.error = "none";
             }
 
+            //Throw 
+            if (obj.error == "Replay not available.")
+            {
+                throw new Exception("Replay data not available.");
+            }
+
             return obj;
             // Note that the binary data you get when you decode above base64-string, is not the contents of an.osr-file.It is the LZMA stream referred to by the osu-wiki here:
             // The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream(https://osu.ppy.sh/wiki/Osr_(file_format)#Format)
@@ -326,13 +410,6 @@ namespace CSharpOsu
         public byte[] GetReplay(mode _m, int _b, string _u, type t, int _mods=0, int _count = 0)
         {
             var replay = GetReplay(_m, _b, _u);
-
-            //Throw
-            if (replay.error == "Replay not available.")
-            {
-                throw new Exception("Replay data not available.");
-            }
-
             var sc = GetScore(_b,_u,_m ,_mods);
             var bt = GetBeatmap(_b, _isSet: false);
 
@@ -340,9 +417,8 @@ namespace CSharpOsu
             var beatmap = bt[0];
 
             var bin = new BinHandler();
-
-            BinaryWriter binWriter = new BinaryWriter(new MemoryStream());
-            BinaryReader binReader = new BinaryReader(binWriter.BaseStream);
+            var binWriter = new BinaryWriter(new MemoryStream());
+            var binReader = new BinaryReader(binWriter.BaseStream);
 
             var replayHashData = bin.MD5Hash(score.maxcombo + "osu" + score.username + beatmap.file_md5 + score.score + score.rank);
             var content = Convert.FromBase64String(replay.content);
@@ -378,14 +454,13 @@ namespace CSharpOsu
 
 
             binReader.BaseStream.Position = 0;
-            int streamLenght = Convert.ToInt32(binReader.BaseStream.Length);
+            int streamLenght = (int)binReader.BaseStream.Length;
 
 
             // [WARNING!]
-            // The Get Replay Data from osu!api dosen't have a mods parametre
+            // The Get Replay Data from osu!api dosen't have a parameter to retrieve a certain replay.
             // It is possible that the movement of the cursor to be wrong because of that.
-            // This happens with HR and DT mods. 
-            // I don't think there's an actual way to fix this but I will look into it.
+            // There is no way to fix it until such parameter is added.
 
             return binReader.ReadBytes(streamLenght);
 
