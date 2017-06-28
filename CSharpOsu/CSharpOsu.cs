@@ -5,8 +5,9 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using CSharpOsu.BinaryHandler;
-using CSharpOsu.Enum;
+using CSharpOsu.Util.BinaryHandler;
+using CSharpOsu.Util.Enum;
+using CSharpOsu.Module;
 using System.IO;
 
 
@@ -65,14 +66,7 @@ namespace CSharpOsu
         /// <param name="url">Url of the JSON.</param>
         /// <returns>Fetch JSON.</returns>
         string GetUrl(string url)
-        {
-            string html;
-            using (WebClient client = new WebClient())
-            {
-                    html = client.DownloadString(url);
-            }
-            return html;
-        }
+        { return new WebClient().DownloadString(url); }
 
         /// <summary>
         /// Get information about beatmaps.

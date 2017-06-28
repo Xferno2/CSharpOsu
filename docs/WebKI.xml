@@ -1,261 +1,262 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
   <HelpKINode Title="accuracy property">
-    <HelpKINode Title="OsuUser.accuracy Property " Url="html/2b54d364-afaf-1116-5dcf-f35b165a5c7d.htm" />
-    <HelpKINode Title="OsuUserBest.accuracy Property " Url="html/34278f28-e58e-47b5-9e50-1fd143982e8d.htm" />
-    <HelpKINode Title="OsuUserRecent.accuracy Property " Url="html/718edf7a-4338-196d-31f7-ab92a1ec2467.htm" />
+    <HelpKINode Title="OsuUser.accuracy Property " Url="html/039d032d-fdaa-dd15-96c4-ddc8ae697d5f.htm" />
+    <HelpKINode Title="OsuUserBest.accuracy Property " Url="html/cb76fd49-2e15-0ba8-43c3-09f67c62cfaa.htm" />
+    <HelpKINode Title="OsuUserRecent.accuracy Property " Url="html/c9d05cd2-1d9d-0d14-bef7-a05205fdc567.htm" />
   </HelpKINode>
   <HelpKINode Title="ad field" Url="html/2bc75247-5bb3-5f15-c384-593dfaf1df80.htm" />
-  <HelpKINode Title="approved property" Url="html/71dee29e-85b9-130f-8b5e-641520204771.htm" />
-  <HelpKINode Title="approved_date property" Url="html/55ad8bbc-f79b-9025-5501-caef5976ce0e.htm" />
-  <HelpKINode Title="approved_string property" Url="html/6f7857d5-ccd2-bb76-6fbd-08686270e9a7.htm" />
-  <HelpKINode Title="artist property" Url="html/ef91be26-0aa3-1059-6c1d-8a0f2f3fc3a9.htm" />
+  <HelpKINode Title="approved property" Url="html/a0cc9a0c-9fae-83a0-b78e-4119edd8f2a4.htm" />
+  <HelpKINode Title="approved_date property" Url="html/1a3cf8bf-3c51-eb26-953a-b029a63ae856.htm" />
+  <HelpKINode Title="approved_string property" Url="html/b989135b-23e8-41e6-072a-1a2a67c4068f.htm" />
+  <HelpKINode Title="artist property" Url="html/6c88f2a1-70ed-710b-1c56-302787675869.htm" />
   <HelpKINode Title="b field" Url="html/76e3ff5c-9c72-d892-8c6a-9b46de81241a.htm" />
   <HelpKINode Title="Beatmap method" Url="html/b49258cc-45cc-75ab-302e-d548aa6ddf4f.htm" />
   <HelpKINode Title="beatmapset_id property">
-    <HelpKINode Title="Event.beatmapset_id Property " Url="html/585a4e9a-bded-05f9-3038-ce46a1128824.htm" />
-    <HelpKINode Title="OsuBeatmap.beatmapset_id Property " Url="html/395e5ee0-aa06-983b-9172-278ca1c7d227.htm" />
+    <HelpKINode Title="Event.beatmapset_id Property " Url="html/b37adc63-bfa6-a001-a2be-e514464e74f5.htm" />
+    <HelpKINode Title="OsuBeatmap.beatmapset_id Property " Url="html/4f920d6c-303c-331d-c53c-fb1b1dac5ed7.htm" />
   </HelpKINode>
-  <HelpKINode Title="beatmapset_url property" Url="html/8af29da5-4d65-e5d2-1e69-258c078ca084.htm" />
+  <HelpKINode Title="beatmapset_url property" Url="html/c82933da-c608-0eec-7701-9b7ad49b831e.htm" />
   <HelpKINode Title="beatmap_id property">
-    <HelpKINode Title="Event.beatmap_id Property " Url="html/8e66460f-c279-3fbe-cefd-96d48e5cc95a.htm" />
-    <HelpKINode Title="Game.beatmap_id Property " Url="html/6116c6ee-3519-f099-59ec-b959ab60dfda.htm" />
-    <HelpKINode Title="OsuBeatmap.beatmap_id Property " Url="html/0235bf50-6028-7f80-8923-95f153807f86.htm" />
-    <HelpKINode Title="OsuUserBest.beatmap_id Property " Url="html/a8a46e7e-2967-5e62-3ae1-3a5c932782d7.htm" />
-    <HelpKINode Title="OsuUserRecent.beatmap_id Property " Url="html/249471e5-bbb3-314b-9967-da15e6e3b18c.htm" />
+    <HelpKINode Title="Event.beatmap_id Property " Url="html/cea6bdde-c8d6-e50a-48ca-4a9da23480c1.htm" />
+    <HelpKINode Title="Game.beatmap_id Property " Url="html/5de845a5-52e6-a4b1-bfa7-23311809370f.htm" />
+    <HelpKINode Title="OsuBeatmap.beatmap_id Property " Url="html/40823983-0592-59bb-c790-489c46ab6683.htm" />
+    <HelpKINode Title="OsuUserBest.beatmap_id Property " Url="html/940e2da5-6928-a3bc-ac87-b39c94dadb16.htm" />
+    <HelpKINode Title="OsuUserRecent.beatmap_id Property " Url="html/80aced1b-55e3-37d1-9597-4aa1e4fe821a.htm" />
   </HelpKINode>
-  <HelpKINode Title="beatmap_url property" Url="html/8978ec9a-8464-702a-d915-6a4bc870e0d7.htm" />
+  <HelpKINode Title="beatmap_url property" Url="html/b4e9f5ed-34c8-7649-d398-66d98bbc32a8.htm" />
   <HelpKINode Title="BinHandler class">
-    <HelpKINode Title="BinHandler Class" Url="html/56dbcab0-cfce-3044-454b-1455188dd845.htm" />
-    <HelpKINode Title="about BinHandler class" Url="html/56dbcab0-cfce-3044-454b-1455188dd845.htm" />
-    <HelpKINode Title="constructor" Url="html/311eb49e-9a01-018a-3a51-5209e2013fa7.htm" />
-    <HelpKINode Title="methods" Url="html/750decbd-4b44-05ff-55fd-262dec0d3f56.htm" />
+    <HelpKINode Title="BinHandler Class" Url="html/593a6f64-b2d6-02fc-2f6b-c552f1aa7822.htm" />
+    <HelpKINode Title="about BinHandler class" Url="html/593a6f64-b2d6-02fc-2f6b-c552f1aa7822.htm" />
+    <HelpKINode Title="constructor" Url="html/3be1f548-c15a-cce6-4779-d905833b4aca.htm" />
+    <HelpKINode Title="methods" Url="html/91196e53-0387-6bf7-8b5f-fbc2718cae14.htm" />
   </HelpKINode>
-  <HelpKINode Title="BinHandler.BinHandler constructor" Url="html/311eb49e-9a01-018a-3a51-5209e2013fa7.htm" />
-  <HelpKINode Title="BinHandler.GetTime method" Url="html/cc7b4ade-f9c4-b8cf-c4c8-2ff816ff9f8c.htm" />
-  <HelpKINode Title="BinHandler.MD5Hash method" Url="html/59856c59-d7c5-e834-6336-9d6fe7d152e6.htm" />
-  <HelpKINode Title="BinHandler.writeByte method" Url="html/210f3d39-ef49-2200-1852-e0f3ac3fcadc.htm" />
-  <HelpKINode Title="BinHandler.writeDate method" Url="html/198fa9a5-2095-c6ae-be84-3f850848d230.htm" />
-  <HelpKINode Title="BinHandler.writeInteger method" Url="html/c6f33194-6f18-25f4-7b89-ac85b0779984.htm" />
-  <HelpKINode Title="BinHandler.writeShort method" Url="html/88f127a9-2e1e-074c-bcfc-6435d389ba41.htm" />
-  <HelpKINode Title="BinHandler.writeString method" Url="html/d1eb9863-6ffe-6146-bca2-14f95c67b514.htm" />
+  <HelpKINode Title="BinHandler.BinHandler constructor" Url="html/3be1f548-c15a-cce6-4779-d905833b4aca.htm" />
+  <HelpKINode Title="BinHandler.GetTime method" Url="html/1b5c8aca-d47b-176f-2967-89ab89295e3b.htm" />
+  <HelpKINode Title="BinHandler.MD5Hash method" Url="html/08da0c68-a63c-3beb-24e7-616c391d104c.htm" />
+  <HelpKINode Title="BinHandler.writeByte method" Url="html/c1aaaf75-79ab-f8d0-8048-26c0b6bd982a.htm" />
+  <HelpKINode Title="BinHandler.writeDate method" Url="html/e6b23631-5ba8-e308-1110-47eca2440ca1.htm" />
+  <HelpKINode Title="BinHandler.writeInteger method" Url="html/d59c7f4c-c947-4868-652e-13d854ffda14.htm" />
+  <HelpKINode Title="BinHandler.writeShort method" Url="html/07855c74-3281-d0ee-358d-6eea8fb845ff.htm" />
+  <HelpKINode Title="BinHandler.writeString method" Url="html/092f242b-858b-ca0d-ee48-3cf20b532728.htm" />
   <HelpKINode Title="Bloodcat field" Url="html/560061b5-95eb-93ed-5f92-af20591f5995.htm" />
-  <HelpKINode Title="bloodcat property" Url="html/e11739a4-f13a-ae4b-07d3-e4ada982ac10.htm" />
-  <HelpKINode Title="bpm property" Url="html/a4935282-f7d3-30ce-8dc8-ce975fa1b562.htm" />
-  <HelpKINode Title="content property" Url="html/69d96d72-8020-8bd4-20bc-36cbeee193b2.htm" />
-  <HelpKINode Title="conv enumeration" Url="html/253a5fd5-a016-53bb-a7e0-12790ba3acce.htm" />
+  <HelpKINode Title="bloodcat property" Url="html/899f09a3-6ae0-97bb-c600-96376e05f6af.htm" />
+  <HelpKINode Title="bpm property" Url="html/9f7aca55-f030-6eb0-6bdd-2a897c087a96.htm" />
+  <HelpKINode Title="content property" Url="html/d8757481-3f87-52ca-6148-4d5514add87a.htm" />
+  <HelpKINode Title="conv enumeration" Url="html/e6bd6d38-5eef-4251-f07e-26d927854053.htm" />
   <HelpKINode Title="count100 property">
-    <HelpKINode Title="OsuScore.count100 Property " Url="html/98c16791-62a0-4a88-c023-5f4219187186.htm" />
-    <HelpKINode Title="OsuUser.count100 Property " Url="html/fa8f1de1-caed-c2fe-d314-5608c1289ca4.htm" />
-    <HelpKINode Title="OsuUserBest.count100 Property " Url="html/aa79805b-dcaf-3c01-184f-4f93fdf404ee.htm" />
-    <HelpKINode Title="OsuUserRecent.count100 Property " Url="html/29c1e853-1941-5cdf-369e-8e0c17061d51.htm" />
+    <HelpKINode Title="OsuScore.count100 Property " Url="html/b4e3b7b7-8a33-35be-84be-8d02523b7687.htm" />
+    <HelpKINode Title="OsuUser.count100 Property " Url="html/7d91ac74-3029-4c8b-dc52-72de6135723c.htm" />
+    <HelpKINode Title="OsuUserBest.count100 Property " Url="html/b1ddc823-6d06-9016-b09d-b2b1388c042a.htm" />
+    <HelpKINode Title="OsuUserRecent.count100 Property " Url="html/b08ac4b9-8363-84b1-67a0-4efae59c3aae.htm" />
   </HelpKINode>
   <HelpKINode Title="count300 property">
-    <HelpKINode Title="OsuScore.count300 Property " Url="html/5e43d17e-9284-3bc0-8762-1c77c345b3df.htm" />
-    <HelpKINode Title="OsuUser.count300 Property " Url="html/ac787d74-35a5-3015-63b4-2e8436623718.htm" />
-    <HelpKINode Title="OsuUserBest.count300 Property " Url="html/0dd98104-4dd6-f853-0b7c-3a9b51eb52de.htm" />
-    <HelpKINode Title="OsuUserRecent.count300 Property " Url="html/9ddad6cb-92e1-5de8-769b-6878b9976095.htm" />
+    <HelpKINode Title="OsuScore.count300 Property " Url="html/b7123852-aae6-bfc1-7521-b21ed0cc8fb9.htm" />
+    <HelpKINode Title="OsuUser.count300 Property " Url="html/0212a2fc-ce95-a802-fca9-8a7df73dcb5f.htm" />
+    <HelpKINode Title="OsuUserBest.count300 Property " Url="html/fe20c4c8-2e9e-c8d8-7ab9-269f8e65d8fb.htm" />
+    <HelpKINode Title="OsuUserRecent.count300 Property " Url="html/c772a17c-470a-7f99-da38-78e5ab5d4069.htm" />
   </HelpKINode>
   <HelpKINode Title="count50 property">
-    <HelpKINode Title="OsuScore.count50 Property " Url="html/c559d3b1-3f85-9625-2f80-c3c12abee65d.htm" />
-    <HelpKINode Title="OsuUser.count50 Property " Url="html/13b673af-2a23-8265-e79e-ce6f9f310640.htm" />
-    <HelpKINode Title="OsuUserBest.count50 Property " Url="html/35b9a10f-09dc-7d36-8fee-e5e9c5f31b22.htm" />
-    <HelpKINode Title="OsuUserRecent.count50 Property " Url="html/b70c28ce-a571-2d40-96d8-90c082d5f45d.htm" />
+    <HelpKINode Title="OsuScore.count50 Property " Url="html/e59b7af3-1b11-be11-981d-5c252ae7be5f.htm" />
+    <HelpKINode Title="OsuUser.count50 Property " Url="html/58bcebb5-1f47-f6d3-709f-f3e387915de0.htm" />
+    <HelpKINode Title="OsuUserBest.count50 Property " Url="html/f9f8bb65-da43-386f-6cb8-32c32b9bdaf0.htm" />
+    <HelpKINode Title="OsuUserRecent.count50 Property " Url="html/9ad9cf2c-20dc-13f5-ad5e-d8084f29c63f.htm" />
   </HelpKINode>
   <HelpKINode Title="countgeki property">
-    <HelpKINode Title="OsuScore.countgeki Property " Url="html/a66318f2-a136-a623-afd9-1354ea68b31c.htm" />
-    <HelpKINode Title="OsuUserBest.countgeki Property " Url="html/8ee088d3-a39b-62bb-9624-ed2742b8f12b.htm" />
-    <HelpKINode Title="OsuUserRecent.countgeki Property " Url="html/4c2c8af0-9f50-9f26-841a-cd737277000d.htm" />
+    <HelpKINode Title="OsuScore.countgeki Property " Url="html/8e16a07e-87e4-918e-1fbd-ba6b4f99d6d7.htm" />
+    <HelpKINode Title="OsuUserBest.countgeki Property " Url="html/865c2134-c50c-5460-b85c-269f4bd78ea7.htm" />
+    <HelpKINode Title="OsuUserRecent.countgeki Property " Url="html/90646cfd-c042-3516-06d6-80aac71b852d.htm" />
   </HelpKINode>
   <HelpKINode Title="countkatu property">
-    <HelpKINode Title="OsuScore.countkatu Property " Url="html/52c47d26-ef16-dee9-a287-52d1d938e10c.htm" />
-    <HelpKINode Title="OsuUserBest.countkatu Property " Url="html/e7655295-7dc3-faab-cecd-b073de4b7dfc.htm" />
-    <HelpKINode Title="OsuUserRecent.countkatu Property " Url="html/eee9b45f-c43c-27da-f270-66e8815c7d46.htm" />
+    <HelpKINode Title="OsuScore.countkatu Property " Url="html/7d4e9008-2c8c-c7e9-e0af-7b61401302e6.htm" />
+    <HelpKINode Title="OsuUserBest.countkatu Property " Url="html/9d3369dd-170f-fc86-e7be-198d0f7d3505.htm" />
+    <HelpKINode Title="OsuUserRecent.countkatu Property " Url="html/6035e0ba-39eb-9406-2a5d-08adb9928e1d.htm" />
   </HelpKINode>
   <HelpKINode Title="countmiss property">
-    <HelpKINode Title="OsuScore.countmiss Property " Url="html/4f1f9950-200a-a2bc-c626-d321b741594c.htm" />
-    <HelpKINode Title="OsuUserBest.countmiss Property " Url="html/978a6166-ccd8-0052-e9f3-536aaaa75f77.htm" />
-    <HelpKINode Title="OsuUserRecent.countmiss Property " Url="html/a383ca4b-8871-60b2-011a-a3c93894da91.htm" />
+    <HelpKINode Title="OsuScore.countmiss Property " Url="html/abd9e6c2-101f-5163-6274-a1c0d0ccb552.htm" />
+    <HelpKINode Title="OsuUserBest.countmiss Property " Url="html/9c907bb9-756a-a283-5533-a26a937ed6a1.htm" />
+    <HelpKINode Title="OsuUserRecent.countmiss Property " Url="html/c33316da-52cb-385d-a17b-7be4387e7ed1.htm" />
   </HelpKINode>
-  <HelpKINode Title="country property" Url="html/223e85c5-cad2-7018-b6ba-5d2ff0224ea8.htm" />
-  <HelpKINode Title="count_rank_a property" Url="html/fc9bb715-3ef8-4385-5ab3-14ca9794d2c6.htm" />
-  <HelpKINode Title="count_rank_s property" Url="html/330f9908-dbba-5359-83aa-f6786bffdc4b.htm" />
-  <HelpKINode Title="count_rank_ss property" Url="html/2fa97d78-f448-28f9-24ce-6fa70b126284.htm" />
-  <HelpKINode Title="creator property" Url="html/d075351c-793f-3478-ae4f-07a0f017a3f6.htm" />
+  <HelpKINode Title="country property" Url="html/324dc3ba-c6bb-271d-cb3d-429bc1276de3.htm" />
+  <HelpKINode Title="count_rank_a property" Url="html/4b1fee5a-46e0-d460-8329-22f4d25aa4d1.htm" />
+  <HelpKINode Title="count_rank_s property" Url="html/7b35ee17-80f6-3079-9bf4-10795ce16ed0.htm" />
+  <HelpKINode Title="count_rank_ss property" Url="html/47c96d64-0d93-212e-bd81-ab65b2b0963c.htm" />
+  <HelpKINode Title="creator property" Url="html/34e6dad3-399b-2540-0a15-65c4f20ecd55.htm" />
   <HelpKINode Title="CSharpOsu namespace" Url="html/f4cf982e-c269-500e-efae-8e6ac9e38e0a.htm" />
-  <HelpKINode Title="CSharpOsu.BinaryHandler namespace" Url="html/f658a6e5-8d23-a4c7-5f7f-e52afd7147dc.htm" />
-  <HelpKINode Title="CSharpOsu.BinaryHandler.BinHandler class" Url="html/56dbcab0-cfce-3044-454b-1455188dd845.htm" />
-  <HelpKINode Title="CSharpOsu.Enum namespace" Url="html/0d3e4381-6231-d1bb-09a6-f593fb64b958.htm" />
-  <HelpKINode Title="CSharpOsu.Enum.conv enumeration" Url="html/253a5fd5-a016-53bb-a7e0-12790ba3acce.htm" />
-  <HelpKINode Title="CSharpOsu.Enum.mode enumeration" Url="html/a966d10c-8b34-46fb-75ea-705b3e986f09.htm" />
-  <HelpKINode Title="CSharpOsu.Enum.type enumeration" Url="html/4c014775-df24-d666-66bc-cd7c9b9db8cf.htm" />
-  <HelpKINode Title="CSharpOsu.Event class" Url="html/f278ccae-cb38-1d33-c10d-f174d413d01d.htm" />
-  <HelpKINode Title="CSharpOsu.Game class" Url="html/8816c00a-6b55-e6c2-9f44-7bcb0e19d798.htm" />
-  <HelpKINode Title="CSharpOsu.Match class" Url="html/c20cbc21-be1e-71cd-2cd6-6ea7ef3bcb1e.htm" />
-  <HelpKINode Title="CSharpOsu.OsuBeatmap class" Url="html/3bfec666-efec-2507-367f-99266fecf38c.htm" />
+  <HelpKINode Title="CSharpOsu.Module namespace" Url="html/eb09fb43-bc31-823c-6bbc-e4d434a09138.htm" />
+  <HelpKINode Title="CSharpOsu.Module.Event class" Url="html/ab8064b6-a168-480b-b8d5-b29a6e4fa934.htm" />
+  <HelpKINode Title="CSharpOsu.Module.Game class" Url="html/66c3f42a-e84f-452a-3c73-7a553f17e754.htm" />
+  <HelpKINode Title="CSharpOsu.Module.Match class" Url="html/7724eea4-fdcf-9da8-feb9-0ea26bedae6a.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuBeatmap class" Url="html/0688eeb5-f96f-a8af-25f6-fad2e9cce1d0.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuMatch class" Url="html/0a84eefc-e0fe-b6be-b89b-2ce18ac80ec8.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuReplay class" Url="html/59a8dbe1-a0a4-65ab-51a1-313baf1ecd6a.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuScore class" Url="html/050e873b-a322-952e-2c55-f7d071a29a17.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuUser class" Url="html/7e5dab30-2c98-f835-78de-ea949153f42c.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuUserBest class" Url="html/f1320318-9f5c-1d80-5ef9-7eeae114385d.htm" />
+  <HelpKINode Title="CSharpOsu.Module.OsuUserRecent class" Url="html/e9df7179-0c85-1319-7eb3-0c6740710452.htm" />
   <HelpKINode Title="CSharpOsu.OsuClient class" Url="html/e6d08d5c-642d-22ae-3af5-93e87f001302.htm" />
-  <HelpKINode Title="CSharpOsu.OsuMatch class" Url="html/8465712b-cd4b-5013-c680-6426cd21ba4b.htm" />
-  <HelpKINode Title="CSharpOsu.OsuReplay class" Url="html/bd8cd9a7-d81e-0e50-d864-64d622cd360c.htm" />
-  <HelpKINode Title="CSharpOsu.OsuScore class" Url="html/bc00a3ff-1860-dd00-c924-d9e11cf698ce.htm" />
-  <HelpKINode Title="CSharpOsu.OsuUser class" Url="html/1d7e4d59-c542-ac7c-b6ad-f488b70ba862.htm" />
-  <HelpKINode Title="CSharpOsu.OsuUserBest class" Url="html/c8b0f23f-a966-fd5d-2bcb-50b4c0a6274e.htm" />
-  <HelpKINode Title="CSharpOsu.OsuUserRecent class" Url="html/f5ba4c7e-6f50-da75-2514-cff6e19182e8.htm" />
-  <HelpKINode Title="CtB enumeration member" Url="html/a966d10c-8b34-46fb-75ea-705b3e986f09.htm" />
+  <HelpKINode Title="CSharpOsu.Util.BinaryHandler namespace" Url="html/3a44a954-3c37-ef49-d6e9-c3f25882e7ff.htm" />
+  <HelpKINode Title="CSharpOsu.Util.BinaryHandler.BinHandler class" Url="html/593a6f64-b2d6-02fc-2f6b-c552f1aa7822.htm" />
+  <HelpKINode Title="CSharpOsu.Util.Enum namespace" Url="html/737cf1bb-96ec-63d7-2e2a-e3494fa6c973.htm" />
+  <HelpKINode Title="CSharpOsu.Util.Enum.conv enumeration" Url="html/e6bd6d38-5eef-4251-f07e-26d927854053.htm" />
+  <HelpKINode Title="CSharpOsu.Util.Enum.mode enumeration" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
+  <HelpKINode Title="CSharpOsu.Util.Enum.type enumeration" Url="html/10017b7d-673e-2b7d-4029-e2b4adbfc922.htm" />
+  <HelpKINode Title="CtB enumeration member" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
   <HelpKINode Title="date property">
-    <HelpKINode Title="Event.date Property " Url="html/f5b7cbcb-5603-4a21-ae3a-22ecd32f3ed7.htm" />
-    <HelpKINode Title="OsuScore.date Property " Url="html/72bd35a2-1d5e-d0fc-52e8-c1b1dd3b7f95.htm" />
-    <HelpKINode Title="OsuUserBest.date Property " Url="html/d211ef54-20bb-58b1-0516-57abe62e6792.htm" />
-    <HelpKINode Title="OsuUserRecent.date Property " Url="html/aef6e32c-ba68-0d0c-8e8a-f99247c56e68.htm" />
+    <HelpKINode Title="Event.date Property " Url="html/7d7e1f6f-fd9f-fe1e-58d5-c80b4d403a1a.htm" />
+    <HelpKINode Title="OsuScore.date Property " Url="html/a5e1f604-ab51-f0db-805c-be221614acbd.htm" />
+    <HelpKINode Title="OsuUserBest.date Property " Url="html/c3183b80-eae9-2210-4247-46fe36f095fd.htm" />
+    <HelpKINode Title="OsuUserRecent.date Property " Url="html/56cfd8e2-7c03-af9e-1db9-966cf7705b2d.htm" />
   </HelpKINode>
-  <HelpKINode Title="difficultyrating property" Url="html/04c0d632-4c20-2525-dec2-5a7e7927b9ae.htm" />
-  <HelpKINode Title="diff_approach property" Url="html/0e65a194-e414-906f-5ea6-d8f4c33404d7.htm" />
-  <HelpKINode Title="diff_drain property" Url="html/6fd51f74-c147-8a85-0c5c-4d53709088e4.htm" />
-  <HelpKINode Title="diff_overall property" Url="html/8edb3c88-ddda-794b-4e45-114d3b3b9a56.htm" />
-  <HelpKINode Title="diff_size property" Url="html/917b93c9-bf88-834c-cf76-d363fb286977.htm" />
-  <HelpKINode Title="display_html property" Url="html/f6ce3cd1-c3c0-2520-d5a3-503076a24839.htm" />
-  <HelpKINode Title="download property" Url="html/faff751d-a25b-1e8b-a78d-647ce48d264e.htm" />
-  <HelpKINode Title="download_no_video property" Url="html/f46b40c4-ce8d-8245-b8f4-44a23090eadc.htm" />
+  <HelpKINode Title="difficultyrating property" Url="html/ea1b4f5c-9164-58c0-cbdf-89923f78cd2c.htm" />
+  <HelpKINode Title="diff_approach property" Url="html/009e2025-7044-59af-3af3-5b67bb128332.htm" />
+  <HelpKINode Title="diff_drain property" Url="html/f5206cd0-877c-27fd-2dfd-a1b494d201b4.htm" />
+  <HelpKINode Title="diff_overall property" Url="html/aa8d4810-a2bb-0e12-4c87-210f02b8ec2f.htm" />
+  <HelpKINode Title="diff_size property" Url="html/681cd5a5-4ab6-bd42-eaf3-20fc3db508e2.htm" />
+  <HelpKINode Title="display_html property" Url="html/05e28c36-1d21-a902-5a8d-ef13c0061de8.htm" />
+  <HelpKINode Title="download property" Url="html/f22f1425-dcb4-08c7-f0ec-515da0db16df.htm" />
+  <HelpKINode Title="download_no_video property" Url="html/90865df8-e100-609f-b0d5-eedf033577f2.htm" />
   <HelpKINode Title="enabled_mods property">
-    <HelpKINode Title="OsuScore.enabled_mods Property " Url="html/a041b22e-a001-d192-5383-d653d0f18e7f.htm" />
-    <HelpKINode Title="OsuUserBest.enabled_mods Property " Url="html/f82312f2-810c-f536-51aa-60e6b02e1dfd.htm" />
-    <HelpKINode Title="OsuUserRecent.enabled_mods Property " Url="html/333cf91d-4679-d85f-8ea5-927348a7a02a.htm" />
+    <HelpKINode Title="OsuScore.enabled_mods Property " Url="html/7d96a975-3ab9-7c64-3f68-867036bc8560.htm" />
+    <HelpKINode Title="OsuUserBest.enabled_mods Property " Url="html/b9de971b-f96d-2508-bcf1-2986055b6fbb.htm" />
+    <HelpKINode Title="OsuUserRecent.enabled_mods Property " Url="html/ceea4e77-829f-0d25-15da-f389947d8794.htm" />
   </HelpKINode>
-  <HelpKINode Title="encoding property" Url="html/ad4f0476-7573-eaee-9e80-7014d87b5dcb.htm" />
+  <HelpKINode Title="encoding property" Url="html/188a3a82-25e4-0bd5-6c42-c1d4d802621c.htm" />
   <HelpKINode Title="end_time property">
-    <HelpKINode Title="Game.end_time Property " Url="html/ed733af9-1fb1-2b20-f0c9-4d476407df4f.htm" />
-    <HelpKINode Title="Match.end_time Property " Url="html/b3508909-adcc-369f-c00b-eb236a1253d4.htm" />
+    <HelpKINode Title="Game.end_time Property " Url="html/76a474ff-96e5-fb90-b61f-3b4366a16175.htm" />
+    <HelpKINode Title="Match.end_time Property " Url="html/dc514001-7c68-af28-153d-f93679a2d4c7.htm" />
   </HelpKINode>
-  <HelpKINode Title="epicfactor property" Url="html/082dbcc4-49bb-5c03-c3c4-f10e91288864.htm" />
-  <HelpKINode Title="error property" Url="html/1cca7e65-5e4f-1c2e-9529-2883f31bc51c.htm" />
+  <HelpKINode Title="epicfactor property" Url="html/bc0215a0-9829-526f-96ef-890b6dfdee6a.htm" />
+  <HelpKINode Title="error property" Url="html/8e40ac07-ec52-4424-22ce-930ce3fe6df6.htm" />
   <HelpKINode Title="Event class">
-    <HelpKINode Title="Event Class" Url="html/f278ccae-cb38-1d33-c10d-f174d413d01d.htm" />
-    <HelpKINode Title="about Event class" Url="html/f278ccae-cb38-1d33-c10d-f174d413d01d.htm" />
-    <HelpKINode Title="constructor" Url="html/94e44c40-cebd-ceec-aa5f-8422b7c60a5f.htm" />
-    <HelpKINode Title="properties" Url="html/3caa8f37-7550-6f75-eff4-79558c9db61b.htm" />
+    <HelpKINode Title="Event Class" Url="html/ab8064b6-a168-480b-b8d5-b29a6e4fa934.htm" />
+    <HelpKINode Title="about Event class" Url="html/ab8064b6-a168-480b-b8d5-b29a6e4fa934.htm" />
+    <HelpKINode Title="constructor" Url="html/7f7e3734-7524-1815-6c19-740c18e57160.htm" />
+    <HelpKINode Title="properties" Url="html/4b42f4d3-c5ff-a888-aa22-84abfc2c43f7.htm" />
   </HelpKINode>
-  <HelpKINode Title="Event.beatmapset_id property" Url="html/585a4e9a-bded-05f9-3038-ce46a1128824.htm" />
-  <HelpKINode Title="Event.beatmap_id property" Url="html/8e66460f-c279-3fbe-cefd-96d48e5cc95a.htm" />
-  <HelpKINode Title="Event.date property" Url="html/f5b7cbcb-5603-4a21-ae3a-22ecd32f3ed7.htm" />
-  <HelpKINode Title="Event.display_html property" Url="html/f6ce3cd1-c3c0-2520-d5a3-503076a24839.htm" />
-  <HelpKINode Title="Event.epicfactor property" Url="html/082dbcc4-49bb-5c03-c3c4-f10e91288864.htm" />
-  <HelpKINode Title="Event.Event constructor" Url="html/94e44c40-cebd-ceec-aa5f-8422b7c60a5f.htm" />
-  <HelpKINode Title="events property" Url="html/a2d51833-b3de-51d7-a95e-b73a9f7bf797.htm" />
-  <HelpKINode Title="favourite_count property" Url="html/1f914ea7-78a3-93c4-a1f4-8823b93be45a.htm" />
-  <HelpKINode Title="file_md5 property" Url="html/903af3a7-7e55-6856-2410-bd6be7be335f.htm" />
-  <HelpKINode Title="flag property" Url="html/bf26ddce-eca0-8acf-faae-290138c65c9c.htm" />
-  <HelpKINode Title="flag_old property" Url="html/9dbf06ad-28ce-ddc4-d748-4b9d3020d644.htm" />
+  <HelpKINode Title="Event.beatmapset_id property" Url="html/b37adc63-bfa6-a001-a2be-e514464e74f5.htm" />
+  <HelpKINode Title="Event.beatmap_id property" Url="html/cea6bdde-c8d6-e50a-48ca-4a9da23480c1.htm" />
+  <HelpKINode Title="Event.date property" Url="html/7d7e1f6f-fd9f-fe1e-58d5-c80b4d403a1a.htm" />
+  <HelpKINode Title="Event.display_html property" Url="html/05e28c36-1d21-a902-5a8d-ef13c0061de8.htm" />
+  <HelpKINode Title="Event.epicfactor property" Url="html/bc0215a0-9829-526f-96ef-890b6dfdee6a.htm" />
+  <HelpKINode Title="Event.Event constructor" Url="html/7f7e3734-7524-1815-6c19-740c18e57160.htm" />
+  <HelpKINode Title="events property" Url="html/c8852fd0-3280-e21e-b037-e7b45caf546f.htm" />
+  <HelpKINode Title="favourite_count property" Url="html/684dc2b6-0f24-68e8-cfee-fa5dc9222e43.htm" />
+  <HelpKINode Title="file_md5 property" Url="html/01de75a7-0c08-4999-af9e-d6173ef2e052.htm" />
+  <HelpKINode Title="flag property" Url="html/485d42ec-13b3-7308-db8d-c4b67ee97970.htm" />
+  <HelpKINode Title="flag_old property" Url="html/d540f320-1267-dcfd-9dce-575b96d23d88.htm" />
   <HelpKINode Title="Game class">
-    <HelpKINode Title="Game Class" Url="html/8816c00a-6b55-e6c2-9f44-7bcb0e19d798.htm" />
-    <HelpKINode Title="about Game class" Url="html/8816c00a-6b55-e6c2-9f44-7bcb0e19d798.htm" />
-    <HelpKINode Title="constructor" Url="html/782fb8bd-042e-0eaf-84f0-d097c27b10de.htm" />
-    <HelpKINode Title="properties" Url="html/c458064a-05b1-987d-ab56-fea337b80bae.htm" />
+    <HelpKINode Title="Game Class" Url="html/66c3f42a-e84f-452a-3c73-7a553f17e754.htm" />
+    <HelpKINode Title="about Game class" Url="html/66c3f42a-e84f-452a-3c73-7a553f17e754.htm" />
+    <HelpKINode Title="constructor" Url="html/011b58e1-c751-1e85-8873-a1b71a85de47.htm" />
+    <HelpKINode Title="properties" Url="html/b0ca4bc7-7a2f-1c23-6a1f-7b207afffcca.htm" />
   </HelpKINode>
-  <HelpKINode Title="Game.beatmap_id property" Url="html/6116c6ee-3519-f099-59ec-b959ab60dfda.htm" />
-  <HelpKINode Title="Game.end_time property" Url="html/ed733af9-1fb1-2b20-f0c9-4d476407df4f.htm" />
-  <HelpKINode Title="Game.Game constructor" Url="html/782fb8bd-042e-0eaf-84f0-d097c27b10de.htm" />
-  <HelpKINode Title="Game.game_id property" Url="html/b05e1512-8597-d1dc-3e66-7e8cc862a384.htm" />
-  <HelpKINode Title="Game.match_type property" Url="html/d7747508-019a-a3f4-31b0-2bc2a93b1aff.htm" />
-  <HelpKINode Title="Game.mods property" Url="html/c5c67b14-2b01-18c4-968b-0ed1e952e8a7.htm" />
-  <HelpKINode Title="Game.play_mode property" Url="html/3413c70d-93b1-09c7-07e2-f104bd0e3295.htm" />
-  <HelpKINode Title="Game.scores property" Url="html/7ea94d37-eaae-0cd2-0d9c-179461432d92.htm" />
-  <HelpKINode Title="Game.scoring_type property" Url="html/0034a5a5-5991-6c9e-f9a2-cd9050c3841d.htm" />
-  <HelpKINode Title="Game.start_time property" Url="html/ed142245-24c0-de83-dcc7-45688f343ad3.htm" />
-  <HelpKINode Title="Game.team_type property" Url="html/a7b269ff-4dec-c39b-742e-07d21b404ced.htm" />
-  <HelpKINode Title="games property" Url="html/a339cf8a-43ca-921b-b8bc-195026a18d08.htm" />
-  <HelpKINode Title="game_id property" Url="html/b05e1512-8597-d1dc-3e66-7e8cc862a384.htm" />
-  <HelpKINode Title="genre_id property" Url="html/f14b4a9b-6983-8f36-1d87-05e8dc069743.htm" />
-  <HelpKINode Title="GetBeatmap method" Url="html/4963a4f8-8c33-95ca-e142-3d780f18adce.htm" />
+  <HelpKINode Title="Game.beatmap_id property" Url="html/5de845a5-52e6-a4b1-bfa7-23311809370f.htm" />
+  <HelpKINode Title="Game.end_time property" Url="html/76a474ff-96e5-fb90-b61f-3b4366a16175.htm" />
+  <HelpKINode Title="Game.Game constructor" Url="html/011b58e1-c751-1e85-8873-a1b71a85de47.htm" />
+  <HelpKINode Title="Game.game_id property" Url="html/b1890466-a751-7d2c-0619-a3263f616ffe.htm" />
+  <HelpKINode Title="Game.match_type property" Url="html/eba71c61-3fb9-65b0-909f-12497d7daabb.htm" />
+  <HelpKINode Title="Game.mods property" Url="html/38e5932a-622e-4a92-93ad-6f0361eccf39.htm" />
+  <HelpKINode Title="Game.play_mode property" Url="html/a8932693-6e51-145b-f02b-7581d86e4e27.htm" />
+  <HelpKINode Title="Game.scores property" Url="html/21b8fdc6-80d5-6a33-2ff5-68d7c84c1031.htm" />
+  <HelpKINode Title="Game.scoring_type property" Url="html/1be296e3-86e3-9179-5def-2851005df662.htm" />
+  <HelpKINode Title="Game.start_time property" Url="html/6d76a6c9-5f1d-33a7-1264-c1a51b40eb4a.htm" />
+  <HelpKINode Title="Game.team_type property" Url="html/256d9c1c-7a35-13e4-5935-180356c4a892.htm" />
+  <HelpKINode Title="games property" Url="html/9800d1f9-ffa2-2e19-06c0-57fb4d171519.htm" />
+  <HelpKINode Title="game_id property" Url="html/b1890466-a751-7d2c-0619-a3263f616ffe.htm" />
+  <HelpKINode Title="genre_id property" Url="html/50167d01-03d8-d091-7301-f9c9b073032f.htm" />
+  <HelpKINode Title="GetBeatmap method" Url="html/48af0d36-ef7e-69c9-5666-dbfdf18edd0c.htm" />
   <HelpKINode Title="GetMatch method" Url="html/e8a1e289-9162-e85c-9f39-6e4b76638134.htm" />
   <HelpKINode Title="GetReplay method" Url="html/05bdaa7a-fd43-4c69-36d9-5c5e4b99eb73.htm" />
-  <HelpKINode Title="GetScore method" Url="html/0ab02cd4-6454-ce84-e173-700fb1e5b5b2.htm" />
-  <HelpKINode Title="GetTime method" Url="html/cc7b4ade-f9c4-b8cf-c4c8-2ff816ff9f8c.htm" />
+  <HelpKINode Title="GetScore method" Url="html/9cef9d57-5a68-89da-cfc6-4432243417aa.htm" />
+  <HelpKINode Title="GetTime method" Url="html/1b5c8aca-d47b-176f-2967-89ab89295e3b.htm" />
   <HelpKINode Title="GetUrl method" Url="html/063271d4-6ad2-d5bc-047e-307ed354ddfd.htm" />
-  <HelpKINode Title="GetUser method" Url="html/8cde7fa6-de96-d6cb-6a20-a83589efaa6d.htm" />
-  <HelpKINode Title="GetUserBest method" Url="html/06be4bf8-7d39-06d9-f482-8b81c2e859b3.htm" />
-  <HelpKINode Title="GetUserRecent method" Url="html/d4fbdead-6827-ef1e-d2c6-dc757fa54c30.htm" />
-  <HelpKINode Title="hit_length property" Url="html/5e10efc7-5046-762c-7933-8f6723588fd7.htm" />
-  <HelpKINode Title="image property" Url="html/2a92ce0b-13b3-270d-31ba-817dc06519fa.htm" />
-  <HelpKINode Title="Included enumeration member" Url="html/253a5fd5-a016-53bb-a7e0-12790ba3acce.htm" />
+  <HelpKINode Title="GetUser method" Url="html/9cac7bb6-50ab-866d-5283-4c9ee07c04a1.htm" />
+  <HelpKINode Title="GetUserBest method" Url="html/3d0de19f-1d91-2816-aa9e-29f2722a2712.htm" />
+  <HelpKINode Title="GetUserRecent method" Url="html/6ff9c4ef-b822-0084-1695-dca8b07a42d7.htm" />
+  <HelpKINode Title="hit_length property" Url="html/0cc776d8-31da-f68e-e32f-07479afc76cc.htm" />
+  <HelpKINode Title="image property" Url="html/62728b22-849e-0005-a00e-fadabbeb3e88.htm" />
+  <HelpKINode Title="Included enumeration member" Url="html/e6bd6d38-5eef-4251-f07e-26d927854053.htm" />
   <HelpKINode Title="k field" Url="html/910bc562-eff9-2f70-3bd0-c137aad35387.htm" />
   <HelpKINode Title="Key property" Url="html/a6c1f073-36f8-0452-e334-24c69bba1d37.htm" />
-  <HelpKINode Title="language_id property" Url="html/1168e932-bec1-52bd-08a6-b60165f806f6.htm" />
-  <HelpKINode Title="last_update property" Url="html/0c07acbb-d309-a36d-ce76-fa88be90a2d9.htm" />
-  <HelpKINode Title="level property" Url="html/7aba7950-8da5-2347-81c5-b9911cd54bca.htm" />
+  <HelpKINode Title="language_id property" Url="html/b45fb1d7-53bb-8e27-e145-dfb8a494383f.htm" />
+  <HelpKINode Title="last_update property" Url="html/f10245de-ba17-5e95-4da1-616545ed3eee.htm" />
+  <HelpKINode Title="level property" Url="html/370e3cc5-a776-d27e-9018-5711425f6bfd.htm" />
   <HelpKINode Title="m field" Url="html/9faa613c-ce0a-2931-927e-60537e057f68.htm" />
   <HelpKINode Title="Match class">
-    <HelpKINode Title="Match Class" Url="html/c20cbc21-be1e-71cd-2cd6-6ea7ef3bcb1e.htm" />
-    <HelpKINode Title="about Match class" Url="html/c20cbc21-be1e-71cd-2cd6-6ea7ef3bcb1e.htm" />
-    <HelpKINode Title="constructor" Url="html/9c3c6617-cb51-7191-3c92-93dac0363cf7.htm" />
-    <HelpKINode Title="properties" Url="html/53179b52-8d98-317e-6522-c7c4c0d76645.htm" />
+    <HelpKINode Title="Match Class" Url="html/7724eea4-fdcf-9da8-feb9-0ea26bedae6a.htm" />
+    <HelpKINode Title="about Match class" Url="html/7724eea4-fdcf-9da8-feb9-0ea26bedae6a.htm" />
+    <HelpKINode Title="constructor" Url="html/9376c6f1-f961-0b37-20ab-efd05856398b.htm" />
+    <HelpKINode Title="properties" Url="html/1d37cd34-2f82-edc0-672c-4b25ee0f14da.htm" />
   </HelpKINode>
   <HelpKINode Title="Match method" Url="html/2c13a7aa-8653-b192-e689-9ad6ec780c72.htm" />
-  <HelpKINode Title="match property" Url="html/7e536d50-11e3-c2e0-af86-2780ec91035a.htm" />
-  <HelpKINode Title="Match.end_time property" Url="html/b3508909-adcc-369f-c00b-eb236a1253d4.htm" />
-  <HelpKINode Title="Match.Match constructor" Url="html/9c3c6617-cb51-7191-3c92-93dac0363cf7.htm" />
-  <HelpKINode Title="Match.match_id property" Url="html/d75e9dcd-4a9c-5b01-5d08-1a06b9d2a09d.htm" />
-  <HelpKINode Title="Match.name property" Url="html/3d70eb4a-bc25-de88-35bf-e49b0b4a5e24.htm" />
-  <HelpKINode Title="Match.start_time property" Url="html/3db9cd0d-0750-e9b4-7e38-8bedc03b07ac.htm" />
-  <HelpKINode Title="match_id property" Url="html/d75e9dcd-4a9c-5b01-5d08-1a06b9d2a09d.htm" />
-  <HelpKINode Title="match_type property" Url="html/d7747508-019a-a3f4-31b0-2bc2a93b1aff.htm" />
+  <HelpKINode Title="match property" Url="html/886c4335-74df-dc77-7de0-bdde37d35fda.htm" />
+  <HelpKINode Title="Match.end_time property" Url="html/dc514001-7c68-af28-153d-f93679a2d4c7.htm" />
+  <HelpKINode Title="Match.Match constructor" Url="html/9376c6f1-f961-0b37-20ab-efd05856398b.htm" />
+  <HelpKINode Title="Match.match_id property" Url="html/7176f140-e070-999d-3f1e-45f101d6fbda.htm" />
+  <HelpKINode Title="Match.name property" Url="html/d086e133-c0fc-15aa-eac3-548cc8ada863.htm" />
+  <HelpKINode Title="Match.start_time property" Url="html/b74ad381-5a71-0c1d-93ec-795d620b3899.htm" />
+  <HelpKINode Title="match_id property" Url="html/7176f140-e070-999d-3f1e-45f101d6fbda.htm" />
+  <HelpKINode Title="match_type property" Url="html/eba71c61-3fb9-65b0-909f-12497d7daabb.htm" />
   <HelpKINode Title="maxcombo property">
-    <HelpKINode Title="OsuScore.maxcombo Property " Url="html/6c009ebb-521e-05d2-e13e-6b231ad7d43e.htm" />
-    <HelpKINode Title="OsuUserBest.maxcombo Property " Url="html/9d73bcf6-862c-b840-c079-8afd61c010cd.htm" />
-    <HelpKINode Title="OsuUserRecent.maxcombo Property " Url="html/00cc8b40-6e39-5ea5-4eef-94a8e6ddc436.htm" />
+    <HelpKINode Title="OsuScore.maxcombo Property " Url="html/ad353c14-5383-ed08-3224-ed2fb6ebc532.htm" />
+    <HelpKINode Title="OsuUserBest.maxcombo Property " Url="html/ce58e85b-7590-12f7-4edd-0c89cd945969.htm" />
+    <HelpKINode Title="OsuUserRecent.maxcombo Property " Url="html/5a6a779c-3422-8aa3-b811-ea1322e975b1.htm" />
   </HelpKINode>
-  <HelpKINode Title="max_combo property" Url="html/daa60436-82dc-766c-e046-a3725fe082e4.htm" />
-  <HelpKINode Title="MD5Hash method" Url="html/59856c59-d7c5-e834-6336-9d6fe7d152e6.htm" />
-  <HelpKINode Title="mode enumeration" Url="html/a966d10c-8b34-46fb-75ea-705b3e986f09.htm" />
-  <HelpKINode Title="mode property" Url="html/8e0f592d-42d9-c81f-7a02-58dc2e072ccd.htm" />
-  <HelpKINode Title="mods property" Url="html/c5c67b14-2b01-18c4-968b-0ed1e952e8a7.htm" />
+  <HelpKINode Title="max_combo property" Url="html/c25194b5-0975-18ac-ccc6-4088c96a9031.htm" />
+  <HelpKINode Title="MD5Hash method" Url="html/08da0c68-a63c-3beb-24e7-616c391d104c.htm" />
+  <HelpKINode Title="mode enumeration" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
+  <HelpKINode Title="mode property" Url="html/c1d8b86c-a052-d900-90bc-6cfb8c63f5e5.htm" />
+  <HelpKINode Title="mods property" Url="html/38e5932a-622e-4a92-93ad-6f0361eccf39.htm" />
   <HelpKINode Title="mp field" Url="html/cca2ebcc-8668-e538-9955-8943b2328087.htm" />
-  <HelpKINode Title="name property" Url="html/3d70eb4a-bc25-de88-35bf-e49b0b4a5e24.htm" />
-  <HelpKINode Title="notIncluded enumeration member" Url="html/253a5fd5-a016-53bb-a7e0-12790ba3acce.htm" />
-  <HelpKINode Title="osu enumeration member" Url="html/a966d10c-8b34-46fb-75ea-705b3e986f09.htm" />
+  <HelpKINode Title="name property" Url="html/d086e133-c0fc-15aa-eac3-548cc8ada863.htm" />
+  <HelpKINode Title="notIncluded enumeration member" Url="html/e6bd6d38-5eef-4251-f07e-26d927854053.htm" />
+  <HelpKINode Title="osu enumeration member" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
   <HelpKINode Title="osuApiUrl field" Url="html/d058154c-0dbb-e8df-934a-990aa40350bd.htm" />
   <HelpKINode Title="OsuBeatmap class">
-    <HelpKINode Title="OsuBeatmap Class" Url="html/3bfec666-efec-2507-367f-99266fecf38c.htm" />
-    <HelpKINode Title="about OsuBeatmap class" Url="html/3bfec666-efec-2507-367f-99266fecf38c.htm" />
-    <HelpKINode Title="constructor" Url="html/dd04a14d-7a3f-9c18-172b-f97783c218b3.htm" />
-    <HelpKINode Title="properties" Url="html/de173f45-a8e7-5349-e322-38b894f94457.htm" />
+    <HelpKINode Title="OsuBeatmap Class" Url="html/0688eeb5-f96f-a8af-25f6-fad2e9cce1d0.htm" />
+    <HelpKINode Title="about OsuBeatmap class" Url="html/0688eeb5-f96f-a8af-25f6-fad2e9cce1d0.htm" />
+    <HelpKINode Title="constructor" Url="html/ec0d5324-faea-102c-026b-1f2dbc1ced98.htm" />
+    <HelpKINode Title="properties" Url="html/7cde2ad4-9720-393b-b57d-1cd7de70d705.htm" />
   </HelpKINode>
   <HelpKINode Title="osuBeatmap field" Url="html/ee3d8aea-1f69-7883-b30c-7def20c9d5e5.htm" />
-  <HelpKINode Title="OsuBeatmap.approved property" Url="html/71dee29e-85b9-130f-8b5e-641520204771.htm" />
-  <HelpKINode Title="OsuBeatmap.approved_date property" Url="html/55ad8bbc-f79b-9025-5501-caef5976ce0e.htm" />
-  <HelpKINode Title="OsuBeatmap.approved_string property" Url="html/6f7857d5-ccd2-bb76-6fbd-08686270e9a7.htm" />
-  <HelpKINode Title="OsuBeatmap.artist property" Url="html/ef91be26-0aa3-1059-6c1d-8a0f2f3fc3a9.htm" />
-  <HelpKINode Title="OsuBeatmap.beatmapset_id property" Url="html/395e5ee0-aa06-983b-9172-278ca1c7d227.htm" />
-  <HelpKINode Title="OsuBeatmap.beatmapset_url property" Url="html/8af29da5-4d65-e5d2-1e69-258c078ca084.htm" />
-  <HelpKINode Title="OsuBeatmap.beatmap_id property" Url="html/0235bf50-6028-7f80-8923-95f153807f86.htm" />
-  <HelpKINode Title="OsuBeatmap.beatmap_url property" Url="html/8978ec9a-8464-702a-d915-6a4bc870e0d7.htm" />
-  <HelpKINode Title="OsuBeatmap.bloodcat property" Url="html/e11739a4-f13a-ae4b-07d3-e4ada982ac10.htm" />
-  <HelpKINode Title="OsuBeatmap.bpm property" Url="html/a4935282-f7d3-30ce-8dc8-ce975fa1b562.htm" />
-  <HelpKINode Title="OsuBeatmap.creator property" Url="html/d075351c-793f-3478-ae4f-07a0f017a3f6.htm" />
-  <HelpKINode Title="OsuBeatmap.difficultyrating property" Url="html/04c0d632-4c20-2525-dec2-5a7e7927b9ae.htm" />
-  <HelpKINode Title="OsuBeatmap.diff_approach property" Url="html/0e65a194-e414-906f-5ea6-d8f4c33404d7.htm" />
-  <HelpKINode Title="OsuBeatmap.diff_drain property" Url="html/6fd51f74-c147-8a85-0c5c-4d53709088e4.htm" />
-  <HelpKINode Title="OsuBeatmap.diff_overall property" Url="html/8edb3c88-ddda-794b-4e45-114d3b3b9a56.htm" />
-  <HelpKINode Title="OsuBeatmap.diff_size property" Url="html/917b93c9-bf88-834c-cf76-d363fb286977.htm" />
-  <HelpKINode Title="OsuBeatmap.download property" Url="html/faff751d-a25b-1e8b-a78d-647ce48d264e.htm" />
-  <HelpKINode Title="OsuBeatmap.download_no_video property" Url="html/f46b40c4-ce8d-8245-b8f4-44a23090eadc.htm" />
-  <HelpKINode Title="OsuBeatmap.favourite_count property" Url="html/1f914ea7-78a3-93c4-a1f4-8823b93be45a.htm" />
-  <HelpKINode Title="OsuBeatmap.file_md5 property" Url="html/903af3a7-7e55-6856-2410-bd6be7be335f.htm" />
-  <HelpKINode Title="OsuBeatmap.genre_id property" Url="html/f14b4a9b-6983-8f36-1d87-05e8dc069743.htm" />
-  <HelpKINode Title="OsuBeatmap.hit_length property" Url="html/5e10efc7-5046-762c-7933-8f6723588fd7.htm" />
-  <HelpKINode Title="OsuBeatmap.language_id property" Url="html/1168e932-bec1-52bd-08a6-b60165f806f6.htm" />
-  <HelpKINode Title="OsuBeatmap.last_update property" Url="html/0c07acbb-d309-a36d-ce76-fa88be90a2d9.htm" />
-  <HelpKINode Title="OsuBeatmap.max_combo property" Url="html/daa60436-82dc-766c-e046-a3725fe082e4.htm" />
-  <HelpKINode Title="OsuBeatmap.mode property" Url="html/8e0f592d-42d9-c81f-7a02-58dc2e072ccd.htm" />
-  <HelpKINode Title="OsuBeatmap.OsuBeatmap constructor" Url="html/dd04a14d-7a3f-9c18-172b-f97783c218b3.htm" />
-  <HelpKINode Title="OsuBeatmap.osu_direct property" Url="html/cc9e790d-ded7-ba05-cd93-81ca3c1bb4da.htm" />
-  <HelpKINode Title="OsuBeatmap.passcount property" Url="html/cc730b7d-7795-80bf-5e6a-e06a68a0a5e3.htm" />
-  <HelpKINode Title="OsuBeatmap.playcount property" Url="html/493d3cfb-f6a6-b66f-4fc0-f31c797cbc83.htm" />
-  <HelpKINode Title="OsuBeatmap.source property" Url="html/8940b987-8571-7f55-2c2e-dfc5ba1b9e56.htm" />
-  <HelpKINode Title="OsuBeatmap.tags property" Url="html/14904960-9467-2b65-226c-d4e6c0d5287b.htm" />
-  <HelpKINode Title="OsuBeatmap.thumbnail property" Url="html/77126579-ba26-387a-8ac6-1c3403107480.htm" />
-  <HelpKINode Title="OsuBeatmap.title property" Url="html/09f614bc-07ac-a54c-345d-6f09f1ede478.htm" />
-  <HelpKINode Title="OsuBeatmap.total_length property" Url="html/4755f226-1ac6-a30e-a637-5fcc332f8036.htm" />
-  <HelpKINode Title="OsuBeatmap.version property" Url="html/289293d1-3898-2891-d1f2-bd03c77c34d6.htm" />
-  <HelpKINode Title="osuchan property" Url="html/bd849e2f-38a6-8738-6ebf-ea8331cfd40c.htm" />
+  <HelpKINode Title="OsuBeatmap.approved property" Url="html/a0cc9a0c-9fae-83a0-b78e-4119edd8f2a4.htm" />
+  <HelpKINode Title="OsuBeatmap.approved_date property" Url="html/1a3cf8bf-3c51-eb26-953a-b029a63ae856.htm" />
+  <HelpKINode Title="OsuBeatmap.approved_string property" Url="html/b989135b-23e8-41e6-072a-1a2a67c4068f.htm" />
+  <HelpKINode Title="OsuBeatmap.artist property" Url="html/6c88f2a1-70ed-710b-1c56-302787675869.htm" />
+  <HelpKINode Title="OsuBeatmap.beatmapset_id property" Url="html/4f920d6c-303c-331d-c53c-fb1b1dac5ed7.htm" />
+  <HelpKINode Title="OsuBeatmap.beatmapset_url property" Url="html/c82933da-c608-0eec-7701-9b7ad49b831e.htm" />
+  <HelpKINode Title="OsuBeatmap.beatmap_id property" Url="html/40823983-0592-59bb-c790-489c46ab6683.htm" />
+  <HelpKINode Title="OsuBeatmap.beatmap_url property" Url="html/b4e9f5ed-34c8-7649-d398-66d98bbc32a8.htm" />
+  <HelpKINode Title="OsuBeatmap.bloodcat property" Url="html/899f09a3-6ae0-97bb-c600-96376e05f6af.htm" />
+  <HelpKINode Title="OsuBeatmap.bpm property" Url="html/9f7aca55-f030-6eb0-6bdd-2a897c087a96.htm" />
+  <HelpKINode Title="OsuBeatmap.creator property" Url="html/34e6dad3-399b-2540-0a15-65c4f20ecd55.htm" />
+  <HelpKINode Title="OsuBeatmap.difficultyrating property" Url="html/ea1b4f5c-9164-58c0-cbdf-89923f78cd2c.htm" />
+  <HelpKINode Title="OsuBeatmap.diff_approach property" Url="html/009e2025-7044-59af-3af3-5b67bb128332.htm" />
+  <HelpKINode Title="OsuBeatmap.diff_drain property" Url="html/f5206cd0-877c-27fd-2dfd-a1b494d201b4.htm" />
+  <HelpKINode Title="OsuBeatmap.diff_overall property" Url="html/aa8d4810-a2bb-0e12-4c87-210f02b8ec2f.htm" />
+  <HelpKINode Title="OsuBeatmap.diff_size property" Url="html/681cd5a5-4ab6-bd42-eaf3-20fc3db508e2.htm" />
+  <HelpKINode Title="OsuBeatmap.download property" Url="html/f22f1425-dcb4-08c7-f0ec-515da0db16df.htm" />
+  <HelpKINode Title="OsuBeatmap.download_no_video property" Url="html/90865df8-e100-609f-b0d5-eedf033577f2.htm" />
+  <HelpKINode Title="OsuBeatmap.favourite_count property" Url="html/684dc2b6-0f24-68e8-cfee-fa5dc9222e43.htm" />
+  <HelpKINode Title="OsuBeatmap.file_md5 property" Url="html/01de75a7-0c08-4999-af9e-d6173ef2e052.htm" />
+  <HelpKINode Title="OsuBeatmap.genre_id property" Url="html/50167d01-03d8-d091-7301-f9c9b073032f.htm" />
+  <HelpKINode Title="OsuBeatmap.hit_length property" Url="html/0cc776d8-31da-f68e-e32f-07479afc76cc.htm" />
+  <HelpKINode Title="OsuBeatmap.language_id property" Url="html/b45fb1d7-53bb-8e27-e145-dfb8a494383f.htm" />
+  <HelpKINode Title="OsuBeatmap.last_update property" Url="html/f10245de-ba17-5e95-4da1-616545ed3eee.htm" />
+  <HelpKINode Title="OsuBeatmap.max_combo property" Url="html/c25194b5-0975-18ac-ccc6-4088c96a9031.htm" />
+  <HelpKINode Title="OsuBeatmap.mode property" Url="html/c1d8b86c-a052-d900-90bc-6cfb8c63f5e5.htm" />
+  <HelpKINode Title="OsuBeatmap.OsuBeatmap constructor" Url="html/ec0d5324-faea-102c-026b-1f2dbc1ced98.htm" />
+  <HelpKINode Title="OsuBeatmap.osu_direct property" Url="html/c622d6f3-5168-1811-ca3f-e0a54cee170e.htm" />
+  <HelpKINode Title="OsuBeatmap.passcount property" Url="html/08e892aa-eb91-37b7-bb01-fa215488b272.htm" />
+  <HelpKINode Title="OsuBeatmap.playcount property" Url="html/1da00778-0a42-20de-592d-6c5adb29a6fd.htm" />
+  <HelpKINode Title="OsuBeatmap.source property" Url="html/b2988e42-25bf-b3d7-1590-825d9f7b93b8.htm" />
+  <HelpKINode Title="OsuBeatmap.tags property" Url="html/8ad4288f-3a38-2ae4-8975-766c4d13d2ed.htm" />
+  <HelpKINode Title="OsuBeatmap.thumbnail property" Url="html/ba12ed92-1980-094c-361c-3ae8348c5db8.htm" />
+  <HelpKINode Title="OsuBeatmap.title property" Url="html/fd2833dc-fdd3-2de7-c814-185b41c265b9.htm" />
+  <HelpKINode Title="OsuBeatmap.total_length property" Url="html/d23f730e-8cf7-a5e3-34af-cedf74adbe17.htm" />
+  <HelpKINode Title="OsuBeatmap.version property" Url="html/d142f2a4-3e83-fe6a-f92a-27a9af93744f.htm" />
+  <HelpKINode Title="osuchan property" Url="html/07cbc60f-61e3-17e4-4756-bdff821fdfe4.htm" />
   <HelpKINode Title="OsuClient class">
     <HelpKINode Title="OsuClient Class" Url="html/e6d08d5c-642d-22ae-3af5-93e87f001302.htm" />
     <HelpKINode Title="about OsuClient class" Url="html/e6d08d5c-642d-22ae-3af5-93e87f001302.htm" />
@@ -268,14 +269,14 @@
   <HelpKINode Title="OsuClient.b field" Url="html/76e3ff5c-9c72-d892-8c6a-9b46de81241a.htm" />
   <HelpKINode Title="OsuClient.Beatmap method" Url="html/b49258cc-45cc-75ab-302e-d548aa6ddf4f.htm" />
   <HelpKINode Title="OsuClient.Bloodcat field" Url="html/560061b5-95eb-93ed-5f92-af20591f5995.htm" />
-  <HelpKINode Title="OsuClient.GetBeatmap method" Url="html/4963a4f8-8c33-95ca-e142-3d780f18adce.htm" />
+  <HelpKINode Title="OsuClient.GetBeatmap method" Url="html/48af0d36-ef7e-69c9-5666-dbfdf18edd0c.htm" />
   <HelpKINode Title="OsuClient.GetMatch method" Url="html/e8a1e289-9162-e85c-9f39-6e4b76638134.htm" />
   <HelpKINode Title="OsuClient.GetReplay method" Url="html/05bdaa7a-fd43-4c69-36d9-5c5e4b99eb73.htm" />
-  <HelpKINode Title="OsuClient.GetScore method" Url="html/0ab02cd4-6454-ce84-e173-700fb1e5b5b2.htm" />
+  <HelpKINode Title="OsuClient.GetScore method" Url="html/9cef9d57-5a68-89da-cfc6-4432243417aa.htm" />
   <HelpKINode Title="OsuClient.GetUrl method" Url="html/063271d4-6ad2-d5bc-047e-307ed354ddfd.htm" />
-  <HelpKINode Title="OsuClient.GetUser method" Url="html/8cde7fa6-de96-d6cb-6a20-a83589efaa6d.htm" />
-  <HelpKINode Title="OsuClient.GetUserBest method" Url="html/06be4bf8-7d39-06d9-f482-8b81c2e859b3.htm" />
-  <HelpKINode Title="OsuClient.GetUserRecent method" Url="html/d4fbdead-6827-ef1e-d2c6-dc757fa54c30.htm" />
+  <HelpKINode Title="OsuClient.GetUser method" Url="html/9cac7bb6-50ab-866d-5283-4c9ee07c04a1.htm" />
+  <HelpKINode Title="OsuClient.GetUserBest method" Url="html/3d0de19f-1d91-2816-aa9e-29f2722a2712.htm" />
+  <HelpKINode Title="OsuClient.GetUserRecent method" Url="html/6ff9c4ef-b822-0084-1695-dca8b07a42d7.htm" />
   <HelpKINode Title="OsuClient.k field" Url="html/910bc562-eff9-2f70-3bd0-c137aad35387.htm" />
   <HelpKINode Title="OsuClient.Key property" Url="html/a6c1f073-36f8-0452-e334-24c69bba1d37.htm" />
   <HelpKINode Title="OsuClient.m field" Url="html/9faa613c-ce0a-2931-927e-60537e057f68.htm" />
@@ -292,7 +293,7 @@
   <HelpKINode Title="OsuClient.osuUser field" Url="html/ab51167b-e083-5ec4-0d3f-73310e411b93.htm" />
   <HelpKINode Title="OsuClient.osuUserBest field" Url="html/db58690a-c1c0-2aad-b282-14520b936a1a.htm" />
   <HelpKINode Title="OsuClient.osuUserRecent field" Url="html/d7ea9d69-558b-b972-0315-16e34fc5ee92.htm" />
-  <HelpKINode Title="OsuClient.Replay method" Url="html/de1155be-c6eb-4c60-447d-f01253a923cf.htm" />
+  <HelpKINode Title="OsuClient.Replay method" Url="html/b39d2878-1ba4-4fba-0a50-e5f019463c17.htm" />
   <HelpKINode Title="OsuClient.s field" Url="html/8fab633a-6259-caf0-fb7d-b03107469ab0.htm" />
   <HelpKINode Title="OsuClient.Score method" Url="html/d7df2755-6c55-b0bd-ad4c-001ef7244299.htm" />
   <HelpKINode Title="OsuClient.u field" Url="html/ec67a03f-8d0b-6323-79eb-a134a63d5370.htm" />
@@ -301,207 +302,207 @@
   <HelpKINode Title="OsuClient.User_Recent method" Url="html/2fb7f31c-57a5-a98f-f25d-205a31087f94.htm" />
   <HelpKINode Title="osuDirect field" Url="html/ada451fb-0ab2-3933-001d-0802ea764032.htm" />
   <HelpKINode Title="osuDowload field" Url="html/1dc4e9fb-3a4b-badc-a4d3-180ace31e668.htm" />
-  <HelpKINode Title="osuMania enumeration member" Url="html/a966d10c-8b34-46fb-75ea-705b3e986f09.htm" />
+  <HelpKINode Title="osuMania enumeration member" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
   <HelpKINode Title="OsuMatch class">
-    <HelpKINode Title="OsuMatch Class" Url="html/8465712b-cd4b-5013-c680-6426cd21ba4b.htm" />
-    <HelpKINode Title="about OsuMatch class" Url="html/8465712b-cd4b-5013-c680-6426cd21ba4b.htm" />
-    <HelpKINode Title="constructor" Url="html/cd0f7c34-eeba-5a72-6fe6-b53087355d56.htm" />
-    <HelpKINode Title="properties" Url="html/180c714e-f3c7-bb3f-75ad-0f29a9debeae.htm" />
+    <HelpKINode Title="OsuMatch Class" Url="html/0a84eefc-e0fe-b6be-b89b-2ce18ac80ec8.htm" />
+    <HelpKINode Title="about OsuMatch class" Url="html/0a84eefc-e0fe-b6be-b89b-2ce18ac80ec8.htm" />
+    <HelpKINode Title="constructor" Url="html/dcd08b1a-3a34-7358-bf9d-d095544b3706.htm" />
+    <HelpKINode Title="properties" Url="html/ca5cbfa5-d710-3f0b-b104-856a5f9a9398.htm" />
   </HelpKINode>
   <HelpKINode Title="osuMatch field" Url="html/ddcbfc52-05d1-6439-8928-f4f40c8ed548.htm" />
-  <HelpKINode Title="OsuMatch.games property" Url="html/a339cf8a-43ca-921b-b8bc-195026a18d08.htm" />
-  <HelpKINode Title="OsuMatch.match property" Url="html/7e536d50-11e3-c2e0-af86-2780ec91035a.htm" />
-  <HelpKINode Title="OsuMatch.OsuMatch constructor" Url="html/cd0f7c34-eeba-5a72-6fe6-b53087355d56.htm" />
+  <HelpKINode Title="OsuMatch.games property" Url="html/9800d1f9-ffa2-2e19-06c0-57fb4d171519.htm" />
+  <HelpKINode Title="OsuMatch.match property" Url="html/886c4335-74df-dc77-7de0-bdde37d35fda.htm" />
+  <HelpKINode Title="OsuMatch.OsuMatch constructor" Url="html/dcd08b1a-3a34-7358-bf9d-d095544b3706.htm" />
   <HelpKINode Title="OsuReplay class">
-    <HelpKINode Title="OsuReplay Class" Url="html/bd8cd9a7-d81e-0e50-d864-64d622cd360c.htm" />
-    <HelpKINode Title="about OsuReplay class" Url="html/bd8cd9a7-d81e-0e50-d864-64d622cd360c.htm" />
-    <HelpKINode Title="constructor" Url="html/ca8e767e-df09-b02b-395c-8e7e0fa0c34f.htm" />
-    <HelpKINode Title="properties" Url="html/f702ff16-616c-fd55-0387-d8eca65f7cd7.htm" />
+    <HelpKINode Title="OsuReplay Class" Url="html/59a8dbe1-a0a4-65ab-51a1-313baf1ecd6a.htm" />
+    <HelpKINode Title="about OsuReplay class" Url="html/59a8dbe1-a0a4-65ab-51a1-313baf1ecd6a.htm" />
+    <HelpKINode Title="constructor" Url="html/c14f6514-56e6-ea63-a911-f93540adc74a.htm" />
+    <HelpKINode Title="properties" Url="html/ae16a85d-8852-9366-9fcd-48b46cccf73e.htm" />
   </HelpKINode>
   <HelpKINode Title="osuReplay field" Url="html/6eca5226-776d-b480-4be2-02b13b8c26bf.htm" />
-  <HelpKINode Title="OsuReplay.content property" Url="html/69d96d72-8020-8bd4-20bc-36cbeee193b2.htm" />
-  <HelpKINode Title="OsuReplay.encoding property" Url="html/ad4f0476-7573-eaee-9e80-7014d87b5dcb.htm" />
-  <HelpKINode Title="OsuReplay.error property" Url="html/1cca7e65-5e4f-1c2e-9529-2883f31bc51c.htm" />
-  <HelpKINode Title="OsuReplay.OsuReplay constructor" Url="html/ca8e767e-df09-b02b-395c-8e7e0fa0c34f.htm" />
+  <HelpKINode Title="OsuReplay.content property" Url="html/d8757481-3f87-52ca-6148-4d5514add87a.htm" />
+  <HelpKINode Title="OsuReplay.encoding property" Url="html/188a3a82-25e4-0bd5-6c42-c1d4d802621c.htm" />
+  <HelpKINode Title="OsuReplay.error property" Url="html/8e40ac07-ec52-4424-22ce-930ce3fe6df6.htm" />
+  <HelpKINode Title="OsuReplay.OsuReplay constructor" Url="html/c14f6514-56e6-ea63-a911-f93540adc74a.htm" />
   <HelpKINode Title="OsuScore class">
-    <HelpKINode Title="OsuScore Class" Url="html/bc00a3ff-1860-dd00-c924-d9e11cf698ce.htm" />
-    <HelpKINode Title="about OsuScore class" Url="html/bc00a3ff-1860-dd00-c924-d9e11cf698ce.htm" />
-    <HelpKINode Title="constructor" Url="html/44fb8a14-0eb3-ab15-9961-c89329244bbb.htm" />
-    <HelpKINode Title="properties" Url="html/853f9a0f-ff09-d9c1-6f26-5d09d2ecbe34.htm" />
+    <HelpKINode Title="OsuScore Class" Url="html/050e873b-a322-952e-2c55-f7d071a29a17.htm" />
+    <HelpKINode Title="about OsuScore class" Url="html/050e873b-a322-952e-2c55-f7d071a29a17.htm" />
+    <HelpKINode Title="constructor" Url="html/49bb44b2-8379-008c-3d58-4d0b94eef53f.htm" />
+    <HelpKINode Title="properties" Url="html/d1e255b6-33f9-16bc-d6cc-c8becba4f496.htm" />
   </HelpKINode>
-  <HelpKINode Title="OsuScore.count100 property" Url="html/98c16791-62a0-4a88-c023-5f4219187186.htm" />
-  <HelpKINode Title="OsuScore.count300 property" Url="html/5e43d17e-9284-3bc0-8762-1c77c345b3df.htm" />
-  <HelpKINode Title="OsuScore.count50 property" Url="html/c559d3b1-3f85-9625-2f80-c3c12abee65d.htm" />
-  <HelpKINode Title="OsuScore.countgeki property" Url="html/a66318f2-a136-a623-afd9-1354ea68b31c.htm" />
-  <HelpKINode Title="OsuScore.countkatu property" Url="html/52c47d26-ef16-dee9-a287-52d1d938e10c.htm" />
-  <HelpKINode Title="OsuScore.countmiss property" Url="html/4f1f9950-200a-a2bc-c626-d321b741594c.htm" />
-  <HelpKINode Title="OsuScore.date property" Url="html/72bd35a2-1d5e-d0fc-52e8-c1b1dd3b7f95.htm" />
-  <HelpKINode Title="OsuScore.enabled_mods property" Url="html/a041b22e-a001-d192-5383-d653d0f18e7f.htm" />
-  <HelpKINode Title="OsuScore.maxcombo property" Url="html/6c009ebb-521e-05d2-e13e-6b231ad7d43e.htm" />
-  <HelpKINode Title="OsuScore.OsuScore constructor" Url="html/44fb8a14-0eb3-ab15-9961-c89329244bbb.htm" />
-  <HelpKINode Title="OsuScore.perfect property" Url="html/5fd81574-530f-79bb-45b1-f0be973d2a8e.htm" />
-  <HelpKINode Title="OsuScore.pp property" Url="html/b437514e-5020-2f45-9b06-4a340004213b.htm" />
-  <HelpKINode Title="OsuScore.rank property" Url="html/130f0423-5535-0855-9a17-b01ee0f7f93d.htm" />
-  <HelpKINode Title="OsuScore.score property" Url="html/a27db918-4dc2-0e3c-1229-cc4b149a2521.htm" />
-  <HelpKINode Title="OsuScore.score_id property" Url="html/ea722af5-7d52-0baa-360c-28fd5c8af1d0.htm" />
-  <HelpKINode Title="OsuScore.username property" Url="html/58996a34-69b5-6e49-803f-18797fc12a5b.htm" />
-  <HelpKINode Title="OsuScore.user_id property" Url="html/8232dd08-4524-7e0c-a6ae-951e43140705.htm" />
+  <HelpKINode Title="OsuScore.count100 property" Url="html/b4e3b7b7-8a33-35be-84be-8d02523b7687.htm" />
+  <HelpKINode Title="OsuScore.count300 property" Url="html/b7123852-aae6-bfc1-7521-b21ed0cc8fb9.htm" />
+  <HelpKINode Title="OsuScore.count50 property" Url="html/e59b7af3-1b11-be11-981d-5c252ae7be5f.htm" />
+  <HelpKINode Title="OsuScore.countgeki property" Url="html/8e16a07e-87e4-918e-1fbd-ba6b4f99d6d7.htm" />
+  <HelpKINode Title="OsuScore.countkatu property" Url="html/7d4e9008-2c8c-c7e9-e0af-7b61401302e6.htm" />
+  <HelpKINode Title="OsuScore.countmiss property" Url="html/abd9e6c2-101f-5163-6274-a1c0d0ccb552.htm" />
+  <HelpKINode Title="OsuScore.date property" Url="html/a5e1f604-ab51-f0db-805c-be221614acbd.htm" />
+  <HelpKINode Title="OsuScore.enabled_mods property" Url="html/7d96a975-3ab9-7c64-3f68-867036bc8560.htm" />
+  <HelpKINode Title="OsuScore.maxcombo property" Url="html/ad353c14-5383-ed08-3224-ed2fb6ebc532.htm" />
+  <HelpKINode Title="OsuScore.OsuScore constructor" Url="html/49bb44b2-8379-008c-3d58-4d0b94eef53f.htm" />
+  <HelpKINode Title="OsuScore.perfect property" Url="html/7f67c7df-3c51-00e1-1228-841e79fccb60.htm" />
+  <HelpKINode Title="OsuScore.pp property" Url="html/de817cc4-a22a-c12d-7595-1d9a8e957ac2.htm" />
+  <HelpKINode Title="OsuScore.rank property" Url="html/675fe54d-a091-1bff-8efe-0d24972e2c45.htm" />
+  <HelpKINode Title="OsuScore.score property" Url="html/a40d26e1-bbde-d36b-0628-58f12e28533a.htm" />
+  <HelpKINode Title="OsuScore.score_id property" Url="html/4d3b7904-9947-f881-b618-0b04cec3b2e7.htm" />
+  <HelpKINode Title="OsuScore.username property" Url="html/0ef577e0-de68-62c3-ffe9-ad04490cf514.htm" />
+  <HelpKINode Title="OsuScore.user_id property" Url="html/35f14b78-29f1-3ed1-1088-1ed87f934fa2.htm" />
   <HelpKINode Title="osuScores field" Url="html/a1ac3f24-7c49-7417-f184-52818d5c496f.htm" />
-  <HelpKINode Title="osuskills property" Url="html/513884e1-c729-e82f-0849-fc609c46caeb.htm" />
-  <HelpKINode Title="osustats property" Url="html/5c65a204-37e1-0fe9-1da5-fab0a83cebb9.htm" />
-  <HelpKINode Title="osutrack property" Url="html/d26985dc-67c1-e389-875b-2fb240d97f4a.htm" />
+  <HelpKINode Title="osuskills property" Url="html/0b18a68b-e0b5-ccb8-b544-db9c8ce57d1b.htm" />
+  <HelpKINode Title="osustats property" Url="html/8809642b-6597-dd9e-b431-76ff32e04bd1.htm" />
+  <HelpKINode Title="osutrack property" Url="html/bcf37897-5e4f-71ae-d08c-0ea32782053c.htm" />
   <HelpKINode Title="OsuUser class">
-    <HelpKINode Title="OsuUser Class" Url="html/1d7e4d59-c542-ac7c-b6ad-f488b70ba862.htm" />
-    <HelpKINode Title="about OsuUser class" Url="html/1d7e4d59-c542-ac7c-b6ad-f488b70ba862.htm" />
-    <HelpKINode Title="constructor" Url="html/23080336-38fd-0a00-2fa5-fde76318d08b.htm" />
-    <HelpKINode Title="properties" Url="html/5ed87ed9-2fec-c86f-43d4-ebac3e88a02d.htm" />
+    <HelpKINode Title="OsuUser Class" Url="html/7e5dab30-2c98-f835-78de-ea949153f42c.htm" />
+    <HelpKINode Title="about OsuUser class" Url="html/7e5dab30-2c98-f835-78de-ea949153f42c.htm" />
+    <HelpKINode Title="constructor" Url="html/3119c9f4-6927-c8be-b853-2b6e5f93fea6.htm" />
+    <HelpKINode Title="properties" Url="html/07f691a8-f43b-14e2-9789-418bef4b71c9.htm" />
   </HelpKINode>
   <HelpKINode Title="osuUser field" Url="html/ab51167b-e083-5ec4-0d3f-73310e411b93.htm" />
-  <HelpKINode Title="OsuUser.accuracy property" Url="html/2b54d364-afaf-1116-5dcf-f35b165a5c7d.htm" />
-  <HelpKINode Title="OsuUser.count100 property" Url="html/fa8f1de1-caed-c2fe-d314-5608c1289ca4.htm" />
-  <HelpKINode Title="OsuUser.count300 property" Url="html/ac787d74-35a5-3015-63b4-2e8436623718.htm" />
-  <HelpKINode Title="OsuUser.count50 property" Url="html/13b673af-2a23-8265-e79e-ce6f9f310640.htm" />
-  <HelpKINode Title="OsuUser.country property" Url="html/223e85c5-cad2-7018-b6ba-5d2ff0224ea8.htm" />
-  <HelpKINode Title="OsuUser.count_rank_a property" Url="html/fc9bb715-3ef8-4385-5ab3-14ca9794d2c6.htm" />
-  <HelpKINode Title="OsuUser.count_rank_s property" Url="html/330f9908-dbba-5359-83aa-f6786bffdc4b.htm" />
-  <HelpKINode Title="OsuUser.count_rank_ss property" Url="html/2fa97d78-f448-28f9-24ce-6fa70b126284.htm" />
-  <HelpKINode Title="OsuUser.events property" Url="html/a2d51833-b3de-51d7-a95e-b73a9f7bf797.htm" />
-  <HelpKINode Title="OsuUser.flag property" Url="html/bf26ddce-eca0-8acf-faae-290138c65c9c.htm" />
-  <HelpKINode Title="OsuUser.flag_old property" Url="html/9dbf06ad-28ce-ddc4-d748-4b9d3020d644.htm" />
-  <HelpKINode Title="OsuUser.image property" Url="html/2a92ce0b-13b3-270d-31ba-817dc06519fa.htm" />
-  <HelpKINode Title="OsuUser.level property" Url="html/7aba7950-8da5-2347-81c5-b9911cd54bca.htm" />
-  <HelpKINode Title="OsuUser.osuchan property" Url="html/bd849e2f-38a6-8738-6ebf-ea8331cfd40c.htm" />
-  <HelpKINode Title="OsuUser.osuskills property" Url="html/513884e1-c729-e82f-0849-fc609c46caeb.htm" />
-  <HelpKINode Title="OsuUser.osustats property" Url="html/5c65a204-37e1-0fe9-1da5-fab0a83cebb9.htm" />
-  <HelpKINode Title="OsuUser.osutrack property" Url="html/d26985dc-67c1-e389-875b-2fb240d97f4a.htm" />
-  <HelpKINode Title="OsuUser.OsuUser constructor" Url="html/23080336-38fd-0a00-2fa5-fde76318d08b.htm" />
-  <HelpKINode Title="OsuUser.playcount property" Url="html/be16b476-64e4-60ae-7cf8-a8704dac16d1.htm" />
-  <HelpKINode Title="OsuUser.pp_country_rank property" Url="html/93277f7a-4c4e-198e-a7a4-289f3ed77b58.htm" />
-  <HelpKINode Title="OsuUser.pp_rank property" Url="html/4c6069f4-d9d2-bfd5-89ab-a6446912f24e.htm" />
-  <HelpKINode Title="OsuUser.pp_raw property" Url="html/613bf3bd-6565-a0bd-b0a9-9c662e06df30.htm" />
-  <HelpKINode Title="OsuUser.ranked_score property" Url="html/8dc9e9ba-5ccc-7549-a347-498995559466.htm" />
-  <HelpKINode Title="OsuUser.spectateUser property" Url="html/5f0b2515-bdaa-f425-d77a-951ea0efcfc2.htm" />
-  <HelpKINode Title="OsuUser.total_score property" Url="html/b1921bd0-b32f-7bb3-9a06-7b820b430a20.htm" />
-  <HelpKINode Title="OsuUser.url property" Url="html/eee999ab-af72-ce28-5d96-771324d2807a.htm" />
-  <HelpKINode Title="OsuUser.username property" Url="html/3fc56045-a9c3-7c1e-9f25-35f5cfeb1f4f.htm" />
-  <HelpKINode Title="OsuUser.user_id property" Url="html/3a41bf7b-6af1-1035-f9f1-d35ea1ca051a.htm" />
+  <HelpKINode Title="OsuUser.accuracy property" Url="html/039d032d-fdaa-dd15-96c4-ddc8ae697d5f.htm" />
+  <HelpKINode Title="OsuUser.count100 property" Url="html/7d91ac74-3029-4c8b-dc52-72de6135723c.htm" />
+  <HelpKINode Title="OsuUser.count300 property" Url="html/0212a2fc-ce95-a802-fca9-8a7df73dcb5f.htm" />
+  <HelpKINode Title="OsuUser.count50 property" Url="html/58bcebb5-1f47-f6d3-709f-f3e387915de0.htm" />
+  <HelpKINode Title="OsuUser.country property" Url="html/324dc3ba-c6bb-271d-cb3d-429bc1276de3.htm" />
+  <HelpKINode Title="OsuUser.count_rank_a property" Url="html/4b1fee5a-46e0-d460-8329-22f4d25aa4d1.htm" />
+  <HelpKINode Title="OsuUser.count_rank_s property" Url="html/7b35ee17-80f6-3079-9bf4-10795ce16ed0.htm" />
+  <HelpKINode Title="OsuUser.count_rank_ss property" Url="html/47c96d64-0d93-212e-bd81-ab65b2b0963c.htm" />
+  <HelpKINode Title="OsuUser.events property" Url="html/c8852fd0-3280-e21e-b037-e7b45caf546f.htm" />
+  <HelpKINode Title="OsuUser.flag property" Url="html/485d42ec-13b3-7308-db8d-c4b67ee97970.htm" />
+  <HelpKINode Title="OsuUser.flag_old property" Url="html/d540f320-1267-dcfd-9dce-575b96d23d88.htm" />
+  <HelpKINode Title="OsuUser.image property" Url="html/62728b22-849e-0005-a00e-fadabbeb3e88.htm" />
+  <HelpKINode Title="OsuUser.level property" Url="html/370e3cc5-a776-d27e-9018-5711425f6bfd.htm" />
+  <HelpKINode Title="OsuUser.osuchan property" Url="html/07cbc60f-61e3-17e4-4756-bdff821fdfe4.htm" />
+  <HelpKINode Title="OsuUser.osuskills property" Url="html/0b18a68b-e0b5-ccb8-b544-db9c8ce57d1b.htm" />
+  <HelpKINode Title="OsuUser.osustats property" Url="html/8809642b-6597-dd9e-b431-76ff32e04bd1.htm" />
+  <HelpKINode Title="OsuUser.osutrack property" Url="html/bcf37897-5e4f-71ae-d08c-0ea32782053c.htm" />
+  <HelpKINode Title="OsuUser.OsuUser constructor" Url="html/3119c9f4-6927-c8be-b853-2b6e5f93fea6.htm" />
+  <HelpKINode Title="OsuUser.playcount property" Url="html/0e678bdd-2c8a-ccad-b6ec-105c719d7346.htm" />
+  <HelpKINode Title="OsuUser.pp_country_rank property" Url="html/0170d10e-31ac-222c-ca36-682e6e710c2e.htm" />
+  <HelpKINode Title="OsuUser.pp_rank property" Url="html/04ff1706-4509-d0ba-6f5e-347142671dda.htm" />
+  <HelpKINode Title="OsuUser.pp_raw property" Url="html/eb71d2b3-ff4d-452b-2a16-a05403b8748b.htm" />
+  <HelpKINode Title="OsuUser.ranked_score property" Url="html/8d43a793-d9b7-ebc7-ed52-618878c177d6.htm" />
+  <HelpKINode Title="OsuUser.spectateUser property" Url="html/1bad2b86-c67e-2e8b-9a3f-9e4708a072d7.htm" />
+  <HelpKINode Title="OsuUser.total_score property" Url="html/90fa92b3-f3a1-068c-0780-849cf4d7a7d9.htm" />
+  <HelpKINode Title="OsuUser.url property" Url="html/8efc8e28-bff8-e09e-f86a-7b62c2f6ff95.htm" />
+  <HelpKINode Title="OsuUser.username property" Url="html/0d020578-8eb1-c518-94b5-be57715981ab.htm" />
+  <HelpKINode Title="OsuUser.user_id property" Url="html/cd9d4573-1436-a9f1-de19-6ca16864f98b.htm" />
   <HelpKINode Title="OsuUserBest class">
-    <HelpKINode Title="OsuUserBest Class" Url="html/c8b0f23f-a966-fd5d-2bcb-50b4c0a6274e.htm" />
-    <HelpKINode Title="about OsuUserBest class" Url="html/c8b0f23f-a966-fd5d-2bcb-50b4c0a6274e.htm" />
-    <HelpKINode Title="constructor" Url="html/0432be6c-32ac-abf6-4b39-4f35bbd9d8bb.htm" />
-    <HelpKINode Title="properties" Url="html/d2309194-6720-407e-7b6b-c8edf80ff8aa.htm" />
+    <HelpKINode Title="OsuUserBest Class" Url="html/f1320318-9f5c-1d80-5ef9-7eeae114385d.htm" />
+    <HelpKINode Title="about OsuUserBest class" Url="html/f1320318-9f5c-1d80-5ef9-7eeae114385d.htm" />
+    <HelpKINode Title="constructor" Url="html/1b5ff63f-ed1d-a8f4-8add-0f91b3d2a933.htm" />
+    <HelpKINode Title="properties" Url="html/a33e8d10-ae51-d6a7-72c2-a7cfa45c9608.htm" />
   </HelpKINode>
   <HelpKINode Title="osuUserBest field" Url="html/db58690a-c1c0-2aad-b282-14520b936a1a.htm" />
-  <HelpKINode Title="OsuUserBest.accuracy property" Url="html/34278f28-e58e-47b5-9e50-1fd143982e8d.htm" />
-  <HelpKINode Title="OsuUserBest.beatmap_id property" Url="html/a8a46e7e-2967-5e62-3ae1-3a5c932782d7.htm" />
-  <HelpKINode Title="OsuUserBest.count100 property" Url="html/aa79805b-dcaf-3c01-184f-4f93fdf404ee.htm" />
-  <HelpKINode Title="OsuUserBest.count300 property" Url="html/0dd98104-4dd6-f853-0b7c-3a9b51eb52de.htm" />
-  <HelpKINode Title="OsuUserBest.count50 property" Url="html/35b9a10f-09dc-7d36-8fee-e5e9c5f31b22.htm" />
-  <HelpKINode Title="OsuUserBest.countgeki property" Url="html/8ee088d3-a39b-62bb-9624-ed2742b8f12b.htm" />
-  <HelpKINode Title="OsuUserBest.countkatu property" Url="html/e7655295-7dc3-faab-cecd-b073de4b7dfc.htm" />
-  <HelpKINode Title="OsuUserBest.countmiss property" Url="html/978a6166-ccd8-0052-e9f3-536aaaa75f77.htm" />
-  <HelpKINode Title="OsuUserBest.date property" Url="html/d211ef54-20bb-58b1-0516-57abe62e6792.htm" />
-  <HelpKINode Title="OsuUserBest.enabled_mods property" Url="html/f82312f2-810c-f536-51aa-60e6b02e1dfd.htm" />
-  <HelpKINode Title="OsuUserBest.maxcombo property" Url="html/9d73bcf6-862c-b840-c079-8afd61c010cd.htm" />
-  <HelpKINode Title="OsuUserBest.OsuUserBest constructor" Url="html/0432be6c-32ac-abf6-4b39-4f35bbd9d8bb.htm" />
-  <HelpKINode Title="OsuUserBest.perfect property" Url="html/cdbb44dd-cde5-bb82-1e8a-0d2b10f37cea.htm" />
-  <HelpKINode Title="OsuUserBest.pp property" Url="html/6fcc1eeb-d3ab-12de-0bf0-193faa6d6c58.htm" />
-  <HelpKINode Title="OsuUserBest.rank property" Url="html/b0ebd2fd-f7ab-cf62-f446-c6a59d40ba36.htm" />
-  <HelpKINode Title="OsuUserBest.score property" Url="html/a6752716-a1ee-5f56-5a5c-37769e93883b.htm" />
-  <HelpKINode Title="OsuUserBest.user_id property" Url="html/9dc57b47-a85b-6414-15e9-c3b9882b2653.htm" />
+  <HelpKINode Title="OsuUserBest.accuracy property" Url="html/cb76fd49-2e15-0ba8-43c3-09f67c62cfaa.htm" />
+  <HelpKINode Title="OsuUserBest.beatmap_id property" Url="html/940e2da5-6928-a3bc-ac87-b39c94dadb16.htm" />
+  <HelpKINode Title="OsuUserBest.count100 property" Url="html/b1ddc823-6d06-9016-b09d-b2b1388c042a.htm" />
+  <HelpKINode Title="OsuUserBest.count300 property" Url="html/fe20c4c8-2e9e-c8d8-7ab9-269f8e65d8fb.htm" />
+  <HelpKINode Title="OsuUserBest.count50 property" Url="html/f9f8bb65-da43-386f-6cb8-32c32b9bdaf0.htm" />
+  <HelpKINode Title="OsuUserBest.countgeki property" Url="html/865c2134-c50c-5460-b85c-269f4bd78ea7.htm" />
+  <HelpKINode Title="OsuUserBest.countkatu property" Url="html/9d3369dd-170f-fc86-e7be-198d0f7d3505.htm" />
+  <HelpKINode Title="OsuUserBest.countmiss property" Url="html/9c907bb9-756a-a283-5533-a26a937ed6a1.htm" />
+  <HelpKINode Title="OsuUserBest.date property" Url="html/c3183b80-eae9-2210-4247-46fe36f095fd.htm" />
+  <HelpKINode Title="OsuUserBest.enabled_mods property" Url="html/b9de971b-f96d-2508-bcf1-2986055b6fbb.htm" />
+  <HelpKINode Title="OsuUserBest.maxcombo property" Url="html/ce58e85b-7590-12f7-4edd-0c89cd945969.htm" />
+  <HelpKINode Title="OsuUserBest.OsuUserBest constructor" Url="html/1b5ff63f-ed1d-a8f4-8add-0f91b3d2a933.htm" />
+  <HelpKINode Title="OsuUserBest.perfect property" Url="html/dac18e8e-d78d-a206-9c8d-a64770696720.htm" />
+  <HelpKINode Title="OsuUserBest.pp property" Url="html/2588241a-625d-ab4a-efdf-7f05fc0ea824.htm" />
+  <HelpKINode Title="OsuUserBest.rank property" Url="html/dcbb05a3-5e4d-df19-959f-18cd4078e81f.htm" />
+  <HelpKINode Title="OsuUserBest.score property" Url="html/171cef80-5ebc-f479-ca32-3b417557b847.htm" />
+  <HelpKINode Title="OsuUserBest.user_id property" Url="html/e7814ef5-71d9-77b8-a519-eeb2cbc155e6.htm" />
   <HelpKINode Title="OsuUserRecent class">
-    <HelpKINode Title="OsuUserRecent Class" Url="html/f5ba4c7e-6f50-da75-2514-cff6e19182e8.htm" />
-    <HelpKINode Title="about OsuUserRecent class" Url="html/f5ba4c7e-6f50-da75-2514-cff6e19182e8.htm" />
-    <HelpKINode Title="constructor" Url="html/cd962333-9418-7848-2f59-f5a00abc56c5.htm" />
-    <HelpKINode Title="properties" Url="html/9db3d53f-7df2-b826-4835-451a5acc9f70.htm" />
+    <HelpKINode Title="OsuUserRecent Class" Url="html/e9df7179-0c85-1319-7eb3-0c6740710452.htm" />
+    <HelpKINode Title="about OsuUserRecent class" Url="html/e9df7179-0c85-1319-7eb3-0c6740710452.htm" />
+    <HelpKINode Title="constructor" Url="html/756bcb21-5ee5-2518-b313-c52566ea6405.htm" />
+    <HelpKINode Title="properties" Url="html/3efe7d46-c58b-5cca-54df-ff038f5c7da1.htm" />
   </HelpKINode>
   <HelpKINode Title="osuUserRecent field" Url="html/d7ea9d69-558b-b972-0315-16e34fc5ee92.htm" />
-  <HelpKINode Title="OsuUserRecent.accuracy property" Url="html/718edf7a-4338-196d-31f7-ab92a1ec2467.htm" />
-  <HelpKINode Title="OsuUserRecent.beatmap_id property" Url="html/249471e5-bbb3-314b-9967-da15e6e3b18c.htm" />
-  <HelpKINode Title="OsuUserRecent.count100 property" Url="html/29c1e853-1941-5cdf-369e-8e0c17061d51.htm" />
-  <HelpKINode Title="OsuUserRecent.count300 property" Url="html/9ddad6cb-92e1-5de8-769b-6878b9976095.htm" />
-  <HelpKINode Title="OsuUserRecent.count50 property" Url="html/b70c28ce-a571-2d40-96d8-90c082d5f45d.htm" />
-  <HelpKINode Title="OsuUserRecent.countgeki property" Url="html/4c2c8af0-9f50-9f26-841a-cd737277000d.htm" />
-  <HelpKINode Title="OsuUserRecent.countkatu property" Url="html/eee9b45f-c43c-27da-f270-66e8815c7d46.htm" />
-  <HelpKINode Title="OsuUserRecent.countmiss property" Url="html/a383ca4b-8871-60b2-011a-a3c93894da91.htm" />
-  <HelpKINode Title="OsuUserRecent.date property" Url="html/aef6e32c-ba68-0d0c-8e8a-f99247c56e68.htm" />
-  <HelpKINode Title="OsuUserRecent.enabled_mods property" Url="html/333cf91d-4679-d85f-8ea5-927348a7a02a.htm" />
-  <HelpKINode Title="OsuUserRecent.maxcombo property" Url="html/00cc8b40-6e39-5ea5-4eef-94a8e6ddc436.htm" />
-  <HelpKINode Title="OsuUserRecent.OsuUserRecent constructor" Url="html/cd962333-9418-7848-2f59-f5a00abc56c5.htm" />
-  <HelpKINode Title="OsuUserRecent.perfect property" Url="html/70c172e5-ac3f-fe5e-12f4-0e725093afe5.htm" />
-  <HelpKINode Title="OsuUserRecent.rank property" Url="html/84b9d104-e7dd-0f4e-b665-8891b8f5ff00.htm" />
-  <HelpKINode Title="OsuUserRecent.score property" Url="html/d8e75ff5-e21a-a1a7-b564-b4b44042adb5.htm" />
-  <HelpKINode Title="OsuUserRecent.user_id property" Url="html/3f973d17-4ac2-1a05-a630-8a0beceb1f75.htm" />
-  <HelpKINode Title="osu_direct property" Url="html/cc9e790d-ded7-ba05-cd93-81ca3c1bb4da.htm" />
-  <HelpKINode Title="passcount property" Url="html/cc730b7d-7795-80bf-5e6a-e06a68a0a5e3.htm" />
+  <HelpKINode Title="OsuUserRecent.accuracy property" Url="html/c9d05cd2-1d9d-0d14-bef7-a05205fdc567.htm" />
+  <HelpKINode Title="OsuUserRecent.beatmap_id property" Url="html/80aced1b-55e3-37d1-9597-4aa1e4fe821a.htm" />
+  <HelpKINode Title="OsuUserRecent.count100 property" Url="html/b08ac4b9-8363-84b1-67a0-4efae59c3aae.htm" />
+  <HelpKINode Title="OsuUserRecent.count300 property" Url="html/c772a17c-470a-7f99-da38-78e5ab5d4069.htm" />
+  <HelpKINode Title="OsuUserRecent.count50 property" Url="html/9ad9cf2c-20dc-13f5-ad5e-d8084f29c63f.htm" />
+  <HelpKINode Title="OsuUserRecent.countgeki property" Url="html/90646cfd-c042-3516-06d6-80aac71b852d.htm" />
+  <HelpKINode Title="OsuUserRecent.countkatu property" Url="html/6035e0ba-39eb-9406-2a5d-08adb9928e1d.htm" />
+  <HelpKINode Title="OsuUserRecent.countmiss property" Url="html/c33316da-52cb-385d-a17b-7be4387e7ed1.htm" />
+  <HelpKINode Title="OsuUserRecent.date property" Url="html/56cfd8e2-7c03-af9e-1db9-966cf7705b2d.htm" />
+  <HelpKINode Title="OsuUserRecent.enabled_mods property" Url="html/ceea4e77-829f-0d25-15da-f389947d8794.htm" />
+  <HelpKINode Title="OsuUserRecent.maxcombo property" Url="html/5a6a779c-3422-8aa3-b811-ea1322e975b1.htm" />
+  <HelpKINode Title="OsuUserRecent.OsuUserRecent constructor" Url="html/756bcb21-5ee5-2518-b313-c52566ea6405.htm" />
+  <HelpKINode Title="OsuUserRecent.perfect property" Url="html/719ebcbb-f4f0-a521-0380-ca7a8b970f55.htm" />
+  <HelpKINode Title="OsuUserRecent.rank property" Url="html/52368e2c-9022-4787-57aa-dbf8a20617d9.htm" />
+  <HelpKINode Title="OsuUserRecent.score property" Url="html/83f4b57e-4d57-cfec-ff27-554b74ea7413.htm" />
+  <HelpKINode Title="OsuUserRecent.user_id property" Url="html/51415f1a-e269-7674-1356-8cc816d3a1b1.htm" />
+  <HelpKINode Title="osu_direct property" Url="html/c622d6f3-5168-1811-ca3f-e0a54cee170e.htm" />
+  <HelpKINode Title="passcount property" Url="html/08e892aa-eb91-37b7-bb01-fa215488b272.htm" />
   <HelpKINode Title="perfect property">
-    <HelpKINode Title="OsuScore.perfect Property " Url="html/5fd81574-530f-79bb-45b1-f0be973d2a8e.htm" />
-    <HelpKINode Title="OsuUserBest.perfect Property " Url="html/cdbb44dd-cde5-bb82-1e8a-0d2b10f37cea.htm" />
-    <HelpKINode Title="OsuUserRecent.perfect Property " Url="html/70c172e5-ac3f-fe5e-12f4-0e725093afe5.htm" />
+    <HelpKINode Title="OsuScore.perfect Property " Url="html/7f67c7df-3c51-00e1-1228-841e79fccb60.htm" />
+    <HelpKINode Title="OsuUserBest.perfect Property " Url="html/dac18e8e-d78d-a206-9c8d-a64770696720.htm" />
+    <HelpKINode Title="OsuUserRecent.perfect Property " Url="html/719ebcbb-f4f0-a521-0380-ca7a8b970f55.htm" />
   </HelpKINode>
   <HelpKINode Title="playcount property">
-    <HelpKINode Title="OsuBeatmap.playcount Property " Url="html/493d3cfb-f6a6-b66f-4fc0-f31c797cbc83.htm" />
-    <HelpKINode Title="OsuUser.playcount Property " Url="html/be16b476-64e4-60ae-7cf8-a8704dac16d1.htm" />
+    <HelpKINode Title="OsuBeatmap.playcount Property " Url="html/1da00778-0a42-20de-592d-6c5adb29a6fd.htm" />
+    <HelpKINode Title="OsuUser.playcount Property " Url="html/0e678bdd-2c8a-ccad-b6ec-105c719d7346.htm" />
   </HelpKINode>
-  <HelpKINode Title="play_mode property" Url="html/3413c70d-93b1-09c7-07e2-f104bd0e3295.htm" />
+  <HelpKINode Title="play_mode property" Url="html/a8932693-6e51-145b-f02b-7581d86e4e27.htm" />
   <HelpKINode Title="pp property">
-    <HelpKINode Title="OsuScore.pp Property " Url="html/b437514e-5020-2f45-9b06-4a340004213b.htm" />
-    <HelpKINode Title="OsuUserBest.pp Property " Url="html/6fcc1eeb-d3ab-12de-0bf0-193faa6d6c58.htm" />
+    <HelpKINode Title="OsuScore.pp Property " Url="html/de817cc4-a22a-c12d-7595-1d9a8e957ac2.htm" />
+    <HelpKINode Title="OsuUserBest.pp Property " Url="html/2588241a-625d-ab4a-efdf-7f05fc0ea824.htm" />
   </HelpKINode>
-  <HelpKINode Title="pp_country_rank property" Url="html/93277f7a-4c4e-198e-a7a4-289f3ed77b58.htm" />
-  <HelpKINode Title="pp_rank property" Url="html/4c6069f4-d9d2-bfd5-89ab-a6446912f24e.htm" />
-  <HelpKINode Title="pp_raw property" Url="html/613bf3bd-6565-a0bd-b0a9-9c662e06df30.htm" />
+  <HelpKINode Title="pp_country_rank property" Url="html/0170d10e-31ac-222c-ca36-682e6e710c2e.htm" />
+  <HelpKINode Title="pp_rank property" Url="html/04ff1706-4509-d0ba-6f5e-347142671dda.htm" />
+  <HelpKINode Title="pp_raw property" Url="html/eb71d2b3-ff4d-452b-2a16-a05403b8748b.htm" />
   <HelpKINode Title="rank property">
-    <HelpKINode Title="OsuScore.rank Property " Url="html/130f0423-5535-0855-9a17-b01ee0f7f93d.htm" />
-    <HelpKINode Title="OsuUserBest.rank Property " Url="html/b0ebd2fd-f7ab-cf62-f446-c6a59d40ba36.htm" />
-    <HelpKINode Title="OsuUserRecent.rank Property " Url="html/84b9d104-e7dd-0f4e-b665-8891b8f5ff00.htm" />
+    <HelpKINode Title="OsuScore.rank Property " Url="html/675fe54d-a091-1bff-8efe-0d24972e2c45.htm" />
+    <HelpKINode Title="OsuUserBest.rank Property " Url="html/dcbb05a3-5e4d-df19-959f-18cd4078e81f.htm" />
+    <HelpKINode Title="OsuUserRecent.rank Property " Url="html/52368e2c-9022-4787-57aa-dbf8a20617d9.htm" />
   </HelpKINode>
-  <HelpKINode Title="ranked_score property" Url="html/8dc9e9ba-5ccc-7549-a347-498995559466.htm" />
-  <HelpKINode Title="Replay method" Url="html/de1155be-c6eb-4c60-447d-f01253a923cf.htm" />
-  <HelpKINode Title="returnByte enumeration member" Url="html/4c014775-df24-d666-66bc-cd7c9b9db8cf.htm" />
+  <HelpKINode Title="ranked_score property" Url="html/8d43a793-d9b7-ebc7-ed52-618878c177d6.htm" />
+  <HelpKINode Title="Replay method" Url="html/b39d2878-1ba4-4fba-0a50-e5f019463c17.htm" />
+  <HelpKINode Title="returnByte enumeration member" Url="html/10017b7d-673e-2b7d-4029-e2b4adbfc922.htm" />
   <HelpKINode Title="s field" Url="html/8fab633a-6259-caf0-fb7d-b03107469ab0.htm" />
   <HelpKINode Title="Score method" Url="html/d7df2755-6c55-b0bd-ad4c-001ef7244299.htm" />
   <HelpKINode Title="score property">
-    <HelpKINode Title="OsuScore.score Property " Url="html/a27db918-4dc2-0e3c-1229-cc4b149a2521.htm" />
-    <HelpKINode Title="OsuUserBest.score Property " Url="html/a6752716-a1ee-5f56-5a5c-37769e93883b.htm" />
-    <HelpKINode Title="OsuUserRecent.score Property " Url="html/d8e75ff5-e21a-a1a7-b564-b4b44042adb5.htm" />
+    <HelpKINode Title="OsuScore.score Property " Url="html/a40d26e1-bbde-d36b-0628-58f12e28533a.htm" />
+    <HelpKINode Title="OsuUserBest.score Property " Url="html/171cef80-5ebc-f479-ca32-3b417557b847.htm" />
+    <HelpKINode Title="OsuUserRecent.score Property " Url="html/83f4b57e-4d57-cfec-ff27-554b74ea7413.htm" />
   </HelpKINode>
-  <HelpKINode Title="scores property" Url="html/7ea94d37-eaae-0cd2-0d9c-179461432d92.htm" />
-  <HelpKINode Title="score_id property" Url="html/ea722af5-7d52-0baa-360c-28fd5c8af1d0.htm" />
-  <HelpKINode Title="scoring_type property" Url="html/0034a5a5-5991-6c9e-f9a2-cd9050c3841d.htm" />
-  <HelpKINode Title="source property" Url="html/8940b987-8571-7f55-2c2e-dfc5ba1b9e56.htm" />
-  <HelpKINode Title="spectateUser property" Url="html/5f0b2515-bdaa-f425-d77a-951ea0efcfc2.htm" />
+  <HelpKINode Title="scores property" Url="html/21b8fdc6-80d5-6a33-2ff5-68d7c84c1031.htm" />
+  <HelpKINode Title="score_id property" Url="html/4d3b7904-9947-f881-b618-0b04cec3b2e7.htm" />
+  <HelpKINode Title="scoring_type property" Url="html/1be296e3-86e3-9179-5def-2851005df662.htm" />
+  <HelpKINode Title="source property" Url="html/b2988e42-25bf-b3d7-1590-825d9f7b93b8.htm" />
+  <HelpKINode Title="spectateUser property" Url="html/1bad2b86-c67e-2e8b-9a3f-9e4708a072d7.htm" />
   <HelpKINode Title="start_time property">
-    <HelpKINode Title="Game.start_time Property " Url="html/ed142245-24c0-de83-dcc7-45688f343ad3.htm" />
-    <HelpKINode Title="Match.start_time Property " Url="html/3db9cd0d-0750-e9b4-7e38-8bedc03b07ac.htm" />
+    <HelpKINode Title="Game.start_time Property " Url="html/6d76a6c9-5f1d-33a7-1264-c1a51b40eb4a.htm" />
+    <HelpKINode Title="Match.start_time Property " Url="html/b74ad381-5a71-0c1d-93ec-795d620b3899.htm" />
   </HelpKINode>
-  <HelpKINode Title="tags property" Url="html/14904960-9467-2b65-226c-d4e6c0d5287b.htm" />
-  <HelpKINode Title="Taiko enumeration member" Url="html/a966d10c-8b34-46fb-75ea-705b3e986f09.htm" />
-  <HelpKINode Title="team_type property" Url="html/a7b269ff-4dec-c39b-742e-07d21b404ced.htm" />
-  <HelpKINode Title="thumbnail property" Url="html/77126579-ba26-387a-8ac6-1c3403107480.htm" />
-  <HelpKINode Title="title property" Url="html/09f614bc-07ac-a54c-345d-6f09f1ede478.htm" />
-  <HelpKINode Title="total_length property" Url="html/4755f226-1ac6-a30e-a637-5fcc332f8036.htm" />
-  <HelpKINode Title="total_score property" Url="html/b1921bd0-b32f-7bb3-9a06-7b820b430a20.htm" />
-  <HelpKINode Title="type enumeration" Url="html/4c014775-df24-d666-66bc-cd7c9b9db8cf.htm" />
+  <HelpKINode Title="tags property" Url="html/8ad4288f-3a38-2ae4-8975-766c4d13d2ed.htm" />
+  <HelpKINode Title="Taiko enumeration member" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
+  <HelpKINode Title="team_type property" Url="html/256d9c1c-7a35-13e4-5935-180356c4a892.htm" />
+  <HelpKINode Title="thumbnail property" Url="html/ba12ed92-1980-094c-361c-3ae8348c5db8.htm" />
+  <HelpKINode Title="title property" Url="html/fd2833dc-fdd3-2de7-c814-185b41c265b9.htm" />
+  <HelpKINode Title="total_length property" Url="html/d23f730e-8cf7-a5e3-34af-cedf74adbe17.htm" />
+  <HelpKINode Title="total_score property" Url="html/90fa92b3-f3a1-068c-0780-849cf4d7a7d9.htm" />
+  <HelpKINode Title="type enumeration" Url="html/10017b7d-673e-2b7d-4029-e2b4adbfc922.htm" />
   <HelpKINode Title="u field" Url="html/ec67a03f-8d0b-6323-79eb-a134a63d5370.htm" />
-  <HelpKINode Title="url property" Url="html/eee999ab-af72-ce28-5d96-771324d2807a.htm" />
+  <HelpKINode Title="url property" Url="html/8efc8e28-bff8-e09e-f86a-7b62c2f6ff95.htm" />
   <HelpKINode Title="User method" Url="html/d3cb3b56-197f-5917-cb16-7e53905d5cf1.htm" />
   <HelpKINode Title="username property">
-    <HelpKINode Title="OsuScore.username Property " Url="html/58996a34-69b5-6e49-803f-18797fc12a5b.htm" />
-    <HelpKINode Title="OsuUser.username Property " Url="html/3fc56045-a9c3-7c1e-9f25-35f5cfeb1f4f.htm" />
+    <HelpKINode Title="OsuScore.username Property " Url="html/0ef577e0-de68-62c3-ffe9-ad04490cf514.htm" />
+    <HelpKINode Title="OsuUser.username Property " Url="html/0d020578-8eb1-c518-94b5-be57715981ab.htm" />
   </HelpKINode>
   <HelpKINode Title="User_Best method" Url="html/399e6202-6101-6027-425e-441b12a388ef.htm" />
   <HelpKINode Title="user_id property">
-    <HelpKINode Title="OsuScore.user_id Property " Url="html/8232dd08-4524-7e0c-a6ae-951e43140705.htm" />
-    <HelpKINode Title="OsuUser.user_id Property " Url="html/3a41bf7b-6af1-1035-f9f1-d35ea1ca051a.htm" />
-    <HelpKINode Title="OsuUserBest.user_id Property " Url="html/9dc57b47-a85b-6414-15e9-c3b9882b2653.htm" />
-    <HelpKINode Title="OsuUserRecent.user_id Property " Url="html/3f973d17-4ac2-1a05-a630-8a0beceb1f75.htm" />
+    <HelpKINode Title="OsuScore.user_id Property " Url="html/35f14b78-29f1-3ed1-1088-1ed87f934fa2.htm" />
+    <HelpKINode Title="OsuUser.user_id Property " Url="html/cd9d4573-1436-a9f1-de19-6ca16864f98b.htm" />
+    <HelpKINode Title="OsuUserBest.user_id Property " Url="html/e7814ef5-71d9-77b8-a519-eeb2cbc155e6.htm" />
+    <HelpKINode Title="OsuUserRecent.user_id Property " Url="html/51415f1a-e269-7674-1356-8cc816d3a1b1.htm" />
   </HelpKINode>
   <HelpKINode Title="User_Recent method" Url="html/2fb7f31c-57a5-a98f-f25d-205a31087f94.htm" />
-  <HelpKINode Title="version property" Url="html/289293d1-3898-2891-d1f2-bd03c77c34d6.htm" />
-  <HelpKINode Title="writeByte method" Url="html/210f3d39-ef49-2200-1852-e0f3ac3fcadc.htm" />
-  <HelpKINode Title="writeDate method" Url="html/198fa9a5-2095-c6ae-be84-3f850848d230.htm" />
-  <HelpKINode Title="writeInteger method" Url="html/c6f33194-6f18-25f4-7b89-ac85b0779984.htm" />
-  <HelpKINode Title="writeShort method" Url="html/88f127a9-2e1e-074c-bcfc-6435d389ba41.htm" />
-  <HelpKINode Title="writeString method" Url="html/d1eb9863-6ffe-6146-bca2-14f95c67b514.htm" />
+  <HelpKINode Title="version property" Url="html/d142f2a4-3e83-fe6a-f92a-27a9af93744f.htm" />
+  <HelpKINode Title="writeByte method" Url="html/c1aaaf75-79ab-f8d0-8048-26c0b6bd982a.htm" />
+  <HelpKINode Title="writeDate method" Url="html/e6b23631-5ba8-e308-1110-47eca2440ca1.htm" />
+  <HelpKINode Title="writeInteger method" Url="html/d59c7f4c-c947-4868-652e-13d854ffda14.htm" />
+  <HelpKINode Title="writeShort method" Url="html/07855c74-3281-d0ee-358d-6eea8fb845ff.htm" />
+  <HelpKINode Title="writeString method" Url="html/092f242b-858b-ca0d-ee48-3cf20b532728.htm" />
 </HelpKI>

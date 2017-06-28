@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryHandler.cs" />
+    <Compile Include="Util\BinaryHandler.cs" />
     <Compile Include="CSharpOsu.cs" />
-    <Compile Include="Enum.cs" />
-    <Compile Include="OsuBeatmap.cs" />
-    <Compile Include="OsuMatch.cs" />
-    <Compile Include="OsuReplay.cs" />
-    <Compile Include="OsuScore.cs" />
-    <Compile Include="OsuUserBest.cs" />
-    <Compile Include="OsuUserRecent.cs" />
+    <Compile Include="Util\Enum.cs" />
+    <Compile Include="Module\OsuBeatmap.cs" />
+    <Compile Include="Module\OsuMatch.cs" />
+    <Compile Include="Module\OsuReplay.cs" />
+    <Compile Include="Module\OsuScore.cs" />
+    <Compile Include="Module\OsuUserBest.cs" />
+    <Compile Include="Module\OsuUserRecent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OsuUser.cs" />
+    <Compile Include="Module\OsuUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
