@@ -1,4 +1,4 @@
-<a href=""><img src="https://www.dropbox.com/s/gituqfcsj9ugnzg/Favicon.gif?dl=1" align="left" height="190" width="190" ></a>
+<a href=""><img src="https://www.dropbox.com/s/gituqfcsj9ugnzg/Favicon.gif?dl=1" align="left" height="195" width="195" ></a>
 # CSharpOsu [![Github All Releases](https://img.shields.io/github/downloads/Xferno2/CSharpOsu/total.svg)]()
 C# library for [osu!api](https://github.com/ppy/osu-api/wiki)
 using [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) project.
