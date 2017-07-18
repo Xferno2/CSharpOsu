@@ -53,21 +53,11 @@
             <param name="input">Decoded MD5 string.</param>
             <returns></returns>
         </member>
-        <member name="T:CSharpOsu.Util.Enum.mode">
-            <summary>
-            A bunch of enums.
-            </summary>
-        </member>
         <member name="M:CSharpOsu.OsuClient.#ctor(System.String)">
             <summary>
             Osu API Key
             </summary>
             <param name="key">API Key</param>
-        </member>
-        <member name="F:CSharpOsu.OsuClient.osuApiUrl">
-            <summary>
-            A bunch of strings.
-            </summary>
         </member>
         <member name="M:CSharpOsu.OsuClient.GetUrl(System.String)">
             <summary>
@@ -144,7 +134,7 @@
             <param name="_u">The user that has played the beatmap.</param>
             <returns>Fetch replay data.</returns>
         </member>
-        <member name="M:CSharpOsu.OsuClient.GetReplay(CSharpOsu.Util.Enum.mode,System.Int32,System.String,CSharpOsu.Util.Enum.type,System.Int32,System.Int32)">
+        <member name="M:CSharpOsu.OsuClient.GetReplay(CSharpOsu.Util.Enum.mode,System.String,System.Int32,System.Int32,System.Int32)">
             <summary>
             Get all the bytes to create a .osr file.
             </summary>
@@ -153,7 +143,7 @@
             <param name="_u">The user that has played the beatmap.</param>
             <param name="t">Change the function to the one that returns bytes.</param>
             <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
-            <param name="_count">On a single map there can be multiple scores. This is a way to get a single score.</param>
+            <param name="_count">This will specify which score to select.</param>
             <returns>.osr file bytes.</returns>
         </member>
         <member name="P:CSharpOsu.Module.OsuUserBest.accuracy">

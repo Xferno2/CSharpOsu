@@ -7,16 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using CSharpOsu.Util.BinaryHandler;
 using CSharpOsu.Util.Enum;
+using CSharpOsu.Util.Strings;
 using CSharpOsu.Module;
 using System.IO;
 
 
 [assembly: CLSCompliant(true)]
-namespace CSharpOsu
+namespace CSharpOsu 
 {
     public class OsuClient
     {
-        public string Key { get; internal set; }
+        Strings str = new Strings();
 
         /// <summary>
         /// Osu API Key
@@ -24,42 +25,9 @@ namespace CSharpOsu
         /// <param name="key">API Key</param>
         public OsuClient(string key)
         {
-            Key = key;
+            str.Key = key;
         }
         
-
-        /// <summary>
-        /// A bunch of strings.
-        /// </summary>
-        string osuApiUrl = "https://osu.ppy.sh/api/";
-        string osuDowload = "https://osu.ppy.sh/d/";
-        string Bloodcat = "https://bloodcat.com/osu/s/";
-        string osuDirect = "osu://s/";
-
-        string osuBeatmap = "get_beatmaps?";
-        string osuScores = "get_scores?";
-        string osuUser = "get_user?";
-        string osuUserBest = "get_user_best?";
-        string osuUserRecent = "get_user_recent?";
-        string osuMatch = "get_match?";
-        string osuReplay = "get_replay?";
-
-        string k = "k=";
-        string s = "s=";
-        string b = "b=";
-        string u = "u=";
-        string m = "m=";
-        string mp = "mp=";
-        string ad = "&";
-
-        string Beatmap() { return osuApiUrl + osuBeatmap + k + Key; }
-        string User(string id) { return osuApiUrl + osuUser + k + Key + ad + u + id; }
-        string Score(int beatmap) { return osuApiUrl + osuScores + k + Key + ad + b.ToString() + beatmap; }
-        string User_Best(string user) { return osuApiUrl + osuUserBest + k + Key + ad + u + user; }
-        string User_Recent(string user) { return osuApiUrl + osuUserRecent + k + Key + ad + u + user; }
-        string Match(int match) { return osuApiUrl + osuMatch + k + Key + ad + mp + match; }
-        string Replay(mode mode, int beatmap, string user) { return osuApiUrl + osuReplay + k + Key + ad + m + mode + ad + b + beatmap + ad + u + user; }
-
         /// <summary>
         /// Get JSON to be pharsed.
         /// </summary>
@@ -83,7 +51,7 @@ namespace CSharpOsu
         public OsuBeatmap[] GetBeatmap(int? _id = null, bool _isSet = true, string _since = null, string _u = null, mode? _m = null, conv? _a = null, string _h = null, int? _limit = null)
         {
             OsuBeatmap[] obj;
-            string beatmap = Beatmap();
+            string beatmap = str.Beatmap();
             if (_since != null)
             {
                 beatmap = beatmap + "&since=" + _since;
@@ -104,7 +72,7 @@ namespace CSharpOsu
                 beatmap = beatmap + "&limit=" + _limit;
             } else if (_id != null)
             {
-                beatmap = (_isSet) ? beatmap + ad + s + _id : beatmap + ad + b + _id;
+                beatmap = (_isSet) ? beatmap + "&s=" + _id : beatmap + "&b=" + _id;
             }
 
             string html = GetUrl(beatmap);
@@ -113,14 +81,19 @@ namespace CSharpOsu
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].thumbnail = "https://b.ppy.sh/thumb/" + obj[i].beatmapset_id + "l.jpg";
-                if (_isSet)
-                { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "NULL"; }
-                else
+                if (_id == null)
                 { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
-                obj[i].download = osuDowload + obj[i].beatmapset_id;
-                obj[i].download_no_video = osuDowload + obj[i].beatmapset_id + "n";
-                obj[i].osu_direct = osuDirect + obj[i].beatmapset_id;
-                obj[i].bloodcat = Bloodcat + obj[i].beatmapset_id;
+                else
+                {
+                    if (_isSet)
+                    { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "NULL"; }
+                    else
+                    { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
+                }
+                obj[i].download = str.osuDowload + obj[i].beatmapset_id;
+                obj[i].download_no_video = str.osuDowload + obj[i].beatmapset_id + "n";
+                obj[i].osu_direct = str.osuDirect + obj[i].beatmapset_id;
+                obj[i].bloodcat = str.Bloodcat + obj[i].beatmapset_id;
                 switch (obj[i].approved)
                 {
                     case "-2":
@@ -159,7 +132,7 @@ namespace CSharpOsu
         /// <returns>Fetch User.</returns>
         public OsuUser[] GetUser(string id, mode? _m = null, int? _event_days = null)
         {
-            string user = User(id);
+            string user = str.User(id);
             if (_m!= null)
             {
                 user = user + "&m=" + _m;
@@ -198,7 +171,7 @@ namespace CSharpOsu
         /// <returns>Fetch Scores.</returns>
         public OsuScore[] GetScore(int _b, string _u = null, mode? _m = null, int? _mods = null, int? _limit = null)
         {
-            string score = Score(_b);
+            string score = str.Score(_b);
             if (_u != null)
             {
                 score = score + "&u=" + _u;
@@ -228,7 +201,7 @@ namespace CSharpOsu
         /// <returns>Fetch user best scores.</returns>
         public OsuUserBest[] GetUserBest(string _u, mode? _m = null, int? _limit = null)
         {
-            string userbest = User_Best(_u);
+            string userbest = str.User_Best(_u);
             if (_m != null)
             {
                userbest = userbest + "&m=" + _m;
@@ -292,7 +265,7 @@ namespace CSharpOsu
         /// <returns>Fetch user recent scores.</returns>
         public OsuUserRecent[] GetUserRecent(string _u, mode? _m = null, int? _limit = null)
         {
-            string userbest = User_Recent(_u);
+            string userbest = str.User_Recent(_u);
             if (_m != null)
             {
                 userbest = userbest + "&m=" + _m;
@@ -355,7 +328,7 @@ namespace CSharpOsu
         public OsuMatch GetMatch(int _mp)
         {
             OsuMatch obj;
-            string match = Match(_mp);
+            string match = str.Match(_mp);
             string html = GetUrl(match);
             obj = JsonConvert.DeserializeObject<OsuMatch>(html);
 
@@ -372,18 +345,16 @@ namespace CSharpOsu
         public OsuReplay GetReplay(mode _m, int _b, string _u)
         {
             OsuReplay obj;
-            string replay = Replay(_m, _b, _u);
+            string replay = str.Replay(_m, _b, _u);
             string html = GetUrl(replay);
             obj = JsonConvert.DeserializeObject<OsuReplay>(html);
             if (obj.error == null)
             {
                 obj.error = "none";
             }
-
-            //Throw 
-            if (obj.error == "Replay not available.")
+            else
             {
-                throw new Exception("Replay data not available.");
+                throw new Exception("Replay data not available: " + obj.error);
             }
 
             return obj;
@@ -399,9 +370,9 @@ namespace CSharpOsu
         /// <param name="_u">The user that has played the beatmap.</param>
         /// <param name="t">Change the function to the one that returns bytes.</param>
         /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
-        /// <param name="_count">On a single map there can be multiple scores. This is a way to get a single score.</param>
+        /// <param name="_count">This will specify which score to select.</param>
         /// <returns>.osr file bytes.</returns>
-        public byte[] GetReplay(mode _m, int _b, string _u, type t, int _mods=0, int _count = 0)
+        public byte[] GetReplay(mode _m, string _u, int _b, int _mods=0, int _count = 0)
         {
             var replay = GetReplay(_m, _b, _u);
             var sc = GetScore(_b,_u,_m ,_mods);

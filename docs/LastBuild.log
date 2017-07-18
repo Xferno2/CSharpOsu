@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="C:\Users\dinu_\Documents\SandCastel\CSharpOsu\csharposu.shfbproj" started="6/28/2017 10:54:18 PM">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="C:\Users\dinu_\Documents\SandCastel\CSharpOsu\csharposu.shfbproj" started="7/18/2017 9:16:32 PM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -28,16 +28,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.0035
+</plugIn>    Last step completed in 00:00:00.1255
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0020
+    Last step completed in 00:00:00.0224
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateRefInfo.proj]
-Build started 6/28/2017 10:54:19 PM.
+Build started 7/18/2017 9:16:34 PM.
 Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -47,7 +47,7 @@ GenerateRefInfo:
   Portions Copyright c 2006-2016, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 4 namespaces, 15 types, and 194 members
+  Wrote information on 5 namespaces, 15 types, and 188 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2017.5.15.0)
   Copyright c 2006-2017, Microsoft Corporation, All Rights Reserved.
@@ -57,13 +57,13 @@ Done Building Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\W
 
 Build succeeded.
 
-Time Elapsed 00:00:02.29
-    Last step completed in 00:00:02.6865
+Time Elapsed 00:00:03.01
+    Last step completed in 00:00:03.8121
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - TransformManifest.proj]
-Build started 6/28/2017 10:54:22 PM.
+Build started 7/18/2017 9:16:37 PM.
 Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2017.5.15.0)
@@ -87,17 +87,17 @@ Done Building Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\W
 
 Build succeeded.
 
-Time Elapsed 00:00:01.16
-    Last step completed in 00:00:01.5335
+Time Elapsed 00:00:01.98
+    Last step completed in 00:00:02.1455
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0070
+    Last step completed in 00:00:00.0220
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0035
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -106,7 +106,7 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 6/28/2017 10:54:24 PM.
+Build started 7/18/2017 9:16:40 PM.
 Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2017.5.15.0)
@@ -117,26 +117,26 @@ Done Building Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\W
 
 Build succeeded.
 
-Time Elapsed 00:00:00.71
+Time Elapsed 00:00:00.32
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.0678
+    Last step completed in 00:00:00.5061
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.0725
+    Last step completed in 00:00:00.6133
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\sandcastle.config
   Updating reference topic configurations.
   No conceptual content.  Removing conceptual content components.
-    Last step completed in 00:00:00.0015
+    Last step completed in 00:00:00.0195
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\MSBuild\14.0\bin\amd64\MSBuild.exe - BuildTopics.proj]
-Build started 6/28/2017 10:54:25 PM.
+Build started 7/18/2017 9:16:41 PM.
 Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2017.5.15.0)
@@ -145,46 +145,7 @@ BuildTopics:
   Loading configuration...
   Processing topics...
 BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.OsuClient] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.ad] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.b] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Beatmap] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Beatmap] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.Bloodcat] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.k] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [P:CSharpOsu.OsuClient.Key] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.m] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Match(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Match(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Match(System.Int32)] Missing &lt;param name=&quot;match&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.mp] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuBeatmap] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuDirect] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuDowload] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuMatch] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuReplay] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuScores] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuUser] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuUserBest] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.osuUserRecent] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;param name=&quot;mode&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;param name=&quot;beatmap&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.s] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Score(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Score(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.Score(System.Int32)] Missing &lt;param name=&quot;beatmap&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.u] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User(System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User(System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User_Best(System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User_Best(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User_Best(System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User_Recent(System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User_Recent(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.OsuClient.User_Recent(System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.OsuClient.str] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.Module.Event] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:CSharpOsu.Module.Event.beatmap_id] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:CSharpOsu.Module.Event.beatmapset_id] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
@@ -330,17 +291,52 @@ BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.Util.BinaryHandler
 BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.BinaryHandler.BinHandler.GetTime(System.DateTime)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.BinaryHandler.BinHandler.MD5Hash(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.Util.Enum.conv] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.Util.Enum.type] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
-  Processed 224 topic(s)
-  187 warning(s)
+BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.Util.Enum.mode] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:CSharpOsu.Util.Strings.Strings] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Beatmap] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Beatmap] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.Bloodcat] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:CSharpOsu.Util.Strings.Strings.Key] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Match(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Match(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Match(System.Int32)] Missing &lt;param name=&quot;match&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuApiUrl] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuBeatmap] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuDirect] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuDowload] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuMatch] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuReplay] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuScores] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuUser] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuUserBest] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:CSharpOsu.Util.Strings.Strings.osuUserRecent] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;param name=&quot;mode&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;param name=&quot;beatmap&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Replay(CSharpOsu.Util.Enum.mode,System.Int32,System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Score(System.Int32)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Score(System.Int32)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.Score(System.Int32)] Missing &lt;param name=&quot;beatmap&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User(System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User(System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User_Best(System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User_Best(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User_Best(System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User_Recent(System.String)] Missing &lt;summary&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User_Recent(System.String)] Missing &lt;returns&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:CSharpOsu.Util.Strings.Strings.User_Recent(System.String)] Missing &lt;param name=&quot;user&quot;/&gt; documentation [C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj]
+  Processed 222 topic(s)
+  183 warning(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 4 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
 Done Building Project &quot;C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\BuildTopics.proj&quot; (default targets).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.61
-    Last step completed in 00:00:04.9961
+Time Elapsed 00:00:09.01
+    Last step completed in 00:00:09.2581
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
@@ -356,11 +352,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\Output\Website
-Processed 224 HTML files
+Processed 222 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\WebKI.xml
 Saving website table of contents to C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\WebTOC.xml
-    Last step completed in 00:00:01.0896
+    Last step completed in 00:00:00.7124
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -442,32 +438,32 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\dinu_\Documents\SandCastel\CSharpOsu\Docs\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00.0966
+    Last step completed in 00:00:00.7475
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0000
+    Last step completed in 00:00:00.0010
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00.4029
+</plugIn>    Last step completed in 00:00:01.2755
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
-Copied 360 files for the website content
-    Last step completed in 00:00:00.6533
+Copied 362 files for the website content
+    Last step completed in 00:00:00.6060
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.3745
+    Last step completed in 00:00:00.6435
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 6/28/2017 10:54:32 PM.  Total time: 00:00:13.6841
+Build completed successfully at 7/18/2017 9:16:54 PM.  Total time: 00:00:22.1938
 
 </buildStep>
 </shfbBuild>
