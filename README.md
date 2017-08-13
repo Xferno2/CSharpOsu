@@ -1,5 +1,5 @@
 
-<a href=""><img src="https://www.dropbox.com/s/gituqfcsj9ugnzg/Favicon.gif?dl=1" align="left" height="100" width="100" ></a>
+<a href=""><img src="https://dl.dropboxusercontent.com/s/gituqfcsj9ugnzg/Favicon.gif" align="left" height="100" width="100" ></a>
 # CSharpOsu [![NuGet](https://img.shields.io/nuget/dt/CSharpOSU.svg)]()
 C# library for [osu!api](https://github.com/ppy/osu-api/wiki)
 using [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json) project.
