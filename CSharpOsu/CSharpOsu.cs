@@ -19,6 +19,8 @@ namespace CSharpOsu
     {
         Strings str = new Strings();
 
+        WebClient client;
+
         /// <summary>
         /// Osu API Key
         /// </summary>
@@ -26,15 +28,15 @@ namespace CSharpOsu
         public OsuClient(string key)
         {
             str.Key = key;
+            client = new WebClient();
         }
-        
+
         /// <summary>
         /// Get JSON to be pharsed.
         /// </summary>
         /// <param name="url">Url of the JSON.</param>
         /// <returns>Fetch JSON.</returns>
-        string GetUrl(string url)
-        { return new WebClient().DownloadString(url); }
+        string GetUrl(string url) => client.DownloadString(url);
 
         /// <summary>
         /// Get information about beatmaps.
