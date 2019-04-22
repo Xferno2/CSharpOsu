@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOsu", "CSharpOsu\CSharpOsu.csproj", "{3108AE4A-DE35-40AE-A449-1EFB9719367D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpOsu", "CSharpOsu\CSharpOsu.csproj", "{3108AE4A-DE35-40AE-A449-1EFB9719367D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Osu-Replay-Compiler", "Examples\Osu-Replay-Compiler\Osu-Replay-Compiler\Example.Osu-Replay-Compiler.csproj", "{FAC3FB6E-FAE8-42D1-B74E-6C7248A6F208}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{3108AE4A-DE35-40AE-A449-1EFB9719367D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3108AE4A-DE35-40AE-A449-1EFB9719367D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3108AE4A-DE35-40AE-A449-1EFB9719367D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC3FB6E-FAE8-42D1-B74E-6C7248A6F208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC3FB6E-FAE8-42D1-B74E-6C7248A6F208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC3FB6E-FAE8-42D1-B74E-6C7248A6F208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC3FB6E-FAE8-42D1-B74E-6C7248A6F208}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {791F4123-5722-4219-9EF1-7C8E2735582D}
 	EndGlobalSection
 EndGlobal
