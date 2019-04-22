@@ -35,7 +35,7 @@ namespace CSharpOsu.Util.Converters
         {
             ulong flag = 1;
             var mods = new List<Mods>();
-            foreach (var value in Enum.GetValues(flags.GetType()).Cast<Mods>())
+            foreach (var value in System.Enum.GetValues(flags.GetType()).Cast<Mods>())
             {
                 ulong bits = Convert.ToUInt64(value);
                 while (flag < bits)
