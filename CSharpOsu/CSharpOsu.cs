@@ -26,10 +26,14 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="key">API Key</param>
         /// <param name="_throwIfNull"> If the returned objects is null then throw error. By default is set on false.</param>
-        public OsuClient(string key, bool _throwIfNull= false)
+        public OsuClient(string key,WebClient? webClient= null, bool _throwIfNull= false)
         {
             str.Key = key;
-            utl = new Utility(client, _throwIfNull);
+            if (webClient == null)
+            {
+                utl = new Utility(client, _throwIfNull);
+            }
+            else { utl = new Utility(webClient, _throwIfNull); }
         }
 
         /// <summary>

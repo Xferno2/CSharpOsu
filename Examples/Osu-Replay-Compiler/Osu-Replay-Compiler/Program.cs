@@ -14,7 +14,9 @@ namespace Osu_Replay_Compiler
         public static void Main(string[] args)
         {
             string osukey = "";
-            try {osukey = File.ReadAllText(@"Osu.txt"); }
+            try {
+                osukey = File.ReadAllText(@"Osu.txt");
+            }
             catch { Console.WriteLine("API File not found!"); }
 
             if (osukey == "")
