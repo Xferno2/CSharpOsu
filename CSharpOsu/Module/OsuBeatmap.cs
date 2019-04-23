@@ -55,7 +55,6 @@ namespace CSharpOsu.Module
         public string download { get; set; }
         public string download_no_video { get; set; }
         public string osu_direct { get; set; }
-        public string bloodcat { get; set; }
         public string error { get; set; }
     }
 }
