@@ -63,5 +63,4 @@ namespace CSharpOsu.Util.Converters
             return mods.ToArray();
         }
     }
-
 }

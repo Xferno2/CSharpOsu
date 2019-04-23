@@ -26,6 +26,7 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="key">API Key</param>
         /// <param name="_throwIfNull"> If the returned objects is null then throw error. By default is set on false.</param>
+        /// <param name="webClient">Specify a WebClient to use. Default null, will use internal WebClient.</param>
         public OsuClient(string key,WebClient? webClient= null, bool _throwIfNull= false)
         {
             str.Key = key;
@@ -355,21 +356,17 @@ namespace CSharpOsu
             // Content
             binWriter.Write(content);                                            // Write replay content.
 
-
             // Final
             binWriter.Write(Convert.ToInt64(score.score_id));                    // Write score id.
             binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);   // Write null byte.
 
-
             binReader.BaseStream.Position = 0;
             int streamLenght = (int)binReader.BaseStream.Length;
-
 
             // [WARNING!]
             // The Get Replay Data from osu!api dosen't have a parameter to retrieve a certain replay.
             // It is possible that the movement of the cursor to be wrong because of that.
             // There is no way to fix it until such parameter is added.
-
             return binReader.ReadBytes(streamLenght);
         }
 

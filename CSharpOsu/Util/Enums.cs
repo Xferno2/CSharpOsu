@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpOsu.Util.Enums
 {
-    public enum mode { osu, Taiko, CtB, osuMania };
+    public enum mode { osu, Taiko, CtB, osuMania }
     public enum conv { notIncluded, Included }
 
     [Flags]

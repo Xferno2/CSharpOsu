@@ -27,7 +27,7 @@ namespace CSharpOsu.Module
         [JsonProperty(PropertyName = "diff_size")]
         public float CS { get; set; }
         [JsonProperty(PropertyName = "diff_overall")]
-        public float OD { get;set; }
+        public float OD { get; set; }
         [JsonProperty(PropertyName = "diff_approach")]
         public float AR { get; set; }
         [JsonProperty(PropertyName = "diff_drain")]
@@ -56,6 +56,6 @@ namespace CSharpOsu.Module
         public string download_no_video { get; set; }
         public string osu_direct { get; set; }
         public string bloodcat { get; set; }
-        public string error { get; set ; }
+        public string error { get; set; }
     }
 }

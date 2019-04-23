@@ -10,7 +10,6 @@ namespace Osu_Replay_Compiler
 {
     class Program
     {
-
         public static void Main(string[] args)
         {
             string osukey = "";
@@ -67,7 +66,6 @@ namespace Osu_Replay_Compiler
                 {
                     mods.Add((Mods)Enum.Parse(typeof(Mods),mod));
                 }
-
             }
 
             Console.WriteLine("[WARNING! If the file already exist it will be overwritten.]");
@@ -77,7 +75,6 @@ namespace Osu_Replay_Compiler
             File.WriteAllBytes(@"" + y + ".osr", Osu.GetReplay(_m, _u,_b,Osu.modsCalculator(mods)));
 
             openreplay(y);
-            
         }
 
         public static void openreplay(string y)
@@ -97,7 +94,6 @@ namespace Osu_Replay_Compiler
                 openreplay(y);
             }
         }
-
     }
 }
 

@@ -12,7 +12,7 @@ namespace CSharpOsu.Module
         public long beatmap_id { get; set; }
         public long beatmapset_id { get; set; }
         public DateTime date { get; set; }
-        public string epicfactor { get; set; }
+        public short epicfactor { get; set; }
     }
 
     public class OsuUser : Model
