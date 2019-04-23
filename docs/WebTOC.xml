@@ -1,32 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="bd69dff8-ebc3-45eb-8fe6-a4ea45ab29db" Title="CSharpOsu Namespaces" Url="html/98fde112-1d6a-b4b6-25a9-ac725815b587.htm">
-    <HelpTOCNode Id="75c9dd36-e607-4e5a-a3f6-1790f11fac44" Title="CSharpOsu" Url="html/f4cf982e-c269-500e-efae-8e6ac9e38e0a.htm">
-      <HelpTOCNode Id="eee05b80-9e69-4a9a-a2b1-f9ddb41356f2" Title="OsuClient Class" Url="html/e6d08d5c-642d-22ae-3af5-93e87f001302.htm">
-        <HelpTOCNode Title="OsuClient Constructor " Url="html/f24c3780-1daa-e532-2e95-1cd48a618174.htm" />
-        <HelpTOCNode Id="649a9b45-8ff2-465f-aa48-7e53bf19dcaf" Title="OsuClient Methods" Url="html/e028eacc-62b2-d7f6-3f48-039bba353904.htm">
-          <HelpTOCNode Title="GetBeatmap Method " Url="html/48af0d36-ef7e-69c9-5666-dbfdf18edd0c.htm" />
+  <HelpTOCNode Title="Introduction(WIP)" Url="html/introduction.htm" />
+  <HelpTOCNode Id="51228808-af28-42d1-ac60-b68413a19a14" Title="Documentation" Url="html/8e69f29b-0c54-b5fb-69b3-f158059d8aaa.htm">
+    <HelpTOCNode Id="a1579b79-2177-4233-bc97-8e1f318a4a91" Title="CSharpOsu" Url="html/f4cf982e-c269-500e-efae-8e6ac9e38e0a.htm">
+      <HelpTOCNode Id="a08df644-a945-40e7-8960-664146ac3045" Title="OsuClient Class" Url="html/e6d08d5c-642d-22ae-3af5-93e87f001302.htm">
+        <HelpTOCNode Title="OsuClient Constructor " Url="html/8d9c9cb9-6ec1-0ad9-b388-220a3289a61b.htm" />
+        <HelpTOCNode Id="4b9eccc6-8d70-4e87-9ef5-35d196b2779f" Title="OsuClient Methods" Url="html/e028eacc-62b2-d7f6-3f48-039bba353904.htm">
+          <HelpTOCNode Title="GetBeatmap Method " Url="html/96da6bb5-239a-89d1-1fbf-0eb158b2b6db.htm" />
           <HelpTOCNode Title="GetMatch Method " Url="html/e8a1e289-9162-e85c-9f39-6e4b76638134.htm" />
-          <HelpTOCNode Id="f92df101-bae0-4a53-893f-5af46c13ee48" Title="GetReplay Method " Url="html/05bdaa7a-fd43-4c69-36d9-5c5e4b99eb73.htm">
-            <HelpTOCNode Title="GetReplay Method (mode, Int32, String)" Url="html/e10f91f8-23e5-e956-5464-921b39f8ad33.htm" />
-            <HelpTOCNode Title="GetReplay Method (mode, String, Int32, Int32, Int32)" Url="html/d8a39460-79fd-637f-934f-e11a65c21c59.htm" />
+          <HelpTOCNode Id="9285bedf-7dcd-4c65-96ba-794bf36c985e" Title="GetReplay Method " Url="html/05bdaa7a-fd43-4c69-36d9-5c5e4b99eb73.htm">
+            <HelpTOCNode Title="GetReplay Method (mode, Int64, String, Nullable(Int64))" Url="html/2cb91361-1af6-f405-9165-e1dd26e74a21.htm" />
+            <HelpTOCNode Title="GetReplay Method (mode, String, Int64, Nullable(Int64))" Url="html/21e515ff-7ec7-5acf-2870-d31fc7dd0d33.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Title="GetScore Method " Url="html/9cef9d57-5a68-89da-cfc6-4432243417aa.htm" />
-          <HelpTOCNode Title="GetUrl Method " Url="html/063271d4-6ad2-d5bc-047e-307ed354ddfd.htm" />
-          <HelpTOCNode Title="GetUser Method " Url="html/9cac7bb6-50ab-866d-5283-4c9ee07c04a1.htm" />
-          <HelpTOCNode Title="GetUserBest Method " Url="html/3d0de19f-1d91-2816-aa9e-29f2722a2712.htm" />
-          <HelpTOCNode Title="GetUserRecent Method " Url="html/6ff9c4ef-b822-0084-1695-dca8b07a42d7.htm" />
-        </HelpTOCNode>
-        <HelpTOCNode Id="cefa0359-646d-4fcb-9170-697f93a92073" Title="OsuClient Fields" Url="html/f7605472-79e5-c390-5b59-6111d39e523f.htm">
-          <HelpTOCNode Title="str Field" Url="html/d7588b47-c504-0b96-2fac-0125bf47c08e.htm" />
+          <HelpTOCNode Title="GetScore Method " Url="html/03f53d27-1804-df16-1811-dd8161d9ca58.htm" />
+          <HelpTOCNode Title="GetUser Method " Url="html/858f87c8-172f-ee3d-1050-ec7e846fa080.htm" />
+          <HelpTOCNode Title="GetUserBest Method " Url="html/c9a09671-4aa1-a92d-1e68-80439314f1b6.htm" />
+          <HelpTOCNode Title="GetUserRecent Method " Url="html/7246f690-3efe-929a-8b1c-0ccfe56f474f.htm" />
+          <HelpTOCNode Title="modsCalculator Method " Url="html/9737d269-0220-aa44-ad72-ecb3e84ae0b5.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="eac70ca3-a3f9-4b5b-b5be-9e740dfebc9f" Title="CSharpOsu.Module" Url="html/eb09fb43-bc31-823c-6bbc-e4d434a09138.htm">
-      <HelpTOCNode Id="6691c22e-16c5-4109-82a5-52eb779db911" Title="Event Class" Url="html/ab8064b6-a168-480b-b8d5-b29a6e4fa934.htm">
+    <HelpTOCNode Id="a10141f5-6ddf-48fd-85ed-7c04d54d91e6" Title="CSharpOsu.Module" Url="html/eb09fb43-bc31-823c-6bbc-e4d434a09138.htm">
+      <HelpTOCNode Id="86878f5b-e877-43a7-a063-0c3e6e2191dc" Title="Event Class" Url="html/ab8064b6-a168-480b-b8d5-b29a6e4fa934.htm">
         <HelpTOCNode Title="Event Constructor " Url="html/7f7e3734-7524-1815-6c19-740c18e57160.htm" />
-        <HelpTOCNode Id="9e0fd2b6-6328-4b50-a36f-a1c5f2efb9f0" Title="Event Properties" Url="html/4b42f4d3-c5ff-a888-aa22-84abfc2c43f7.htm">
+        <HelpTOCNode Id="be12b2f9-dd91-4b1c-8fc6-82a9d0f2ac30" Title="Event Properties" Url="html/4b42f4d3-c5ff-a888-aa22-84abfc2c43f7.htm">
           <HelpTOCNode Title="beatmap_id Property " Url="html/cea6bdde-c8d6-e50a-48ca-4a9da23480c1.htm" />
           <HelpTOCNode Title="beatmapset_id Property " Url="html/b37adc63-bfa6-a001-a2be-e514464e74f5.htm" />
           <HelpTOCNode Title="date Property " Url="html/7d7e1f6f-fd9f-fe1e-58d5-c80b4d403a1a.htm" />
@@ -34,9 +32,9 @@
           <HelpTOCNode Title="epicfactor Property " Url="html/bc0215a0-9829-526f-96ef-890b6dfdee6a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="6fbb3923-b0de-41eb-9d8e-e54d980970bd" Title="Game Class" Url="html/66c3f42a-e84f-452a-3c73-7a553f17e754.htm">
+      <HelpTOCNode Id="85603806-d6e3-496f-9c0a-c2e66385d3f9" Title="Game Class" Url="html/66c3f42a-e84f-452a-3c73-7a553f17e754.htm">
         <HelpTOCNode Title="Game Constructor " Url="html/011b58e1-c751-1e85-8873-a1b71a85de47.htm" />
-        <HelpTOCNode Id="a6321271-1e26-4082-8191-e47b6d9a8c29" Title="Game Properties" Url="html/b0ca4bc7-7a2f-1c23-6a1f-7b207afffcca.htm">
+        <HelpTOCNode Id="bccc2fcd-d1e8-43cc-892a-9df02c05cda7" Title="Game Properties" Url="html/b0ca4bc7-7a2f-1c23-6a1f-7b207afffcca.htm">
           <HelpTOCNode Title="beatmap_id Property " Url="html/5de845a5-52e6-a4b1-bfa7-23311809370f.htm" />
           <HelpTOCNode Title="end_time Property " Url="html/76a474ff-96e5-fb90-b61f-3b4366a16175.htm" />
           <HelpTOCNode Title="game_id Property " Url="html/b1890466-a751-7d2c-0619-a3263f616ffe.htm" />
@@ -49,21 +47,26 @@
           <HelpTOCNode Title="team_type Property " Url="html/256d9c1c-7a35-13e4-5935-180356c4a892.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="481d72fa-dd64-418e-9459-9d5fa787a811" Title="Match Class" Url="html/7724eea4-fdcf-9da8-feb9-0ea26bedae6a.htm">
+      <HelpTOCNode Id="2c5d87eb-2c89-4fdf-8cbc-f6eb98651ac0" Title="Match Class" Url="html/7724eea4-fdcf-9da8-feb9-0ea26bedae6a.htm">
         <HelpTOCNode Title="Match Constructor " Url="html/9376c6f1-f961-0b37-20ab-efd05856398b.htm" />
-        <HelpTOCNode Id="6e790866-9412-4b7c-bf9f-562c7d1b1010" Title="Match Properties" Url="html/1d37cd34-2f82-edc0-672c-4b25ee0f14da.htm">
+        <HelpTOCNode Id="417e59ca-4c74-4c6d-8bdb-6dbe5a11ec7e" Title="Match Properties" Url="html/1d37cd34-2f82-edc0-672c-4b25ee0f14da.htm">
           <HelpTOCNode Title="end_time Property " Url="html/dc514001-7c68-af28-153d-f93679a2d4c7.htm" />
           <HelpTOCNode Title="match_id Property " Url="html/7176f140-e070-999d-3f1e-45f101d6fbda.htm" />
           <HelpTOCNode Title="name Property " Url="html/d086e133-c0fc-15aa-eac3-548cc8ada863.htm" />
           <HelpTOCNode Title="start_time Property " Url="html/b74ad381-5a71-0c1d-93ec-795d620b3899.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2fd24d47-55a9-411c-a077-8dddd3190637" Title="OsuBeatmap Class" Url="html/0688eeb5-f96f-a8af-25f6-fad2e9cce1d0.htm">
+      <HelpTOCNode Id="0f7a903d-a3b5-4d46-ac53-d79cc33bb6ec" Title="Model Interface" Url="html/aa93259c-7c9a-5aaa-6a7a-5ac889f055e1.htm">
+        <HelpTOCNode Id="eea221d7-ba74-4c07-9779-c607798132da" Title="Model Properties" Url="html/93ae7eac-7b49-6911-4dd5-50e7d70e32b5.htm">
+          <HelpTOCNode Title="error Property " Url="html/1189739e-261d-64af-907f-65f5a518151a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="54b54533-9ebc-47dc-9341-2628abf5cb56" Title="OsuBeatmap Class" Url="html/0688eeb5-f96f-a8af-25f6-fad2e9cce1d0.htm">
         <HelpTOCNode Title="OsuBeatmap Constructor " Url="html/ec0d5324-faea-102c-026b-1f2dbc1ced98.htm" />
-        <HelpTOCNode Id="6fc18b3f-2bb5-4d3a-9c03-885b6047cbec" Title="OsuBeatmap Properties" Url="html/7cde2ad4-9720-393b-b57d-1cd7de70d705.htm">
+        <HelpTOCNode Id="ca107cfa-aa2c-4d5e-9151-610fce22569a" Title="OsuBeatmap Properties" Url="html/7cde2ad4-9720-393b-b57d-1cd7de70d705.htm">
           <HelpTOCNode Title="approved Property " Url="html/a0cc9a0c-9fae-83a0-b78e-4119edd8f2a4.htm" />
           <HelpTOCNode Title="approved_date Property " Url="html/1a3cf8bf-3c51-eb26-953a-b029a63ae856.htm" />
-          <HelpTOCNode Title="approved_string Property " Url="html/b989135b-23e8-41e6-072a-1a2a67c4068f.htm" />
+          <HelpTOCNode Title="AR Property " Url="html/22502ff7-4ba8-0560-0446-10eaf41dad10.htm" />
           <HelpTOCNode Title="artist Property " Url="html/6c88f2a1-70ed-710b-1c56-302787675869.htm" />
           <HelpTOCNode Title="beatmap_id Property " Url="html/40823983-0592-59bb-c790-489c46ab6683.htm" />
           <HelpTOCNode Title="beatmap_url Property " Url="html/b4e9f5ed-34c8-7649-d398-66d98bbc32a8.htm" />
@@ -72,50 +75,51 @@
           <HelpTOCNode Title="bloodcat Property " Url="html/899f09a3-6ae0-97bb-c600-96376e05f6af.htm" />
           <HelpTOCNode Title="bpm Property " Url="html/9f7aca55-f030-6eb0-6bdd-2a897c087a96.htm" />
           <HelpTOCNode Title="creator Property " Url="html/34e6dad3-399b-2540-0a15-65c4f20ecd55.htm" />
-          <HelpTOCNode Title="diff_approach Property " Url="html/009e2025-7044-59af-3af3-5b67bb128332.htm" />
-          <HelpTOCNode Title="diff_drain Property " Url="html/f5206cd0-877c-27fd-2dfd-a1b494d201b4.htm" />
-          <HelpTOCNode Title="diff_overall Property " Url="html/aa8d4810-a2bb-0e12-4c87-210f02b8ec2f.htm" />
-          <HelpTOCNode Title="diff_size Property " Url="html/681cd5a5-4ab6-bd42-eaf3-20fc3db508e2.htm" />
-          <HelpTOCNode Title="difficultyrating Property " Url="html/ea1b4f5c-9164-58c0-cbdf-89923f78cd2c.htm" />
+          <HelpTOCNode Title="CS Property " Url="html/af3e6f52-6dd3-ca03-a041-7e6609b88f2e.htm" />
+          <HelpTOCNode Title="difficulty Property " Url="html/7620a833-c879-d877-330e-2d52a2227c88.htm" />
           <HelpTOCNode Title="download Property " Url="html/f22f1425-dcb4-08c7-f0ec-515da0db16df.htm" />
           <HelpTOCNode Title="download_no_video Property " Url="html/90865df8-e100-609f-b0d5-eedf033577f2.htm" />
+          <HelpTOCNode Title="error Property " Url="html/197672d6-f13d-5741-ed21-50392b28caf3.htm" />
           <HelpTOCNode Title="favourite_count Property " Url="html/684dc2b6-0f24-68e8-cfee-fa5dc9222e43.htm" />
-          <HelpTOCNode Title="file_md5 Property " Url="html/01de75a7-0c08-4999-af9e-d6173ef2e052.htm" />
           <HelpTOCNode Title="genre_id Property " Url="html/50167d01-03d8-d091-7301-f9c9b073032f.htm" />
           <HelpTOCNode Title="hit_length Property " Url="html/0cc776d8-31da-f68e-e32f-07479afc76cc.htm" />
+          <HelpTOCNode Title="HP Property " Url="html/bf78b5b4-d404-0c89-65a6-22dea7418957.htm" />
           <HelpTOCNode Title="language_id Property " Url="html/b45fb1d7-53bb-8e27-e145-dfb8a494383f.htm" />
           <HelpTOCNode Title="last_update Property " Url="html/f10245de-ba17-5e95-4da1-616545ed3eee.htm" />
           <HelpTOCNode Title="max_combo Property " Url="html/c25194b5-0975-18ac-ccc6-4088c96a9031.htm" />
+          <HelpTOCNode Title="MD5 Property " Url="html/dcc1a1d0-f9e1-55ca-0cc3-4375cf79db87.htm" />
           <HelpTOCNode Title="mode Property " Url="html/c1d8b86c-a052-d900-90bc-6cfb8c63f5e5.htm" />
+          <HelpTOCNode Title="OD Property " Url="html/8c4a6fae-35fb-b1fb-7990-801c534190b5.htm" />
           <HelpTOCNode Title="osu_direct Property " Url="html/c622d6f3-5168-1811-ca3f-e0a54cee170e.htm" />
           <HelpTOCNode Title="passcount Property " Url="html/08e892aa-eb91-37b7-bb01-fa215488b272.htm" />
           <HelpTOCNode Title="playcount Property " Url="html/1da00778-0a42-20de-592d-6c5adb29a6fd.htm" />
           <HelpTOCNode Title="source Property " Url="html/b2988e42-25bf-b3d7-1590-825d9f7b93b8.htm" />
+          <HelpTOCNode Title="StarRating Property " Url="html/7e916232-5ecd-9145-a74a-e9d3a4f352cb.htm" />
           <HelpTOCNode Title="tags Property " Url="html/8ad4288f-3a38-2ae4-8975-766c4d13d2ed.htm" />
           <HelpTOCNode Title="thumbnail Property " Url="html/ba12ed92-1980-094c-361c-3ae8348c5db8.htm" />
           <HelpTOCNode Title="title Property " Url="html/fd2833dc-fdd3-2de7-c814-185b41c265b9.htm" />
           <HelpTOCNode Title="total_length Property " Url="html/d23f730e-8cf7-a5e3-34af-cedf74adbe17.htm" />
-          <HelpTOCNode Title="version Property " Url="html/d142f2a4-3e83-fe6a-f92a-27a9af93744f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c29421e5-d7dd-4046-824d-7da510693e00" Title="OsuMatch Class" Url="html/0a84eefc-e0fe-b6be-b89b-2ce18ac80ec8.htm">
+      <HelpTOCNode Id="2f2e5062-aadf-4e84-9821-7cb942ed0892" Title="OsuMatch Class" Url="html/0a84eefc-e0fe-b6be-b89b-2ce18ac80ec8.htm">
         <HelpTOCNode Title="OsuMatch Constructor " Url="html/dcd08b1a-3a34-7358-bf9d-d095544b3706.htm" />
-        <HelpTOCNode Id="a7283de5-ae61-4693-acfb-3ddfedc4dab1" Title="OsuMatch Properties" Url="html/ca5cbfa5-d710-3f0b-b104-856a5f9a9398.htm">
+        <HelpTOCNode Id="a8ac5568-b22b-43c8-982e-64b16bba0251" Title="OsuMatch Properties" Url="html/ca5cbfa5-d710-3f0b-b104-856a5f9a9398.htm">
+          <HelpTOCNode Title="error Property " Url="html/4264b650-b56c-6353-6c9e-03b4825a27c7.htm" />
           <HelpTOCNode Title="games Property " Url="html/9800d1f9-ffa2-2e19-06c0-57fb4d171519.htm" />
           <HelpTOCNode Title="match Property " Url="html/886c4335-74df-dc77-7de0-bdde37d35fda.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="771a76c8-4de0-4669-96bf-1a3bb8f564ff" Title="OsuReplay Class" Url="html/59a8dbe1-a0a4-65ab-51a1-313baf1ecd6a.htm">
+      <HelpTOCNode Id="17e837b8-0735-4b0c-a0d2-a84584513a6a" Title="OsuReplay Class" Url="html/59a8dbe1-a0a4-65ab-51a1-313baf1ecd6a.htm">
         <HelpTOCNode Title="OsuReplay Constructor " Url="html/c14f6514-56e6-ea63-a911-f93540adc74a.htm" />
-        <HelpTOCNode Id="040e826d-9a9a-479b-932b-9695ba334b83" Title="OsuReplay Properties" Url="html/ae16a85d-8852-9366-9fcd-48b46cccf73e.htm">
+        <HelpTOCNode Id="163e4957-0424-4f05-817f-983b8231ba33" Title="OsuReplay Properties" Url="html/ae16a85d-8852-9366-9fcd-48b46cccf73e.htm">
           <HelpTOCNode Title="content Property " Url="html/d8757481-3f87-52ca-6148-4d5514add87a.htm" />
           <HelpTOCNode Title="encoding Property " Url="html/188a3a82-25e4-0bd5-6c42-c1d4d802621c.htm" />
           <HelpTOCNode Title="error Property " Url="html/8e40ac07-ec52-4424-22ce-930ce3fe6df6.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="607727c4-631a-4fd1-9ade-1d5d94ad5e62" Title="OsuScore Class" Url="html/050e873b-a322-952e-2c55-f7d071a29a17.htm">
+      <HelpTOCNode Id="5d7dea4e-a2e6-4d6d-8c27-d8b91ead86ad" Title="OsuScore Class" Url="html/050e873b-a322-952e-2c55-f7d071a29a17.htm">
         <HelpTOCNode Title="OsuScore Constructor " Url="html/49bb44b2-8379-008c-3d58-4d0b94eef53f.htm" />
-        <HelpTOCNode Id="98bb666f-5959-4647-8620-46c081418b79" Title="OsuScore Properties" Url="html/d1e255b6-33f9-16bc-d6cc-c8becba4f496.htm">
+        <HelpTOCNode Id="35f25ee5-7b89-440d-89b2-6ba568a52f46" Title="OsuScore Properties" Url="html/d1e255b6-33f9-16bc-d6cc-c8becba4f496.htm">
           <HelpTOCNode Title="count100 Property " Url="html/b4e3b7b7-8a33-35be-84be-8d02523b7687.htm" />
           <HelpTOCNode Title="count300 Property " Url="html/b7123852-aae6-bfc1-7521-b21ed0cc8fb9.htm" />
           <HelpTOCNode Title="count50 Property " Url="html/e59b7af3-1b11-be11-981d-5c252ae7be5f.htm" />
@@ -124,6 +128,7 @@
           <HelpTOCNode Title="countmiss Property " Url="html/abd9e6c2-101f-5163-6274-a1c0d0ccb552.htm" />
           <HelpTOCNode Title="date Property " Url="html/a5e1f604-ab51-f0db-805c-be221614acbd.htm" />
           <HelpTOCNode Title="enabled_mods Property " Url="html/7d96a975-3ab9-7c64-3f68-867036bc8560.htm" />
+          <HelpTOCNode Title="error Property " Url="html/b24c17e4-4ade-4241-fbc9-ae9fb7de45b0.htm" />
           <HelpTOCNode Title="maxcombo Property " Url="html/ad353c14-5383-ed08-3224-ed2fb6ebc532.htm" />
           <HelpTOCNode Title="perfect Property " Url="html/7f67c7df-3c51-00e1-1228-841e79fccb60.htm" />
           <HelpTOCNode Title="pp Property " Url="html/de817cc4-a22a-c12d-7595-1d9a8e957ac2.htm" />
@@ -134,9 +139,9 @@
           <HelpTOCNode Title="username Property " Url="html/0ef577e0-de68-62c3-ffe9-ad04490cf514.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="88f4bd18-c9e7-456c-93b0-e970abfff798" Title="OsuUser Class" Url="html/7e5dab30-2c98-f835-78de-ea949153f42c.htm">
+      <HelpTOCNode Id="3adf2a31-394b-4dde-84f1-ddfd81b9ec45" Title="OsuUser Class" Url="html/7e5dab30-2c98-f835-78de-ea949153f42c.htm">
         <HelpTOCNode Title="OsuUser Constructor " Url="html/3119c9f4-6927-c8be-b853-2b6e5f93fea6.htm" />
-        <HelpTOCNode Id="51d289fd-1079-4918-b001-2eb9a8a778f0" Title="OsuUser Properties" Url="html/07f691a8-f43b-14e2-9789-418bef4b71c9.htm">
+        <HelpTOCNode Id="43cc1e79-dd15-4757-899e-1521a4ff9a80" Title="OsuUser Properties" Url="html/07f691a8-f43b-14e2-9789-418bef4b71c9.htm">
           <HelpTOCNode Title="accuracy Property " Url="html/039d032d-fdaa-dd15-96c4-ddc8ae697d5f.htm" />
           <HelpTOCNode Title="count_rank_a Property " Url="html/4b1fee5a-46e0-d460-8329-22f4d25aa4d1.htm" />
           <HelpTOCNode Title="count_rank_s Property " Url="html/7b35ee17-80f6-3079-9bf4-10795ce16ed0.htm" />
@@ -145,15 +150,12 @@
           <HelpTOCNode Title="count300 Property " Url="html/0212a2fc-ce95-a802-fca9-8a7df73dcb5f.htm" />
           <HelpTOCNode Title="count50 Property " Url="html/58bcebb5-1f47-f6d3-709f-f3e387915de0.htm" />
           <HelpTOCNode Title="country Property " Url="html/324dc3ba-c6bb-271d-cb3d-429bc1276de3.htm" />
+          <HelpTOCNode Title="error Property " Url="html/69c10542-97ea-dad0-10ea-2db7f78d5d44.htm" />
           <HelpTOCNode Title="events Property " Url="html/c8852fd0-3280-e21e-b037-e7b45caf546f.htm" />
           <HelpTOCNode Title="flag Property " Url="html/485d42ec-13b3-7308-db8d-c4b67ee97970.htm" />
           <HelpTOCNode Title="flag_old Property " Url="html/d540f320-1267-dcfd-9dce-575b96d23d88.htm" />
           <HelpTOCNode Title="image Property " Url="html/62728b22-849e-0005-a00e-fadabbeb3e88.htm" />
           <HelpTOCNode Title="level Property " Url="html/370e3cc5-a776-d27e-9018-5711425f6bfd.htm" />
-          <HelpTOCNode Title="osuchan Property " Url="html/07cbc60f-61e3-17e4-4756-bdff821fdfe4.htm" />
-          <HelpTOCNode Title="osuskills Property " Url="html/0b18a68b-e0b5-ccb8-b544-db9c8ce57d1b.htm" />
-          <HelpTOCNode Title="osustats Property " Url="html/8809642b-6597-dd9e-b431-76ff32e04bd1.htm" />
-          <HelpTOCNode Title="osutrack Property " Url="html/bcf37897-5e4f-71ae-d08c-0ea32782053c.htm" />
           <HelpTOCNode Title="playcount Property " Url="html/0e678bdd-2c8a-ccad-b6ec-105c719d7346.htm" />
           <HelpTOCNode Title="pp_country_rank Property " Url="html/0170d10e-31ac-222c-ca36-682e6e710c2e.htm" />
           <HelpTOCNode Title="pp_rank Property " Url="html/04ff1706-4509-d0ba-6f5e-347142671dda.htm" />
@@ -166,9 +168,9 @@
           <HelpTOCNode Title="username Property " Url="html/0d020578-8eb1-c518-94b5-be57715981ab.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="703badb3-a4e8-4f7a-85dd-85b74b0fd558" Title="OsuUserBest Class" Url="html/f1320318-9f5c-1d80-5ef9-7eeae114385d.htm">
+      <HelpTOCNode Id="d60a1c4d-0270-486b-a43b-c770f781c2bb" Title="OsuUserBest Class" Url="html/f1320318-9f5c-1d80-5ef9-7eeae114385d.htm">
         <HelpTOCNode Title="OsuUserBest Constructor " Url="html/1b5ff63f-ed1d-a8f4-8add-0f91b3d2a933.htm" />
-        <HelpTOCNode Id="900aaed7-b732-43e2-94f6-f3c7dde36b91" Title="OsuUserBest Properties" Url="html/a33e8d10-ae51-d6a7-72c2-a7cfa45c9608.htm">
+        <HelpTOCNode Id="ac33063f-4908-4218-b6d9-ae30479afe81" Title="OsuUserBest Properties" Url="html/a33e8d10-ae51-d6a7-72c2-a7cfa45c9608.htm">
           <HelpTOCNode Title="accuracy Property " Url="html/cb76fd49-2e15-0ba8-43c3-09f67c62cfaa.htm" />
           <HelpTOCNode Title="beatmap_id Property " Url="html/940e2da5-6928-a3bc-ac87-b39c94dadb16.htm" />
           <HelpTOCNode Title="count100 Property " Url="html/b1ddc823-6d06-9016-b09d-b2b1388c042a.htm" />
@@ -179,6 +181,7 @@
           <HelpTOCNode Title="countmiss Property " Url="html/9c907bb9-756a-a283-5533-a26a937ed6a1.htm" />
           <HelpTOCNode Title="date Property " Url="html/c3183b80-eae9-2210-4247-46fe36f095fd.htm" />
           <HelpTOCNode Title="enabled_mods Property " Url="html/b9de971b-f96d-2508-bcf1-2986055b6fbb.htm" />
+          <HelpTOCNode Title="error Property " Url="html/b59e4ff0-0672-5a7f-27a1-b148f1b1e33a.htm" />
           <HelpTOCNode Title="maxcombo Property " Url="html/ce58e85b-7590-12f7-4edd-0c89cd945969.htm" />
           <HelpTOCNode Title="perfect Property " Url="html/dac18e8e-d78d-a206-9c8d-a64770696720.htm" />
           <HelpTOCNode Title="pp Property " Url="html/2588241a-625d-ab4a-efdf-7f05fc0ea824.htm" />
@@ -187,9 +190,9 @@
           <HelpTOCNode Title="user_id Property " Url="html/e7814ef5-71d9-77b8-a519-eeb2cbc155e6.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="a18ff5a3-7105-4e92-bfa9-8a4def0dad99" Title="OsuUserRecent Class" Url="html/e9df7179-0c85-1319-7eb3-0c6740710452.htm">
+      <HelpTOCNode Id="0c3bc5ff-f05f-442a-8168-65e121dd21a1" Title="OsuUserRecent Class" Url="html/e9df7179-0c85-1319-7eb3-0c6740710452.htm">
         <HelpTOCNode Title="OsuUserRecent Constructor " Url="html/756bcb21-5ee5-2518-b313-c52566ea6405.htm" />
-        <HelpTOCNode Id="79575246-7e96-4f4f-9e1f-8cab0ff6124f" Title="OsuUserRecent Properties" Url="html/3efe7d46-c58b-5cca-54df-ff038f5c7da1.htm">
+        <HelpTOCNode Id="2401311e-d6db-4e42-8a4f-81a9b239d043" Title="OsuUserRecent Properties" Url="html/3efe7d46-c58b-5cca-54df-ff038f5c7da1.htm">
           <HelpTOCNode Title="accuracy Property " Url="html/c9d05cd2-1d9d-0d14-bef7-a05205fdc567.htm" />
           <HelpTOCNode Title="beatmap_id Property " Url="html/80aced1b-55e3-37d1-9597-4aa1e4fe821a.htm" />
           <HelpTOCNode Title="count100 Property " Url="html/b08ac4b9-8363-84b1-67a0-4efae59c3aae.htm" />
@@ -200,6 +203,7 @@
           <HelpTOCNode Title="countmiss Property " Url="html/c33316da-52cb-385d-a17b-7be4387e7ed1.htm" />
           <HelpTOCNode Title="date Property " Url="html/56cfd8e2-7c03-af9e-1db9-966cf7705b2d.htm" />
           <HelpTOCNode Title="enabled_mods Property " Url="html/ceea4e77-829f-0d25-15da-f389947d8794.htm" />
+          <HelpTOCNode Title="error Property " Url="html/5fab97a2-4bef-bd38-5cac-d471adbcd775.htm" />
           <HelpTOCNode Title="maxcombo Property " Url="html/5a6a779c-3422-8aa3-b811-ea1322e975b1.htm" />
           <HelpTOCNode Title="perfect Property " Url="html/719ebcbb-f4f0-a521-0380-ca7a8b970f55.htm" />
           <HelpTOCNode Title="rank Property " Url="html/52368e2c-9022-4787-57aa-dbf8a20617d9.htm" />
@@ -207,54 +211,119 @@
           <HelpTOCNode Title="user_id Property " Url="html/51415f1a-e269-7674-1356-8cc816d3a1b1.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-    </HelpTOCNode>
-    <HelpTOCNode Id="de25c5ef-c932-4f45-b621-b4af19f2d817" Title="CSharpOsu.Util Namespaces" Url="html/3d7970eb-a011-310e-7079-ee3e21e9d7b3.htm">
-      <HelpTOCNode Id="dd75a71c-0ef2-4d61-9e62-e3202b1e10e0" Title="CSharpOsu.Util.BinaryHandler" Url="html/3a44a954-3c37-ef49-d6e9-c3f25882e7ff.htm">
-        <HelpTOCNode Id="e557b65a-589c-461f-9e56-5e834935fdb6" Title="BinHandler Class" Url="html/593a6f64-b2d6-02fc-2f6b-c552f1aa7822.htm">
-          <HelpTOCNode Title="BinHandler Constructor " Url="html/3be1f548-c15a-cce6-4779-d905833b4aca.htm" />
-          <HelpTOCNode Id="e45ab6c0-56f7-45a2-a686-47c2cc40c611" Title="BinHandler Methods" Url="html/91196e53-0387-6bf7-8b5f-fbc2718cae14.htm">
-            <HelpTOCNode Title="GetTime Method " Url="html/1b5c8aca-d47b-176f-2967-89ab89295e3b.htm" />
-            <HelpTOCNode Title="MD5Hash Method " Url="html/08da0c68-a63c-3beb-24e7-616c391d104c.htm" />
-            <HelpTOCNode Title="writeByte Method " Url="html/c1aaaf75-79ab-f8d0-8048-26c0b6bd982a.htm" />
-            <HelpTOCNode Title="writeDate Method " Url="html/e6b23631-5ba8-e308-1110-47eca2440ca1.htm" />
-            <HelpTOCNode Title="writeInteger Method " Url="html/d59c7f4c-c947-4868-652e-13d854ffda14.htm" />
-            <HelpTOCNode Title="writeShort Method " Url="html/07855c74-3281-d0ee-358d-6eea8fb845ff.htm" />
-            <HelpTOCNode Title="writeString Method " Url="html/092f242b-858b-ca0d-ee48-3cf20b532728.htm" />
-          </HelpTOCNode>
+      <HelpTOCNode Id="fca02a44-4e37-4ce7-b503-7e8fbfe8f15e" Title="Score Class" Url="html/0f889495-a197-c324-09e3-f2eeb173415e.htm">
+        <HelpTOCNode Title="Score Constructor " Url="html/6ab545f4-f5eb-8094-6658-1e2bf36e4247.htm" />
+        <HelpTOCNode Id="8bde55fb-da5e-4d0d-a648-7f336658e7f6" Title="Score Properties" Url="html/0d1aa67e-3ff2-8a7a-3e5b-319ac78bc752.htm">
+          <HelpTOCNode Title="count100 Property " Url="html/e26e3330-404a-3541-819e-0a5c6cf732de.htm" />
+          <HelpTOCNode Title="count300 Property " Url="html/80a8f108-1a5f-ca5d-5d96-6fba03da8c02.htm" />
+          <HelpTOCNode Title="count50 Property " Url="html/bcc7c410-ebf8-d7fa-6fe1-1dd342310495.htm" />
+          <HelpTOCNode Title="countgeki Property " Url="html/7f9c5ab8-91f7-9ba6-8cdd-0848cee5603f.htm" />
+          <HelpTOCNode Title="countkatu Property " Url="html/96ea8260-bd6b-6351-d27b-9ab515583ab3.htm" />
+          <HelpTOCNode Title="countmiss Property " Url="html/2687fd0d-ff45-54f4-4691-62a12dbf6ca0.htm" />
+          <HelpTOCNode Title="maxcombo Property " Url="html/cd663f80-1dc6-04d3-5eae-1b20ef46d6f4.htm" />
+          <HelpTOCNode Title="pass Property " Url="html/edbdf51e-0028-fe3a-9e6a-390c45872809.htm" />
+          <HelpTOCNode Title="perfect Property " Url="html/0e1d80f5-25d3-d933-fd58-9c0fa64cd0ec.htm" />
+          <HelpTOCNode Title="rank Property " Url="html/b22d08d1-baef-345b-f043-b87d96d22dd0.htm" />
+          <HelpTOCNode Title="score Property " Url="html/49f8ce92-a1dd-5cf6-c646-c655ad0346f2.htm" />
+          <HelpTOCNode Title="slot Property " Url="html/22c2bf1b-e33b-dfec-7a7a-c56d3031241d.htm" />
+          <HelpTOCNode Title="team Property " Url="html/f9a16a45-d490-c5cb-e3c4-990f656213d1.htm" />
+          <HelpTOCNode Title="user_id Property " Url="html/826b0229-4c91-6c89-d018-df298c6882c2.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="520eac33-11e2-459c-ac54-228d458a47b4" Title="CSharpOsu.Util.Enum" Url="html/737cf1bb-96ec-63d7-2e2a-e3494fa6c973.htm">
-        <HelpTOCNode Title="conv Enumeration" Url="html/e6bd6d38-5eef-4251-f07e-26d927854053.htm" />
-        <HelpTOCNode Title="mode Enumeration" Url="html/dd2f1edc-d8af-d434-331b-15cb951c39c4.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cbb88727-baad-43ce-a958-525d7e63974e" Title="CSharpOsu.Util" Url="html/8f644080-e58c-c8ad-bef6-cd7c66e4d0ea.htm">
+      <HelpTOCNode Id="8234528c-d69a-4987-acef-319a63d7d8c4" Title="Utility Class" Url="html/22c50749-f121-6672-ec33-d90a8be43d85.htm">
+        <HelpTOCNode Title="Utility Constructor " Url="html/5c4f5a44-10da-5fd1-ffa6-b2e24570412a.htm" />
+        <HelpTOCNode Id="8b57f4c8-f44e-45f6-a808-33f15b172bee" Title="Utility Methods" Url="html/9148ff12-c054-8b67-a988-dae69b96b5dc.htm">
+          <HelpTOCNode Title="accuracyCalculator Method " Url="html/ad55f0dd-0026-e9c7-d8f1-1534769d7537.htm" />
+          <HelpTOCNode Id="a4810b30-62fe-4fd1-829f-2a289ada222e" Title="ErrorHandler Method " Url="html/41d007de-2006-f48e-2351-0475d4305152.htm">
+            <HelpTOCNode Title="ErrorHandler Method (Model)" Url="html/182ef957-908a-d456-ddc8-a93f5015e5a2.htm" />
+            <HelpTOCNode Title="ErrorHandler Method (Model[])" Url="html/96638815-020e-d745-5e0d-6748b85d4bb9.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetUrl Method " Url="html/1121b22f-da3a-3ce9-f5ee-1f8e08c4fbbf.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="aece005b-04f5-455f-a568-45291e7e8d6a" Title="Utility Fields" Url="html/5c76ebcc-b36b-ce5e-736b-406b647981c6.htm">
+          <HelpTOCNode Title="throwIfNull Field" Url="html/e30b8c62-47a5-fd84-8736-e9a23a390365.htm" />
+        </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="be073fbf-83ed-4704-916a-c55e225bb3fb" Title="CSharpOsu.Util.Strings" Url="html/b8305d66-0b91-8a2d-175c-13057a281a2a.htm">
-        <HelpTOCNode Id="3fd24a0a-b757-41b8-aa6a-64ff86b4a9ed" Title="Strings Class" Url="html/c644cdfa-572e-beda-b1bc-ecddcead3c98.htm">
-          <HelpTOCNode Title="Strings Constructor " Url="html/4daf9623-afe5-72df-c8c3-d1ccbc7be79c.htm" />
-          <HelpTOCNode Id="b90ee177-0ed9-4f08-b443-40c3aef7c519" Title="Strings Properties" Url="html/23d51bda-59ca-0528-5673-b745be96e7f5.htm">
-            <HelpTOCNode Title="Key Property " Url="html/00540a1f-b43b-849f-613d-9a402db6b6fe.htm" />
-          </HelpTOCNode>
-          <HelpTOCNode Id="4c861005-dccb-458d-a922-25132d88671f" Title="Strings Methods" Url="html/4400f6de-0cc5-c829-7566-bacdb3b07cfb.htm">
-            <HelpTOCNode Title="Beatmap Method " Url="html/658a6483-4dac-4db7-4fa1-4606d4286c59.htm" />
-            <HelpTOCNode Title="Match Method " Url="html/690718e7-1ec6-3d05-cf54-7983c208ba30.htm" />
-            <HelpTOCNode Title="Replay Method " Url="html/a7481581-bcc6-c9a2-84b7-02731139f721.htm" />
-            <HelpTOCNode Title="Score Method " Url="html/fc2eab56-d3a4-c8e9-0aae-cbe12fd3ee8a.htm" />
-            <HelpTOCNode Title="User Method " Url="html/783ec537-4e1c-87c1-fe4e-dbd349ea2229.htm" />
-            <HelpTOCNode Title="User_Best Method " Url="html/d97c4bed-8909-abe8-e394-d880d0772377.htm" />
-            <HelpTOCNode Title="User_Recent Method " Url="html/439d4e21-9e43-26ea-45f4-0a798a764335.htm" />
-          </HelpTOCNode>
-          <HelpTOCNode Id="9edb81bb-9695-4d1d-82e8-b4a9e33e2a0b" Title="Strings Fields" Url="html/b9801dc4-e75a-4326-743a-733bac9c28f2.htm">
-            <HelpTOCNode Title="Bloodcat Field" Url="html/814fb345-c823-b89b-b0d2-92f82583c4f2.htm" />
-            <HelpTOCNode Title="osuApiUrl Field" Url="html/4bbfe226-adf3-92e8-a8bc-4d4cc074e412.htm" />
-            <HelpTOCNode Title="osuBeatmap Field" Url="html/44843d11-4dac-7d52-6437-e3786c8ea116.htm" />
-            <HelpTOCNode Title="osuDirect Field" Url="html/68a18509-850c-1592-1970-f9cd5364ab81.htm" />
-            <HelpTOCNode Title="osuDowload Field" Url="html/e0f51417-b059-3859-5c44-1788eb62e635.htm" />
-            <HelpTOCNode Title="osuMatch Field" Url="html/c5137dbf-9b0d-c986-995d-a5e52238a06b.htm" />
-            <HelpTOCNode Title="osuReplay Field" Url="html/c20832f2-3a95-70c4-5a41-aa089128c87a.htm" />
-            <HelpTOCNode Title="osuScores Field" Url="html/6e5f9dd8-fce8-a7ae-db88-eccc3a8c3d0b.htm" />
-            <HelpTOCNode Title="osuUser Field" Url="html/af78f2c8-7bec-cb0e-cba2-1bf256d72614.htm" />
-            <HelpTOCNode Title="osuUserBest Field" Url="html/d6307973-e05a-51ba-9941-0b5f96ca86a0.htm" />
-            <HelpTOCNode Title="osuUserRecent Field" Url="html/bc81e4e8-f4fa-1f6d-6a95-914614726b1a.htm" />
-          </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c48dd5e8-8433-44db-830c-a71df19b9b35" Title="CSharpOsu.Util.BinaryHandler" Url="html/3a44a954-3c37-ef49-d6e9-c3f25882e7ff.htm">
+      <HelpTOCNode Id="181a53ed-4fb3-4407-b967-820e3b98f37a" Title="BinHandler Class" Url="html/593a6f64-b2d6-02fc-2f6b-c552f1aa7822.htm">
+        <HelpTOCNode Title="BinHandler Constructor " Url="html/f4356d19-a566-dc5f-8110-5da4e0f8f2a4.htm" />
+        <HelpTOCNode Id="4c40c64a-b958-4eff-8c0e-c8ff482d2bb3" Title="BinHandler Methods" Url="html/91196e53-0387-6bf7-8b5f-fbc2718cae14.htm">
+          <HelpTOCNode Title="GetTime Method " Url="html/1b5c8aca-d47b-176f-2967-89ab89295e3b.htm" />
+          <HelpTOCNode Title="MD5Hash Method " Url="html/08da0c68-a63c-3beb-24e7-616c391d104c.htm" />
+          <HelpTOCNode Title="writeByte Method " Url="html/88ddb0f4-2525-c2b2-0cc6-e64e65815830.htm" />
+          <HelpTOCNode Title="writeDate Method " Url="html/50425a07-64da-a2c0-7b14-3c14735b218f.htm" />
+          <HelpTOCNode Title="writeInteger Method " Url="html/7fd48a03-a155-47a3-591e-7b27c07e38da.htm" />
+          <HelpTOCNode Title="writeShort Method " Url="html/643badec-82f9-fbcc-81e5-846f25c95c23.htm" />
+          <HelpTOCNode Title="writeString Method " Url="html/f0190191-76da-9ee4-0fc5-910d1317176b.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0064f464-ae69-47e7-ae6f-e557729ba0aa" Title="CSharpOsu.Util.Converters" Url="html/6583ee86-b8df-ee5c-1316-45be8058bf23.htm">
+      <HelpTOCNode Id="19881188-51b3-4420-ba09-3fe73efa3f17" Title="ApprovedConvert Class" Url="html/7a674a75-a95f-5c4f-b880-b0a2b5386251.htm">
+        <HelpTOCNode Title="ApprovedConvert Constructor " Url="html/f6e61fa0-75b2-8e25-c963-0941278ab4d6.htm" />
+        <HelpTOCNode Title="ApprovedConvert Properties" Url="html/7b8b4d5e-581e-33ce-3be8-df840c5a2db5.htm" />
+        <HelpTOCNode Id="90cbd0ac-8d95-429d-846e-a4e486dc96c2" Title="ApprovedConvert Methods" Url="html/654bc424-4e21-3edd-6a3f-7b9c1430a149.htm">
+          <HelpTOCNode Title="CanConvert Method " Url="html/9580d069-4953-b16d-e833-3a40808d849f.htm" />
+          <HelpTOCNode Title="ReadJson Method " Url="html/074ec819-946a-1e6b-4825-21fd4aeb2e9a.htm" />
+          <HelpTOCNode Title="WriteJson Method " Url="html/b9f5cd13-463c-0702-b188-c69bb5beb848.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="6b42221c-bebb-40b5-976c-a5f29056532d" Title="BoolConvert Class" Url="html/25e83543-51b7-34d7-cd74-5aa83df931b9.htm">
+        <HelpTOCNode Title="BoolConvert Constructor " Url="html/bd11609c-463a-905d-57a4-934d74b103d7.htm" />
+        <HelpTOCNode Title="BoolConvert Properties" Url="html/1a47ea24-f09e-2622-1c24-c74ee8bfb3ba.htm" />
+        <HelpTOCNode Id="d64e99df-3951-4114-b2b7-3280e247e714" Title="BoolConvert Methods" Url="html/6b87b4c5-8aea-cbe7-1e40-7273fb085127.htm">
+          <HelpTOCNode Title="CanConvert Method " Url="html/a4ed9548-832c-3d9d-c81a-8a7bb00ecc6a.htm" />
+          <HelpTOCNode Title="ReadJson Method " Url="html/8587745f-58f9-c0b2-a7eb-45c2927099eb.htm" />
+          <HelpTOCNode Title="WriteJson Method " Url="html/aae770bc-2b46-5334-c2df-d7e00ab9eb7d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="30373cee-2b45-4660-93f8-e5016c593634" Title="ModsConvert Class" Url="html/31967e26-ab3d-e758-64e3-e67c30b3227b.htm">
+        <HelpTOCNode Title="ModsConvert Constructor " Url="html/5cdb2860-f626-94cd-810e-77a52c1cfd74.htm" />
+        <HelpTOCNode Title="ModsConvert Properties" Url="html/917acca6-866c-5b42-3cf1-5713aa5ab1ee.htm" />
+        <HelpTOCNode Id="d1b5ae72-6968-4fee-a9c0-493a7cb1b61a" Title="ModsConvert Methods" Url="html/52f521da-0e73-6c9b-1a5b-1429d85749e8.htm">
+          <HelpTOCNode Title="CanConvert Method " Url="html/c1360f53-bcfe-9d56-9a3d-5e0c9b7f2af4.htm" />
+          <HelpTOCNode Title="GetUniqueFlags Method " Url="html/aa414526-6edd-5cb6-e665-4be53d71c634.htm" />
+          <HelpTOCNode Title="ReadJson Method " Url="html/39f674af-f8c1-ff4b-11d2-1ac415fea2fe.htm" />
+          <HelpTOCNode Title="WriteJson Method " Url="html/e3bb76f3-f7d0-bb9e-efa9-eae810acb7ae.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="00581e4a-b740-4d0b-9e49-116a721e479f" Title="CSharpOsu.Util.Enums" Url="html/4a631c4a-2a3b-09ee-9aa7-388f6ea5447e.htm">
+      <HelpTOCNode Title="ApprovedStatus Enumeration" Url="html/ba00559d-ec23-76a5-e8ec-60aa75ea2b9c.htm" />
+      <HelpTOCNode Title="conv Enumeration" Url="html/d791ef97-c5fb-f280-0454-bc32ae9b2fbb.htm" />
+      <HelpTOCNode Title="mode Enumeration" Url="html/28cff653-a905-c15c-7a58-ed925aaa5f45.htm" />
+      <HelpTOCNode Title="Mods Enumeration" Url="html/2ad6aa1a-ebc7-50e1-c688-5a98496975de.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a061d8a8-d465-4538-8d6a-08f59acba830" Title="CSharpOsu.Util.Strings" Url="html/b8305d66-0b91-8a2d-175c-13057a281a2a.htm">
+      <HelpTOCNode Id="ba58af7e-2d1a-4620-ab21-3b410c1ab459" Title="Strings Class" Url="html/c644cdfa-572e-beda-b1bc-ecddcead3c98.htm">
+        <HelpTOCNode Title="Strings Constructor " Url="html/4daf9623-afe5-72df-c8c3-d1ccbc7be79c.htm" />
+        <HelpTOCNode Id="e1917224-0ca4-48d9-8f55-ea6f3b247bac" Title="Strings Properties" Url="html/23d51bda-59ca-0528-5673-b745be96e7f5.htm">
+          <HelpTOCNode Title="Key Property " Url="html/00540a1f-b43b-849f-613d-9a402db6b6fe.htm" />
+          <HelpTOCNode Title="osuApiUrl Property " Url="html/f32a513e-1fd6-b291-a63b-b2a3aecd5233.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="59048c10-3822-4729-a4c7-8a7ed8a0197b" Title="Strings Methods" Url="html/4400f6de-0cc5-c829-7566-bacdb3b07cfb.htm">
+          <HelpTOCNode Title="Beatmap Method " Url="html/658a6483-4dac-4db7-4fa1-4606d4286c59.htm" />
+          <HelpTOCNode Title="CreateURL Method " Url="html/f5b385ba-540e-2ec4-a401-2e3efef57886.htm" />
+          <HelpTOCNode Title="Match Method " Url="html/690718e7-1ec6-3d05-cf54-7983c208ba30.htm" />
+          <HelpTOCNode Title="Replay Method " Url="html/1355ec67-9118-1a41-fcb7-2af922dca15f.htm" />
+          <HelpTOCNode Title="Score Method " Url="html/05b7fc50-3281-4158-024b-d323a083ffcd.htm" />
+          <HelpTOCNode Title="User Method " Url="html/783ec537-4e1c-87c1-fe4e-dbd349ea2229.htm" />
+          <HelpTOCNode Title="User_Best Method " Url="html/d97c4bed-8909-abe8-e394-d880d0772377.htm" />
+          <HelpTOCNode Title="User_Recent Method " Url="html/439d4e21-9e43-26ea-45f4-0a798a764335.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="490ff0a4-7a6d-4a76-a63e-542bbabf36b0" Title="Strings Fields" Url="html/b9801dc4-e75a-4326-743a-733bac9c28f2.htm">
+          <HelpTOCNode Title="osuBeatmap Field" Url="html/44843d11-4dac-7d52-6437-e3786c8ea116.htm" />
+          <HelpTOCNode Title="osuDirect Field" Url="html/68a18509-850c-1592-1970-f9cd5364ab81.htm" />
+          <HelpTOCNode Title="osuDowload Field" Url="html/e0f51417-b059-3859-5c44-1788eb62e635.htm" />
+          <HelpTOCNode Title="osuMatch Field" Url="html/c5137dbf-9b0d-c986-995d-a5e52238a06b.htm" />
+          <HelpTOCNode Title="osuReplay Field" Url="html/c20832f2-3a95-70c4-5a41-aa089128c87a.htm" />
+          <HelpTOCNode Title="osuScores Field" Url="html/6e5f9dd8-fce8-a7ae-db88-eccc3a8c3d0b.htm" />
+          <HelpTOCNode Title="osuUser Field" Url="html/af78f2c8-7bec-cb0e-cba2-1bf256d72614.htm" />
+          <HelpTOCNode Title="osuUserBest Field" Url="html/d6307973-e05a-51ba-9941-0b5f96ca86a0.htm" />
+          <HelpTOCNode Title="osuUserRecent Field" Url="html/bc81e4e8-f4fa-1f6d-6a95-914614726b1a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>

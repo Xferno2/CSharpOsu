@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpOsu.Module
 {
-    public class OsuReplay
+    public class OsuReplay: Model
     {
         public string content { get; set; }
         public string encoding { get; set; }

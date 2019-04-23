@@ -10,12 +10,18 @@ namespace CSharpOsu.Util.BinaryHandler
 {
     internal class BinHandler
     {
+        BinaryWriter binWriter;
+
+        public BinHandler(BinaryWriter _binWriter)
+        {
+            binWriter = _binWriter;
+        }   
+
         /// <summary>
         /// Binary String
         /// </summary>
-        /// <param name="binWriter">The main BinaryWriter.</param>
         /// <param name="str">A string.</param>
-        public void writeString(BinaryWriter binWriter, string str)
+        public void writeString(string? str)
         {
             binWriter.Write((byte)0x0B);
             binWriter.Write(str);
@@ -24,9 +30,8 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <summary>
         /// Binary Byte
         /// </summary>
-        /// <param name="binWriter">The main BinaryWriter.</param>
         /// <param name="bt">A string.</param>
-        public void writeByte(BinaryWriter binWriter, string bt)
+        public void writeByte(string? bt)
         {
             binWriter.Write(byte.Parse(bt));
         }
@@ -34,9 +39,8 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <summary>
         /// Binary Short
         /// </summary>
-        /// <param name="binWriter">The main BinaryWriter.</param>
-        /// <param name="srt">A string.</param>
-        public void writeShort(BinaryWriter binWriter, string srt)
+        /// <param name="srt">A short.</param>
+        public void writeShort(short? srt)
         {
             binWriter.Write(Convert.ToUInt16(srt));
         }
@@ -44,9 +48,8 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <summary>
         /// Binary Int
         /// </summary>
-        /// <param name="binWriter">The main BinaryWriter.</param>
-        /// <param name="i">A string.</param>
-        public void writeInteger(BinaryWriter binWriter, string i)
+        /// <param name="i">A int.</param>
+        public void writeInteger(int? i)
         {
             binWriter.Write(Convert.ToUInt32(i));
         }
@@ -54,17 +57,15 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <summary>
         /// Binary Database Timestamp
         /// </summary>
-        /// <param name="binWriter">The main BinaryWriter.</param>
-        /// <param name="datestr">A date parsed as a string.</param>
-        public void writeDate(BinaryWriter binWriter, string datestr)
+        /// <param name="datestr">A DateTime format.</param>
+        public void writeDate(DateTime datestr)
         {
             // Weird string and timestamp manipulation. I have no clue how it works.
             // The credits for this one goes to omkelderman(https://github.com/omkelderman/osu-replay-downloader).
 
             var constant = 429.4967296;
-            DateTime date = DateTime.Parse(datestr.Replace(' ', 'T') + "+08:00");
 
-            var temp1 = (GetTime(date) / 1000) + 62135596800;
+            var temp1 = (GetTime(datestr) / 1000) + 62135596800;
             var temp2 = temp1 / constant;
             var high = Math.Round(temp2);
             var low = (temp2 - high) * constant * 10000000;
@@ -79,7 +80,7 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <summary>
         /// Unix Timestamp
         /// </summary>
-        /// <param name="date">A date from DateTime.</param>
+        /// <param name="date">A DateTime format.</param>
         /// <returns></returns>
         private Int64 GetTime(DateTime date)
         {
@@ -93,7 +94,7 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <summary>
         /// Calculate MD5Hash
         /// </summary>
-        /// <param name="input">Decoded MD5 string.</param>
+        /// <param name="input">String to encode.</param>
         /// <returns></returns>
         public string MD5Hash(string input)
 
