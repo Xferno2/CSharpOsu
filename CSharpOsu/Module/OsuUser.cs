@@ -19,6 +19,7 @@ namespace CSharpOsu.Module
     {
         public long user_id { get; set; }
         public string username { get; set; }
+        public DateTime join_date { get; set; }
         public long count300 { get; set; }
         public long count100 { get; set; }
         public long count50 { get; set; }
@@ -30,9 +31,12 @@ namespace CSharpOsu.Module
         public float pp_raw { get; set; }
         public float accuracy { get; set; }
         public int count_rank_ss { get; set; }
+        public int count_rank_ssh { get; set; }
         public int count_rank_s { get; set; }
+        public int count_rank_sh { get; set; }
         public int count_rank_a { get; set; }
         public string country { get; set; }
+        public int total_seconds_played { get; set; }
         public int pp_country_rank { get; set; }
         public List<Event> events { get; set; }
         public string url { get; set; }

@@ -40,7 +40,7 @@ namespace CSharpOsu.Util.BinaryHandler
         /// Binary Short
         /// </summary>
         /// <param name="srt">A short.</param>
-        public void writeShort(short? srt)
+        public void writeShort(long? srt)
         {
             binWriter.Write(Convert.ToUInt16(srt));
         }

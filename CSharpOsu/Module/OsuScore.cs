@@ -14,13 +14,13 @@ namespace CSharpOsu.Module
         public long score_id { get; set; }
         public int score { get; set; }
         public string username { get; set; }
+        public long count50 { get; set; }
+        public long count100 { get; set; }
+        public long count300 { get; set; }
+        public long countmiss { get; set; }
         public short maxcombo { get; set; }
-        public short count50 { get; set; }
-        public short count100 { get; set; }
-        public short count300 { get; set; }
-        public short countmiss { get; set; }
-        public short countkatu { get; set; }
-        public short countgeki { get; set; }
+        public long countkatu { get; set; }
+        public long countgeki { get; set; }
         [JsonConverter(typeof(BoolConvert))]
         public bool perfect { get; set; }
 

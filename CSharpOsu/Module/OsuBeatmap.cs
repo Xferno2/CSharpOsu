@@ -38,6 +38,7 @@ namespace CSharpOsu.Module
         public string artist { get; set; }
         public string title { get; set; }
         public string creator { get; set; }
+        public string creator_id { get; set; }
         public float bpm { get; set; }
         public string source { get; set; }
         public string tags { get; set; }
