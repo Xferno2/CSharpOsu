@@ -27,7 +27,7 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="key">API Key</param>
         /// <param name="_throwIfNull"> If the returned objects is null then throw error. By default is set on false.</param>
-        /// <param name="webClient">Specify a WebClient to use. Default null, will use internal WebClient.</param>
+        /// <param name="httpClient">Specify a HttpClient to use. Default null, will use internal HttpClient.</param>
         public OsuClient(string key,HttpClient? httpClient= null, bool _throwIfNull= false)
         {
             str.Key = key;
