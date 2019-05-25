@@ -33,6 +33,7 @@ namespace CSharpOsu.Module
         [JsonProperty(PropertyName = "diff_drain")]
         public float HP { get; set; }
         public mode mode { get; set; }
+        public DateTime? submit_date { get; set; }
         public DateTime? approved_date { get; set; }
         public DateTime last_update { get; set; }
         public string artist { get; set; }
@@ -45,11 +46,16 @@ namespace CSharpOsu.Module
         public string genre_id { get; set; }
         public string language_id { get; set; }
         public int favourite_count { get; set; }
+        public float rating { get; set; }
         public int playcount { get; set; }
         public int passcount { get; set; }
         public int? max_combo { get; set; }
         [JsonProperty(PropertyName = "difficultyrating")]
         public float StarRating { get; set; }
+        [JsonProperty(PropertyName = "diff_aim")]
+        public float? AimRating { get; set; }
+        [JsonProperty(PropertyName = "diff_speed")]
+        public float? SpeedRating { get; set; }
         public string thumbnail { get; set; }
         public string beatmapset_url { get; set; }
         public string beatmap_url { get; set; }
