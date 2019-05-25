@@ -10,6 +10,7 @@ using CSharpOsu.Util.Enums;
 using CSharpOsu.Util.Strings;
 using CSharpOsu.Module;
 using System.IO;
+using System.Net.Http;
 using CSharpOsu.Util;
 
 [assembly: CLSCompliant(true)]
@@ -18,7 +19,7 @@ namespace CSharpOsu
     public class OsuClient
     {
         Strings str = new Strings();
-        static WebClient client = new WebClient();
+        static HttpClient client = new HttpClient();
         Utility utl;
 
         /// <summary>
@@ -27,14 +28,14 @@ namespace CSharpOsu
         /// <param name="key">API Key</param>
         /// <param name="_throwIfNull"> If the returned objects is null then throw error. By default is set on false.</param>
         /// <param name="webClient">Specify a WebClient to use. Default null, will use internal WebClient.</param>
-        public OsuClient(string key,WebClient? webClient= null, bool _throwIfNull= false)
+        public OsuClient(string key,HttpClient? httpClient= null, bool _throwIfNull= false)
         {
             str.Key = key;
-            if (webClient == null)
+            if (httpClient == null)
             {
                 utl = new Utility(client, _throwIfNull);
             }
-            else { utl = new Utility(webClient, _throwIfNull); }
+            else { utl = new Utility(httpClient, _throwIfNull); }
         }
 
         /// <summary>

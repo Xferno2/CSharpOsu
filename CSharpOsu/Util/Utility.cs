@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Web;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,15 +14,15 @@ namespace CSharpOsu.Util
 {
     internal class Utility
     {
-        WebClient client;
+        HttpClient client;
         private bool throwIfNull;
 
-        public Utility(WebClient? _client, bool _throwIfNull) { client = _client; throwIfNull = _throwIfNull; }
+        public Utility(HttpClient? _client, bool _throwIfNull) { client = _client; throwIfNull = _throwIfNull; }
         public string GetUrl(string url)
         {
             try
             {
-                var json = client.DownloadString(url);
+                var json = client.GetAsync(url).Result.Content.ReadAsStringAsync().Result;
                 if (throwIfNull)
                     if (json == "[]") { throw new Exception("No objects have been found for those arguments"); }
                 return json;
