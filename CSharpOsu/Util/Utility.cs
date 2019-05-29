@@ -53,7 +53,7 @@ namespace CSharpOsu.Util
 
         public float accuracyCalculator(OsuBeatmap[] bt, long count50, long count100, long count300, long countmiss, long countkatu,long countgeki)
         {
-            var mapMode = (mode)Convert.ToInt32(bt[0].mode);
+            var mapMode = bt[0].mode;
             float totalPointsOfHits;
             float totalNumberOfHits;
             float accuracy;
