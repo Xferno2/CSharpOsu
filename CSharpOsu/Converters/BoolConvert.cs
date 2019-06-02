@@ -14,8 +14,9 @@ namespace CSharpOsu.Util.Converters
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
-            bool.TryParse((string)reader.Value, out var bools);
-            return bools;
+            var value = Convert.ToInt32(reader.Value);
+            bool boolValue = value != 0;
+            return boolValue;
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
