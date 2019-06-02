@@ -346,9 +346,9 @@ namespace CSharpOsu
                 bin.writeInteger(null);                                         // Write null int if no mods were enabled.
             }
             else {
-                bin.writeInteger(Convert.ToInt32(modsCalculator(                // Use mods calculator to get the long for enabled mods.
+                bin.writeInteger(Convert.ToInt32(modsCalculator(                // Convert mods to int.
                     score.enabled_mods.ToList()                                 // Cast mods array to List.
-                    )));                                                        // Cast the long to string then write enabled mods.
+                    )));                                                        // Write enabled mods.
             }
             bin.writeString("");                                                // Write lifebar hp. (Unknown)
             bin.writeDate(score.date);                                          // Write replay timestamp.
