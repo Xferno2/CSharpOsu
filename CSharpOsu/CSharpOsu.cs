@@ -344,7 +344,8 @@ namespace CSharpOsu
             else{
                 bin.writeInteger(Convert.ToInt32(modsCalculator(                // Convert mods to int.
                     score.enabled_mods.ToList()                                 // Cast mods array to List.
-                    )));}                                                       // Write enabled mods.
+                    )));
+            }                                                       // Write enabled mods.
             bin.writeString("");                                                // Write lifebar hp. (Unknown)
             bin.writeDate(score.date);                                          // Write replay timestamp.
             bin.writeInteger(content.Length);                                   // Write replay content lenght.

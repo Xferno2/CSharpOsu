@@ -18,7 +18,8 @@ namespace CSharpOsu.Util.Converters
                 throw new Exception("The response from the server was not a 0 or a 1." +
                     System.Environment.NewLine+
                     "Server response: " +reader.Value.ToString()
-                    );}
+                    );
+            }
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
