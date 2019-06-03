@@ -161,7 +161,7 @@ namespace CSharpOsu
             {
                 score = score + "&m=" + (int)_m;
             }
-            if (_mods != null)
+            if (_mods != null && _mods != 0)
             {
                 score = score + "&mods=" + _mods;
             }
@@ -285,7 +285,7 @@ namespace CSharpOsu
         public OsuReplay GetReplay(mode _m, long _b, string _u, long? _mods)
         {
             string replay = str.Replay(_m, _b, _u);
-            if (_mods != null)
+            if (_mods != null && _mods != 0)
             {
                replay = replay + "&mods=" + _mods;
             }
@@ -345,7 +345,7 @@ namespace CSharpOsu
                 bin.writeInteger(Convert.ToInt32(modsCalculator(                // Convert mods to int.
                     score.enabled_mods.ToList()                                 // Cast mods array to List.
                     )));
-            }                                                       // Write enabled mods.
+            }                                                                   // Write enabled mods.
             bin.writeString("");                                                // Write lifebar hp. (Unknown)
             bin.writeDate(score.date);                                          // Write replay timestamp.
             bin.writeInteger(content.Length);                                   // Write replay content lenght.

@@ -62,9 +62,14 @@ namespace Osu_Replay_Compiler
             if (cacheRead != null)
             {
                 var modsStrings =cacheRead.Split(',');
-                foreach (var mod in modsStrings)
+                try
                 {
-                    mods.Add((Mods)Enum.Parse(typeof(Mods),mod));
+                    foreach (var mod in modsStrings)
+                    {
+                        mods.Add((Mods)Enum.Parse(typeof(Mods), mod));
+                    }
+                }catch(Exception ex)
+                {
                 }
             }
 
