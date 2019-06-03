@@ -9,10 +9,6 @@ namespace CSharpOsu.Util.Converters
     // Thanks to Game4all and his circles.NET project (https://github.com/Game4all/circles.NET)
     public class ModsConvert : JsonConverter
     {
-        public ModsConvert()
-        {
-        }
-
         public override bool CanConvert(Type objectType)
         {
             if (objectType == typeof(Mods[]))

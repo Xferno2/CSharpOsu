@@ -340,16 +340,11 @@ namespace CSharpOsu
             bin.writeInteger(score.score);                                      // Write score.
             bin.writeShort(score.maxcombo);                                     // Write maxcombo.
             bin.writeByte((score.perfect ? 1:0).ToString());                    // Write if the score is perfect or not.
-
-            if (score.enabled_mods==null)
-            {
-                bin.writeInteger(null);                                         // Write null int if no mods were enabled.
-            }
-            else {
+            if (score.enabled_mods == null) { bin.writeInteger(null); }         // Write null int if no mods were enabled.
+            else{
                 bin.writeInteger(Convert.ToInt32(modsCalculator(                // Convert mods to int.
                     score.enabled_mods.ToList()                                 // Cast mods array to List.
-                    )));                                                        // Write enabled mods.
-            }
+                    )));}                                                       // Write enabled mods.
             bin.writeString("");                                                // Write lifebar hp. (Unknown)
             bin.writeDate(score.date);                                          // Write replay timestamp.
             bin.writeInteger(content.Length);                                   // Write replay content lenght.
@@ -385,6 +380,5 @@ namespace CSharpOsu
             }
             return flag;
         }
-
     }
 }
