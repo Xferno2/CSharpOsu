@@ -18,9 +18,10 @@ namespace CSharpOsu
 {
     public class OsuClient
     {
-        Strings str = new Strings();
+        Strings str;
         static HttpClient client = new HttpClient();
         Utility utl;
+        public readonly string APIKey;
 
         /// <summary>
         /// Osu API Key
@@ -30,7 +31,8 @@ namespace CSharpOsu
         /// <param name="httpClient">Specify a HttpClient to use. Default null, will use internal HttpClient.</param>
         public OsuClient(string key,HttpClient? httpClient= null, bool _throwIfNull= false)
         {
-            str.Key = key;
+            APIKey = key;
+            str = new Strings(key);
             if (httpClient == null)
             {
                 utl = new Utility(client, _throwIfNull);
@@ -41,66 +43,47 @@ namespace CSharpOsu
         /// <summary>
         /// Return information about beatmaps.
         /// </summary>
-        /// <param name="_id">Specify a beatmapset or beatmap id.</param>
-        /// <param name="_isSet">Logical switch that determine if the request is a single beatmap or a beatmapset</param>
-        /// <param name="_since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
-        /// <param name="_u">Specify a user or a username to return metadata from.</param>
-        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
-        /// <param name="_a">Specify whether converted beatmaps are included (0 = not included, 1 = included). Only has an effect if m is chosen and not 0. Converted maps show their converted difficulty rating. Optional, default is 0.</param>
-        /// <param name="_h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
-        /// <param name="_limit">Amount of results. Optional, default and maximum are 500.</param>
+        /// <param name="id">Specify a beatmapset or beatmap id.</param>
+        /// <param name="isSet">Logical switch that determine if the request is a single beatmap or a beatmapset</param>
+        /// <param name="since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
+        /// <param name="u">Specify a user or a username to return metadata from.</param>
+        /// <param name="m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+        /// <param name="a">Specify whether converted beatmaps are included (0 = not included, 1 = included). Only has an effect if m is chosen and not 0. Converted maps show their converted difficulty rating. Optional, default is 0.</param>
+        /// <param name="h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
+        /// <param name="limit">Amount of results. Optional, default and maximum are 500.</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
+        /// <param name="mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
         /// <returns>Fetch Beatmap.</returns>
-        public OsuBeatmap[] GetBeatmap(long? _id = null, bool _isSet = true, DateTime? _since = null, string _u = null, mode? _m = null, conv? _a = null, string _h = null, int? _limit = null)
+        public OsuBeatmap[] GetBeatmap(long? id = null, bool isSet = true, DateTime? since = null, string u = null, mode? m = null, include? a = null, string h = null, int? limit = null, typeUser ? userType = null, long ? mods = null)
         {
             OsuBeatmap[] obj;
-            string beatmap = str.Beatmap();
-            if (_since != null)
-            {
-                beatmap = beatmap + "&since=" + _since;
-            }
-            if (_u != null)
-            {
-                beatmap = beatmap + "&u=" + _u;
-            }
-            if (_m != null)
-            {
-                beatmap = beatmap + "&m=" + (int)_m;
-            }
-            if (_a != null)
-            {
-                beatmap = beatmap + "&a=" + (int)_a;
-            }
-            if (_h != null)
-            {
-                beatmap = beatmap + "&h=" + _h;
-            }
-            if (_limit != null)
-            {
-                beatmap = beatmap + "&limit=" + _limit;
-            }
-            if (_id != null)
-            {
-                beatmap = (_isSet) ? beatmap + "&s=" + _id : beatmap + "&b=" + _id;
-            }
+            string html = str.CreateURL(str.Beatmap,
+                "since", since,
+                "u", u,
+                "m", m,
+                "a", a,
+                "h", h,
+                "limit", limit,
+                "type", userType,
+                "mods", mods,
+                (isSet) ? "s" : "b", id);
 
-            string html = utl.GetUrl(beatmap);
-
-            obj = JsonConvert.DeserializeObject<OsuBeatmap[]>(html);
+            obj = JsonConvert.DeserializeObject<OsuBeatmap[]>(utl.GetURL(html));
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].thumbnail = "https://b.ppy.sh/thumb/" + obj[i].beatmapset_id + "l.jpg";
-                if (_id == null)
+                if (id == null)
                 { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
                 else
                 {
-                    if (_isSet)
+                    if (isSet)
                     { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = null; }
                     else
                     { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
                 }
-                obj[i].download = str.osuDowload + obj[i].beatmapset_id;
-                obj[i].download_no_video = str.osuDowload + obj[i].beatmapset_id + "n";
-                obj[i].osu_direct = str.osuDirect + obj[i].beatmapset_id;
+                obj[i].download = str.Dowload + obj[i].beatmapset_id;
+                obj[i].download_no_video = str.Dowload + obj[i].beatmapset_id + "n";
+                obj[i].osu_direct = str.Direct + obj[i].beatmapset_id;
                 utl.ErrorHandler(obj[i]);
             }
 
@@ -110,24 +93,22 @@ namespace CSharpOsu
         /// <summary>
         /// Return informations about a user.
         /// </summary>
-        /// <param name="id">Specify a user id or a username to return metadata from (required).</param>
-        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
-        /// <param name="_event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.</param>
+        /// <param name="u">Specify a user id or a username to return metadata from (required).</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
+        /// <param name="m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+        /// <param name="event_days">Max number of days between now and last event date. Range of 1-31. Optional, default value is 1.</param>
         /// <returns>Fetch User.</returns>
-        public OsuUser[] GetUser(string id, mode? _m = null, DateTime? _event_days = null)
+        public OsuUser[] GetUser(string u, mode? m = null, typeUser? userType = null, DateTime? event_days = null)
         {
-            string user = str.User(id);
-            if (_m!= null)
-            {
-                user = user + "&m=" + (int)_m;
-            }
-            if (_event_days != null)
-            {
-                user = user + "&u=" + _event_days;
-            }
             OsuUser[] obj;
-            string html = utl.GetUrl(user);
-            obj = JsonConvert.DeserializeObject<OsuUser[]>(html);
+            string html = str.CreateURL(str.User,
+                "u", u,
+                "m", m,
+                "type", userType,
+                "event_days",event_days
+                );
+
+            obj = JsonConvert.DeserializeObject<OsuUser[]>(utl.GetURL(html));
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].url = "https://osu.ppy.sh/u/" + obj[i].user_id;
@@ -144,34 +125,25 @@ namespace CSharpOsu
         /// <summary>
         /// Return informations about scores from a beatmap.
         /// </summary>
-        /// <param name="_b">Specify a beatmap_id to return score information from.</param>
-        /// <param name="_u">Specify a user_id or a username to return score information for.</param>
-        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
-        /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
-        /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <param name="b">Specify a beatmap_id to return score information from.</param>
+        /// <param name="u">Specify a user_id or a username to return score information for.</param>
+        /// <param name="m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+        /// <param name="mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
+        /// <param name="limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
         /// <returns>Fetch Scores.</returns>
-        public OsuScore[] GetScore(long _b, string _u = null, mode? _m = null, long? _mods = null, int? _limit = null)
+        public OsuScore[] GetScore(long b, string u = null, mode? m = null, long? mods = null, typeUser? userType = null, int? limit = null)
         {
-            string score = str.Score(_b);
-            if (_u != null)
-            {
-                score = score + "&u=" + _u;
-            }
-            if (_m != null)
-            {
-                score = score + "&m=" + (int)_m;
-            }
-            if (_mods != null && _mods != 0)
-            {
-                score = score + "&mods=" + _mods;
-            }
-            if (_limit != null)
-            {
-                score = score + "&limit=" + _limit;
-            }
             OsuScore[] obj;
-            string html = utl.GetUrl(score);
-            obj = JsonConvert.DeserializeObject<OsuScore[]>(html);
+            string html = str.CreateURL(str.Scores,
+                "b", b,
+                "u", u,
+                "m", m,
+                "mods", mods,
+                "type", userType,
+                "limit", limit);
+
+            obj = JsonConvert.DeserializeObject<OsuScore[]>(utl.GetURL(html));
             utl.ErrorHandler(obj);
 
             return obj;
@@ -180,30 +152,25 @@ namespace CSharpOsu
         /// <summary>
         /// Return informations about a user best scores.
         /// </summary>
-        /// <param name="_u">Specify a user_id or a username to return score information for.</param>
-        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
-        /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <param name="u">Specify a user_id or a username to return score information for.</param>
+        /// <param name="m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+        /// <param name="limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
         /// <returns>Fetch user best scores.</returns>
-        public OsuUserBest[] GetUserBest(string _u, mode? _m = null, int? _limit = null)
+        public OsuUserBest[] GetUserBest(string u, mode? m = null, int? limit = null, typeUser? userType = null)
         {
-            string userbest = str.User_Best(_u);
-            if (_m != null)
-            {
-               userbest = userbest + "&m=" + (int)_m;
-            }
-            if (_limit != null)
-            {
-                userbest = userbest + "&limit=" + _limit;
-            }
             OsuUserBest[] obj;
-            string html = utl.GetUrl(userbest);
-            obj = JsonConvert.DeserializeObject<OsuUserBest[]>(html);
+            string html = str.CreateURL(str.UserBest,
+                "u", u,
+                "m", m,
+                "limit", limit,
+                "type", userType);
 
+            obj = JsonConvert.DeserializeObject<OsuUserBest[]>(utl.GetURL(html));
             for (int i = 0; i < obj.Length; i++)
             {
-                // Get Beatmap for the mode
-                var bt = GetBeatmap(Convert.ToInt32(obj[i].beatmap_id), _isSet: false);
-                obj[i].accuracy = utl.accuracyCalculator(bt,
+                obj[i].accuracy = utl.accuracyCalculator(
+                    GetBeatmap(Convert.ToInt32(obj[i].beatmap_id), isSet: false),
                     obj[i].count50,
                     obj[i].count100,
                     obj[i].count300,
@@ -220,30 +187,26 @@ namespace CSharpOsu
         /// <summary>
         /// Return informations about a user recent scores.
         /// </summary>
-        /// <param name="_u">Specify a user_id or a username to return score information for.</param>
-        /// <param name="_m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
-        /// <param name="_limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <param name="u">Specify a user_id or a username to return score information for.</param>
+        /// <param name="m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, default value is 0.</param>
+        /// <param name="limit">Amount of results from the top (range between 1 and 100 - defaults to 50).</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
         /// <returns>Fetch user recent scores.</returns>
-        public OsuUserRecent[] GetUserRecent(string _u, mode? _m = null, int? _limit = null)
+        public OsuUserRecent[] GetUserRecent(string u, mode? m = null, int? limit = null, typeUser? userType = null)
         {
-            string userbest = str.User_Recent(_u);
-            if (_m != null)
-            {
-                userbest = userbest + "&m=" + (int)_m;
-            }
-            if (_limit != null)
-            {
-                userbest = userbest + "&limit=" + _limit;
-            }
             OsuUserRecent[] obj;
-            string html = utl.GetUrl(userbest);
-            obj = JsonConvert.DeserializeObject<OsuUserRecent[]>(html);
+            string html = str.CreateURL(str.UserRecent,
+                "u", u,
+                "m", m,
+                "limit", limit,
+                "type", userType);
+
+            obj = JsonConvert.DeserializeObject<OsuUserRecent[]>(utl.GetURL(html));
 
             for (int i = 0; i < obj.Length; i++)
             {
-                // Get Beatmap for the mode
-                var bt = GetBeatmap(Convert.ToInt32(obj[i].beatmap_id), _isSet: false);
-                obj[i].accuracy = utl.accuracyCalculator(bt,
+                obj[i].accuracy = utl.accuracyCalculator(
+                    GetBeatmap(Convert.ToInt32(obj[i].beatmap_id), isSet: false),
                     obj[i].count50,
                     obj[i].count100,
                     obj[i].count300,
@@ -260,14 +223,15 @@ namespace CSharpOsu
         /// <summary>
         /// Return informations about a multiplayer lobby.
         /// </summary>
-        /// <param name="_mp">Match id to get information from.</param>
+        /// <param name="mp">Match id to get information from.</param>
         /// <returns>Fetch multiplayer lobby.</returns>
-        public OsuMatch GetMatch(int _mp)
+        public OsuMatch GetMatch(int mp)
         {
             OsuMatch obj;
-            string match = str.Match(_mp);
-            string html = utl.GetUrl(match);
-            obj = JsonConvert.DeserializeObject<OsuMatch>(html);
+            string html = str.CreateURL(str.Match,
+                "mp", mp);
+
+            obj = JsonConvert.DeserializeObject<OsuMatch>(utl.GetURL(html));
 
             utl.ErrorHandler(obj);
 
@@ -277,21 +241,23 @@ namespace CSharpOsu
         /// <summary>
         /// Return informations about a replay.
         /// </summary>
-        /// <param name="_m">The mode the score was played in.</param>
-        /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
-        /// <param name="_u">The user that has played the beatmap.</param>
-        /// <param name="_mods">Specify a mod or mod combination (.</param>
+        /// <param name="m">The mode the score was played in.</param>
+        /// <param name="b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
+        /// <param name="u">The user that has played the beatmap.</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
+        /// <param name="mods">Specify a mod or mod combination (.</param>
         /// <returns>Fetch replay data.</returns>
-        public OsuReplay GetReplay(mode _m, long _b, string _u, long? _mods)
+        public OsuReplay GetReplay(mode m, long b, string u, long? mods = null, typeUser? userType = null)
         {
-            string replay = str.Replay(_m, _b, _u);
-            if (_mods != null && _mods != 0)
-            {
-               replay = replay + "&mods=" + _mods;
-            }
             OsuReplay obj;
-            string html = utl.GetUrl(replay);
-            obj = JsonConvert.DeserializeObject<OsuReplay>(html);
+            string html = str.CreateURL(str.Replay,
+                "m", m,
+                "b", b,
+                "u", u,
+                "type", userType,
+                "mods", mods);
+
+            obj = JsonConvert.DeserializeObject<OsuReplay>(utl.GetURL(html));
             utl.ErrorHandler(obj);
 
             return obj;
@@ -302,28 +268,27 @@ namespace CSharpOsu
         /// <summary>
         /// Return all the bytes needed to create a .osr file.
         /// </summary>
-        /// <param name="_m">The mode the score was played in.</param>
-        /// <param name="_b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
-        /// <param name="_u">The user that has played the beatmap.</param>
-        /// <param name="_mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+        /// <param name="m">The mode the score was played in.</param>
+        /// <param name="b">The beatmap ID (not beatmap set ID!) in which the replay was played.</param>
+        /// <param name="u">The user that has played the beatmap.</param>
+        /// <param name="mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
         /// <returns>.osr file bytes.</returns>
-        public byte[] GetReplay(mode _m, string _u, long _b, long? _mods=null)
+        public byte[] GetReplay(mode m, string u, long b, long? mods=null, typeUser? userType = null)
         {
-            var replay = GetReplay(_m, _b, _u, _mods);
-            var sc = GetScore(_b,_u,_m ,_mods);
-            var bt = GetBeatmap(_b, _isSet: false);
-
+            var replay = GetReplay(m, b, u, mods, userType);
+            var sc = GetScore(b,u,m ,mods);
+            var bt = GetBeatmap(b, isSet: false);
             var score = sc[0];
             var beatmap = bt[0];
 
             var binWriter = new BinaryWriter(new MemoryStream());
-
             var bin = new BinHandler(binWriter);
             var binReader = new BinaryReader(binWriter.BaseStream);
 
             var replayHashData = bin.MD5Hash(score.maxcombo + "osu" + score.username + beatmap.MD5 + score.score + score.rank);
             var content = Convert.FromBase64String(replay.content);
-            var mode = Convert.ToInt32(_m).ToString();
+            var mode = Convert.ToInt32(m).ToString();
 
             // Begin
             bin.writeByte(mode);                                                // Write osu mode.
@@ -342,20 +307,18 @@ namespace CSharpOsu
             bin.writeByte((score.perfect ? 1:0).ToString());                    // Write if the score is perfect or not.
             if (score.enabled_mods == null) { bin.writeInteger(null); }         // Write null int if no mods were enabled.
             else{
-                bin.writeInteger(Convert.ToInt32(modsCalculator(                // Convert mods to int.
-                    score.enabled_mods.ToList()                                 // Cast mods array to List.
-                    )));
-            }                                                                   // Write enabled mods.
+                bin.writeInteger(                                               // Write enabled mods.           
+                    Convert.ToInt32(modsCalculator(                             // Convert mods to int.
+                    score.enabled_mods.ToList())));                             // Cast mods array to List.
+            }
             bin.writeString("");                                                // Write lifebar hp. (Unknown)
             bin.writeDate(score.date);                                          // Write replay timestamp.
             bin.writeInteger(content.Length);                                   // Write replay content lenght.
 
-            // Content
-            binWriter.Write(content);                                            // Write replay content.
+            binWriter.Write(content);                                           // Write replay content.
 
-            // Final
-            binWriter.Write(Convert.ToInt64(score.score_id));                    // Write score id.
-            binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);   // Write null byte.
+            binWriter.Write(Convert.ToInt64(score.score_id));                   // Write score id.
+            binWriter.Write(BitConverter.GetBytes(Convert.ToUInt32(0)), 4, 0);  // Write null byte.
 
             binReader.BaseStream.Position = 0;
             int streamLenght = (int)binReader.BaseStream.Length;
@@ -372,13 +335,12 @@ namespace CSharpOsu
         /// </summary>
         /// <param name="mods">Specify mod combination as a list.(See https://github.com/ppy/osu-api/wiki#mods )</param>
         /// <returns>.osr file bytes.</returns>
-        public long modsCalculator(List<Mods> mods)
+        public long? modsCalculator(List<Mods> mods)
         {
-            long flag = 0;
+            long? flag = 0;
             foreach (var mod in mods)
-            {
-                flag += Convert.ToInt64(mod);
-            }
+            { flag += Convert.ToInt64(mod); }
+            if (flag == 0) flag = null;
             return flag;
         }
     }

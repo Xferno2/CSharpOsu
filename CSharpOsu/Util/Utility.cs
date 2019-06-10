@@ -18,7 +18,7 @@ namespace CSharpOsu.Util
         private bool throwIfNull;
 
         public Utility(HttpClient? _client, bool _throwIfNull) { client = _client; throwIfNull = _throwIfNull; }
-        public string GetUrl(string url)
+        public string GetURL(string url)
         {
             try
             {

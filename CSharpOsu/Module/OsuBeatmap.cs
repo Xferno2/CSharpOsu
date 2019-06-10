@@ -56,6 +56,13 @@ namespace CSharpOsu.Module
         public float? AimRating { get; set; }
         [JsonProperty(PropertyName = "diff_speed")]
         public float? SpeedRating { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        public bool download_unavailable { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        public bool audio_unavailable { get; set; }
+        public int count_normal { get; set; }
+        public int count_slider { get; set; }
+        public int count_spiner { get; set; }
         public string thumbnail { get; set; }
         public string beatmapset_url { get; set; }
         public string beatmap_url { get; set; }

@@ -3,7 +3,6 @@ using System;
 
 namespace CSharpOsu.Util.Converters
 {
-    // Thanks to Game4all and his circles.NET project (https://github.com/Game4all/circles.NET)
     internal class BoolConvert : JsonConverter
     {
         public override bool CanConvert(Type objectType) => true;
@@ -16,8 +15,8 @@ namespace CSharpOsu.Util.Converters
             }
             catch (Exception) {
                 throw new Exception("The response from the server was not a 0 or a 1." +
-                    System.Environment.NewLine+
-                    "Server response: " +reader.Value.ToString()
+                    System.Environment.NewLine +
+                    "Server response: " + reader.Value.ToString()
                     );
             }
         }

@@ -31,6 +31,8 @@ namespace CSharpOsu.Module
         public DateTime date { get; set; }
         public string rank { get; set; }
         public float pp { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        public bool replay_available { get; set; }
         public string error { get; set; }
     }
 }

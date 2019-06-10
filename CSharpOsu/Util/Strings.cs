@@ -9,44 +9,32 @@ namespace CSharpOsu.Util.Strings
 {
     internal class Strings
     {
+        public Strings(string key){
+            Key = key;
+        }
+
         public string Key { get; internal set; }
+        protected virtual string APIUrl => "https://osu.ppy.sh/api/";
+        public string Dowload = "https://osu.ppy.sh/d/";
+        public string Direct = "osu://s/";
 
-        protected virtual string osuApiUrl => "https://osu.ppy.sh/api/";
-        public string osuDowload = "https://osu.ppy.sh/d/";
-        public string osuDirect = "osu://s/";
-
-        public string osuBeatmap = "get_beatmaps?";
-        public string osuScores = "get_scores?";
-        public string osuUser = "get_user?";
-        public string osuUserBest = "get_user_best?";
-        public string osuUserRecent = "get_user_recent?";
-        public string osuMatch = "get_match?";
-        public string osuReplay = "get_replay?";
-
-        public string Beatmap() { return osuApiUrl + osuBeatmap + "k=" + Key; }
-        public string User(string id) { return osuApiUrl + osuUser + "k=" + Key + "&u=" + id; }
-        public string Score(long beatmap) { return osuApiUrl + osuScores + "k=" + Key + "&b=" + beatmap; }
-        public string User_Best(string user) { return osuApiUrl + osuUserBest + "k=" + Key + "&u=" + user; }
-        public string User_Recent(string user) { return osuApiUrl + osuUserRecent + "k=" + Key + "&u=" + user; }
-        public string Match(int match) { return osuApiUrl + osuMatch + "k=" + Key + "&mp=" + match; }
-        public string Replay(mode mode, long beatmap, string user) { return osuApiUrl + osuReplay + "k=" + Key + "&m=" + (int)mode + "&b=" + beatmap + "&u=" + user; }
+        public string Beatmap = "get_beatmaps?";
+        public string Scores = "get_scores?";
+        public string User = "get_user?";
+        public string UserBest = "get_user_best?";
+        public string UserRecent = "get_user_recent?";
+        public string Match = "get_match?";
+        public string Replay = "get_replay?";
 
         // Thanks to Game4all and his circles.NET project (https://github.com/Game4all/circles.NET)
-        // Not implemented yet.
         internal string CreateURL(string endpoint, params object[] queryStrings)
         {
             var sb = new StringBuilder();
-            sb.Append(osuApiUrl);
+            sb.Append(APIUrl);
             sb.Append(endpoint);
-
+            sb.Append("k=" + Key);
             for (int i = 0; i < queryStrings.Length; i += 2) //query strings are given this way [0] = QueryStringName, [1] = QueryStringValue
             {
-                if (i == 0) //first parameter should always be API key
-                {
-                    sb.Append($"{queryStrings[i].ToString()}={queryStrings[i + 1].ToString()}");
-                    continue;
-                }
-
                 if (queryStrings[i + 1] != null) //if the query string value is != null , let's add it to the url
                     sb.Append($"&{queryStrings[i].ToString()}={queryStrings[i + 1].ToString()}");
             }

@@ -24,9 +24,10 @@ namespace Osu_Replay_Compiler
                 Console.Write("Enter API key: ");
                 File.WriteAllText(@"Osu.txt", Console.ReadLine());
                 osukey = File.ReadAllText(@"Osu.txt");
-            } else{ Console.WriteLine("API Key found!"); }
+            }
+            else { Console.WriteLine("API Key found!"); }
 
-            OsuClient Osu = new OsuClient(osukey);
+            OsuClient osu = new OsuClient(osukey);
 
             Console.WriteLine("0. Osu!");
             Console.WriteLine("1. Taiko");
@@ -77,7 +78,7 @@ namespace Osu_Replay_Compiler
             Console.Write("File name(without extension): ");
             string y = Console.ReadLine();
 
-            File.WriteAllBytes(@"" + y + ".osr", Osu.GetReplay(_m, _u,_b,Osu.modsCalculator(mods)));
+            File.WriteAllBytes(@"" + y + ".osr", osu.GetReplay(_m, _u,_b,osu.modsCalculator(mods)));
 
             openreplay(y);
         }
