@@ -17,14 +17,34 @@ namespace CSharpOsu.Util
         HttpClient client;
         private bool throwIfNull;
 
-        public Utility(HttpClient? _client, bool _throwIfNull) { client = _client; throwIfNull = _throwIfNull; }
+        public short requestCount = 0;
+        public bool bypassLimit;
+        public short limit;
+
+        DateTime oldTime = DateTime.UtcNow;
+        public Utility(HttpClient? _client, bool _throwIfNull, bool _bypassLimit, short _limit, bool _bypassReplayLimit, short _replayLimit)
+        {
+            client = _client;
+            throwIfNull = _throwIfNull;
+            bypassLimit = _bypassLimit;
+            limit = _limit;
+        }
+
         public string GetURL(string url)
         {
+            var nowTime = DateTime.UtcNow;
+            if (!bypassLimit) if (requestCount == limit) throw new Exception("Requests limit per minute exceeded");
             try
             {
                 var json = client.GetAsync(url).Result.Content.ReadAsStringAsync().Result;
                 if (throwIfNull)
                     if (json == "[]") { throw new Exception("No objects have been found for those arguments"); }
+                requestCount++;
+                if (nowTime >= oldTime + new TimeSpan(0, 0, 1, 0))
+                {
+                    requestCount = 0;
+                    oldTime = nowTime;
+                }
                 return json;
             }
             catch (WebException ex)

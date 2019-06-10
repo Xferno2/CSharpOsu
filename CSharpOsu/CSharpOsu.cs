@@ -21,8 +21,17 @@ namespace CSharpOsu
         Strings str;
         static HttpClient client = new HttpClient();
         Utility utl;
-        public readonly string APIKey;
 
+        public readonly string APIKey;
+        public bool bypassLimit = false;
+        //  public short Highlimit = 1200;
+        // private short burst = 200;
+        public short limit = 60;
+        public bool bypassReplayLimit = false;
+        public short replayLimit = 10;
+        private short replayReq = 0;
+
+        DateTime oldTime = DateTime.UtcNow;
         /// <summary>
         /// Osu API Key
         /// </summary>
@@ -35,9 +44,9 @@ namespace CSharpOsu
             str = new Strings(key);
             if (httpClient == null)
             {
-                utl = new Utility(client, _throwIfNull);
+                utl = new Utility(client, _throwIfNull, bypassLimit, limit,bypassReplayLimit,replayLimit);
             }
-            else { utl = new Utility(httpClient, _throwIfNull); }
+            else { utl = new Utility(httpClient, _throwIfNull, bypassLimit, limit, bypassReplayLimit, replayLimit); }
         }
 
         /// <summary>
@@ -120,7 +129,6 @@ namespace CSharpOsu
             }
             return obj;
         }
-
 
         /// <summary>
         /// Return informations about scores from a beatmap.
@@ -259,7 +267,14 @@ namespace CSharpOsu
 
             obj = JsonConvert.DeserializeObject<OsuReplay>(utl.GetURL(html));
             utl.ErrorHandler(obj);
-
+            replayReq++;
+            var nowTime = DateTime.UtcNow;
+            if (!bypassReplayLimit) if (replayLimit == replayReq) throw new Exception("Replay limit per minute exceeded");
+            if (nowTime >= oldTime + new TimeSpan(0, 0, 1, 0))
+            {
+                replayReq = 0;
+                oldTime = nowTime;
+            }
             return obj;
             // Note that the binary data you get when you decode above base64-string, is not the contents of an.osr-file.It is the LZMA stream referred to by the osu-wiki here:
             // The remaining data contains information about mouse movement and key presses in an wikipedia:LZMA stream(https://osu.ppy.sh/wiki/Osr_(file_format)#Format)

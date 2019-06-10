@@ -72,7 +72,6 @@ namespace CSharpOsu.Util.BinaryHandler
             byte[] toBytes2 = BitConverter.GetBytes(Convert.ToInt32(high));
             byte[] toBytes1 = BitConverter.GetBytes(Convert.ToInt32(low));
 
-
             binWriter.Write(toBytes1, 0, 4);
             binWriter.Write(toBytes2, 0, 4);
         }
@@ -97,7 +96,6 @@ namespace CSharpOsu.Util.BinaryHandler
         /// <param name="input">String to encode.</param>
         /// <returns></returns>
         public string MD5Hash(string input)
-
         {
             MD5 md5 = System.Security.Cryptography.MD5.Create();
             StringBuilder sb = new StringBuilder();
@@ -109,7 +107,6 @@ namespace CSharpOsu.Util.BinaryHandler
             {   sb.Append(hash[i].ToString("X2"));  }
 
             return sb.ToString().ToLower();
-
         }
     }
 }

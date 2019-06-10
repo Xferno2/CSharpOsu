@@ -3,8 +3,8 @@ using CSharpOsu;
 using System.IO;
 using System.Diagnostics;
 using CSharpOsu.Util.Enums;
-using System.Text;
 using System.Collections.Generic;
+using CSharpOsu.Module;
 
 namespace Osu_Replay_Compiler
 {
@@ -102,4 +102,3 @@ namespace Osu_Replay_Compiler
         }
     }
 }
-

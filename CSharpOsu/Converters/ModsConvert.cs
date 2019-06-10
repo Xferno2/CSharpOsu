@@ -19,6 +19,9 @@ namespace CSharpOsu.Util.Converters
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
+            if (reader.Value == null)
+                return null;
+
             var encodedFlags = int.Parse((string)reader.Value);
             return GetUniqueFlags((Mods)encodedFlags);
         }
