@@ -9,8 +9,8 @@ namespace CSharpOsu.Module
     public class Event
     {
         public string display_html { get; set; }
-        public long beatmap_id { get; set; }
-        public long beatmapset_id { get; set; }
+        public long? beatmap_id { get; set; }
+        public long? beatmapset_id { get; set; }
         public DateTime date { get; set; }
         public short epicfactor { get; set; }
     }
