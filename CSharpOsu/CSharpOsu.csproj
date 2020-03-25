@@ -3,11 +3,22 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>preview</LangVersion>
+    <Version>1.4.9.9</Version>
+    <Authors>Xferno2</Authors>
+    <Description>C# library for osu!api using Newtonsoft.Json project.</Description>
+    <Copyright />
+    <PackageProjectUrl>https://github.com/Xferno2/CSharpOsu</PackageProjectUrl>
+    <PackageIconUrl>https://dl.dropboxusercontent.com/s/gituqfcsj9ugnzg/Favicon.gif</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Xferno2/CSharpOsu</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <PackageTags>osu csharp osu-api csharp-library clscompilant</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>\bin\Debug\CSharpOsu.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
 
   

@@ -11,8 +11,8 @@ namespace CSharpOsu.Module
 {
     public class OsuBeatmap : Model
     {
-        public long beatmapset_id { get; set; }
-        public long beatmap_id { get; set; }
+        public int beatmapset_id { get; set; }
+        public int beatmap_id { get; set; }
         [JsonConverter(typeof(ApprovedConvert))]
         public ApprovedStatus approved { get; set; }
         public int total_length { get; set; }

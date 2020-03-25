@@ -24,7 +24,7 @@ namespace CSharpOsu
 
         public readonly string APIKey;
         public bool bypassLimit = false;
-        //  public short Highlimit = 1200;
+        // public short Highlimit = 1200;
         // private short burst = 200;
         public short limit = 60;
         public bool bypassReplayLimit = false;
@@ -78,6 +78,58 @@ namespace CSharpOsu
                 (isSet) ? "s" : "b", id);
 
             obj = JsonConvert.DeserializeObject<OsuBeatmap[]>(utl.GetURL(html));
+            for (int i = 0; i < obj.Length; i++)
+            {
+                obj[i].thumbnail = "https://b.ppy.sh/thumb/" + obj[i].beatmapset_id + "l.jpg";
+                if (id == null)
+                { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
+                else
+                {
+                    if (isSet)
+                    { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = null; }
+                    else
+                    { obj[i].beatmapset_url = "https://osu.ppy.sh/s/" + obj[i].beatmapset_id; obj[i].beatmap_url = "https://osu.ppy.sh/b/" + obj[i].beatmap_id; }
+                }
+                obj[i].download = str.Dowload + obj[i].beatmapset_id;
+                obj[i].download_no_video = str.Dowload + obj[i].beatmapset_id + "n";
+                obj[i].osu_direct = str.Direct + obj[i].beatmapset_id;
+                utl.ErrorHandler(obj[i]);
+            }
+
+            return obj;
+        }
+
+        /// <summary>
+        /// Return information about beatmaps.
+        /// </summary>
+        /// <param name="id">Specify a beatmapset or beatmap id.</param>
+        /// <param name="isSet">Logical switch that determine if the request is a single beatmap or a beatmapset</param>
+        /// <param name="since">Return all beatmaps ranked since this date. Must be a MySQL date.</param>
+        /// <param name="u">Specify a user or a username to return metadata from.</param>
+        /// <param name="m">Mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional, maps of all modes are returned by default.</param>
+        /// <param name="a">Specify whether converted beatmaps are included (0 = not included, 1 = included). Only has an effect if m is chosen and not 0. Converted maps show their converted difficulty rating. Optional, default is 0.</param>
+        /// <param name="h">The beatmap hash. It can be used, for instance, if you're trying to get what beatmap has a replay played in, as .osr replays only provide beatmap hashes (example of hash: a5b99395a42bd55bc5eb1d2411cbdf8b). Optional, by default all beatmaps are returned independently from the hash.</param>
+        /// <param name="limit">Amount of results. Optional, default and maximum are 500.</param>
+        /// <param name="userType">Specify if u is a user_id or a username. Use string for usernames or id for user_ids. Optional, default behaviour is automatic recognition (may be problematic for usernames made up of digits only).</param>
+        /// <param name="mods">Specify a mod or mod combination (See https://github.com/ppy/osu-api/wiki#mods )</param>
+        /// <returns>Fetch Beatmap.</returns>
+        public async Task<OsuBeatmap[]> GetBeatmapAsync(long? id = null, bool isSet = true, DateTime? since = null, string u = null, mode? m = null, include? a = null, string h = null, int? limit = null, typeUser? userType = null, long? mods = null)
+        {
+            Task<string> CreateUrl = new Task<string>(() => str.CreateURL(str.Beatmap,
+                "since", since,
+                "u", u,
+                "m", m,
+                "a", a,
+                "h", h,
+                "limit", limit,
+                "type", userType,
+                "mods", mods,
+                isSet ? "s" : "b", id));
+            OsuBeatmap[] obj;
+            string html = await CreateUrl;
+
+            Task<string> getURL = new Task<string>(() => utl.GetURL(html));
+            obj = JsonConvert.DeserializeObject<OsuBeatmap[]>(await getURL);
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].thumbnail = "https://b.ppy.sh/thumb/" + obj[i].beatmapset_id + "l.jpg";
@@ -178,7 +230,7 @@ namespace CSharpOsu
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].accuracy = utl.accuracyCalculator(
-                    GetBeatmap(Convert.ToInt32(obj[i].beatmap_id), isSet: false),
+                    GetBeatmap(obj[i].beatmap_id, isSet: false),
                     obj[i].count50,
                     obj[i].count100,
                     obj[i].count300,
@@ -214,7 +266,7 @@ namespace CSharpOsu
             for (int i = 0; i < obj.Length; i++)
             {
                 obj[i].accuracy = utl.accuracyCalculator(
-                    GetBeatmap(Convert.ToInt32(obj[i].beatmap_id), isSet: false),
+                    GetBeatmap(obj[i].beatmap_id, isSet: false),
                     obj[i].count50,
                     obj[i].count100,
                     obj[i].count300,
@@ -268,6 +320,8 @@ namespace CSharpOsu
             obj = JsonConvert.DeserializeObject<OsuReplay>(utl.GetURL(html));
             utl.ErrorHandler(obj);
             replayReq++;
+
+            // Add Replay limit to the HttpHandler.
             var nowTime = DateTime.UtcNow;
             if (!bypassReplayLimit) if (replayLimit == replayReq) throw new Exception("Replay limit per minute exceeded");
             if (nowTime >= oldTime + new TimeSpan(0, 0, 1, 0))
@@ -305,7 +359,6 @@ namespace CSharpOsu
             var content = Convert.FromBase64String(replay.content);
             var mode = Convert.ToInt32(m).ToString();
 
-            // Begin
             bin.writeByte(mode);                                                // Write osu mode.
             bin.writeInteger(0);                                                // Write osu version. (Unknown)
             bin.writeString(beatmap.MD5);                                       // Write beatmap MD5.

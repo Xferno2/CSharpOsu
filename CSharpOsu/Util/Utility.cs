@@ -30,6 +30,7 @@ namespace CSharpOsu.Util
             limit = _limit;
         }
 
+        // To be recoded as HttpHandler
         public string GetURL(string url)
         {
             var nowTime = DateTime.UtcNow;
