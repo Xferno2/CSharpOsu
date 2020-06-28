@@ -1,4 +1,4 @@
-﻿using CSharpOsu.Util.Converters;
+using CSharpOsu.Util.Converters;
 using CSharpOsu.Util.Enums;
 using Newtonsoft.Json;
 using System;
@@ -56,6 +56,29 @@ namespace CSharpOsu.Module
         public float? AimRating { get; set; }
         [JsonProperty(PropertyName = "diff_speed")]
         public float? SpeedRating { get; set; }
+        [JsonProperty(PropertyName = "count_normal")]
+        public int CountNormal { get; set; }
+        [JsonProperty(PropertyName = "count_slider")]
+        public int CountSlider { get; set; }
+        [JsonProperty(PropertyName = "count_spinner")]
+        public int CountSpinner { get; set; }
+        [JsonProperty(PropertyName = "artist_unicode")]
+        public string ArtistUnicode { get; set; }
+        [JsonProperty(PropertyName = "title_unicode")]
+        public string TitleUnicode { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        [JsonProperty(PropertyName = "storyboard")]
+        public bool HasStoryboard { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        [JsonProperty(PropertyName = "video")]
+        public bool HasVideo { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        [JsonProperty(PropertyName = "download_unavailable")]
+        public bool DownloadUnavailable { get; set; }
+        [JsonConverter(typeof(BoolConvert))]
+        [JsonProperty(PropertyName = "audio_unavailable")]
+        public bool AudioUnavailable { get; set; }
+        public string Packs { get; set; }
         public string thumbnail { get; set; }
         public string beatmapset_url { get; set; }
         public string beatmap_url { get; set; }
